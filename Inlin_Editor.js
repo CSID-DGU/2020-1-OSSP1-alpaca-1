@@ -1,4 +1,3 @@
-//Inline editor
 const functions = require('firebase-functions');
 const admin=require('firebase-admin');
 const {WebhookClient} = require('dialogflow-fulfillment');
@@ -44,11 +43,21 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	agent.add(vectorInfo);
     });
   }
+  
+  function handleiterator(agent){
+  	const a=agent.parameters.iterator;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var STLInfo=snapshot.child('answer/'+a+'/idea').val();
+      	agent.add(STLInfo);
+    });
+  }
+  
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
   intentMap.set('STLIntent',handleSTL);
   intentMap.set('vectorIntent',handlevector);
+  intentMap.set('iteratorIntent',handleiterator);
   // intentMap.set('your intent name here', yourFunctionHandler);
   // intentMap.set('your intent name here', googleAssistantHandler);
   agent.handleRequest(intentMap);
