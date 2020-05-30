@@ -131,6 +131,15 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(ideaInfo); });
   }
+  function handlereuse(agent){
+  	const a=agent.parameters.reuse;
+    const b=agent.parameters.how;
+    const c=agent.parameters.mean;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var howInfo=snapshot.child('answer/'+a+'/'+b).val();
+      	var meanInfo=snapshot.child('answer/'+a+'/'+c).val();
+      	if(b=="how") agent.add(howInfo); else agent.add(meanInfo); });
+  }
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -148,5 +157,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('operatingoverloadingIntent',handleoperatingoverloading);
   intentMap.set('memoryallocationIntent',handlememoryallocation);
   intentMap.set('mallocIntent',handlemalloc);
+  intentMap.set('reuseIntent',handlereuse);
   agent.handleRequest(intentMap);
 });
