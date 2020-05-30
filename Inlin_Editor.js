@@ -122,5 +122,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('mapIntent',handlemap);
   intentMap.set('staticallocationIntent',handlestaticallocation);
   intentMap.set('streamIntent',handlestream);
+  intentMap.set('templateIntent',handletemplate);
   
 });
