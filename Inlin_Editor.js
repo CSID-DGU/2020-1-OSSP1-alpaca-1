@@ -110,7 +110,12 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(ideaInfo); });
   }
-  
+  function handleoperatingoverloading(agent){
+	const a=agent.parameters.operatingoverloading;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
+      	agent.add(ideaInfo); });
+  }
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -125,5 +130,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('templateIntent',handletemplate);
   intentMap.set('upcastingIntent',handleupcasting);
   intentMap.set('overridingIntent',handleoverriding);
+  intentMap.set('operatingoverloadingIntent',handleoperatingoverloading);
   agent.handleRequest(intentMap);
 });
