@@ -26,39 +26,93 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 
   function handleSTL(agent){
   	const a=agent.parameters.STL;
+    b=agent.parameters.function;
+    if(b=="component"){b='component';}
+    else{b='idea';}
     return admin.database().ref().once("value").then((snapshot)=>{
-    	var STLInfo=snapshot.child('answer/'+a+'/idea').val();
-      	agent.add(STLInfo);
-    });
+    	var STLInfo=snapshot.child('answer/'+a+'/'+b).val();
+      	agent.add(STLInfo);});
   }
-  
+  function handlestaticallocation(agent){
+  	const a=agent.parameters.staticallocation;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var allocationInfo=snapshot.child('answer/'+a+'/idea').val();
+      	agent.add(allocationInfo);});
+  }
+  function handleabstraction(agent){
+  	a=agent.parameters.abstraction;
+    b=agent.parameters.use;
+    if(b!="use"){b='idea';}
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var  abstractionInfo=snapshot.child('answer/'+a+'/'+b).val();
+      	agent.add(abstractionInfo);});
+  }
   function handlevector(agent){
   	const a=agent.parameters.vector;
     b=agent.parameters.function;
     
-    if(b=="function"){b='funtion';}
+    if(b=="function"){b='function';}
     else{b='idea';}
     return admin.database().ref().once("value").then((snapshot)=>{
     	var  vectorInfo=snapshot.child('answer/'+a+'/'+b).val();
-      	agent.add(vectorInfo);
-    });
+      	agent.add(vectorInfo); });
   }
   
   function handleiterator(agent){
   	const a=agent.parameters.iterator;
     return admin.database().ref().once("value").then((snapshot)=>{
-    	var STLInfo=snapshot.child('answer/'+a+'/idea').val();
-      	agent.add(STLInfo);
-    });
+    	var iteratorInfo=snapshot.child('answer/'+a+'/idea').val();
+      	agent.add(iteratorInfo);});
+  }
+  
+  function handletemplate(agent){
+  	const a=agent.parameters.template;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var templateInfo=snapshot.child('answer/'+a+'/idea').val();
+      	agent.add(templateInfo);});
+  }
+  function handlegeneric(agent){
+  	const a=agent.parameters.generic;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
+      	var codeInfo=snapshot.child('answer/'+a+'/code').val();
+      	agent.add(ideaInfo+"이고 "+codeInfo+"를 추가하면 된다."); });
+  }
+  
+  function handlemap(agent){
+  	const a=agent.parameters.map;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
+      	var codeInfo=snapshot.child('answer/'+a+'/need').val();
+      	agent.add(ideaInfo+"이고 "+codeInfo+"를 추가하면 된다.");});
+  }
+  
+  function handlestream(agent){
+  	a=agent.parameters.stream;
+    b=agent.parameters.iostream;
+    if(a=="stream"){ b='idea'; }
+    else {a='stream';}
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var streamInfo=snapshot.child('answer/'+a+'/'+b).val();
+      	agent.add(ideaInfo);});
+  }
+  
+  function handleupcasting(agent){
+  	const a=agent.parameters.upcasting;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
+      	agent.add(ideaInfo); });
+  }
+  
+  function handleoverriding(agent){
+	const a=agent.parameters.overriding;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
+      	agent.add(ideaInfo); });
   }
   
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
-  intentMap.set('STLIntent',handleSTL);
-  intentMap.set('vectorIntent',handlevector);
-  intentMap.set('iteratorIntent',handleiterator);
-  // intentMap.set('your intent name here', yourFunctionHandler);
-  // intentMap.set('your intent name here', googleAssistantHandler);
   agent.handleRequest(intentMap);
 });
