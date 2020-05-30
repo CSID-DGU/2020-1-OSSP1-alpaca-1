@@ -79,37 +79,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	agent.add(ideaInfo+"이고 "+codeInfo+"를 추가하면 된다."); });
   }
   
-  function handlemap(agent){
-  	const a=agent.parameters.map;
-    return admin.database().ref().once("value").then((snapshot)=>{
-    	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
-      	var codeInfo=snapshot.child('answer/'+a+'/need').val();
-      	agent.add(ideaInfo+"이고 "+codeInfo+"를 추가하면 된다.");});
-  }
-  
-  function handlestream(agent){
-  	a=agent.parameters.stream;
-    b=agent.parameters.iostream;
-    if(a=="stream"){ b='idea'; }
-    else {a='stream';}
-    return admin.database().ref().once("value").then((snapshot)=>{
-    	var streamInfo=snapshot.child('answer/'+a+'/'+b).val();
-      	agent.add(ideaInfo);});
-  }
-  
-  function handleupcasting(agent){
-  	const a=agent.parameters.upcasting;
-    return admin.database().ref().once("value").then((snapshot)=>{
-    	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
-      	agent.add(ideaInfo); });
-  }
-  
-  function handleoverriding(agent){
-	const a=agent.parameters.overriding;
-    return admin.database().ref().once("value").then((snapshot)=>{
-    	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
-      	agent.add(ideaInfo); });
-  }
+
   
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
