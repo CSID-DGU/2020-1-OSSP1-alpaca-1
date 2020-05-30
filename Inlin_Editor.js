@@ -124,5 +124,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('streamIntent',handlestream);
   intentMap.set('templateIntent',handletemplate);
   intentMap.set('upcastingIntent',handleupcasting);
+  intentMap.set('overridingIntent',handleoverriding);
 
 });
