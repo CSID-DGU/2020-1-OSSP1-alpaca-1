@@ -91,11 +91,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   function handlestream(agent){
   	a=agent.parameters.stream;
     b=agent.parameters.iostream;
-    if(a=="stream"){ b='idea'; }
-    else {a='stream';}
     return admin.database().ref().once("value").then((snapshot)=>{
-    	var streamInfo=snapshot.child('answer/'+a+'/'+b).val();
-      	agent.add(ideaInfo);});
+    	var streamInfo=snapshot.child('answer/'+a+'/idea').val();
+      	var iostreamInfo=snapshot.child('answer/stream/'+b).val();
+      	if(a=="stream") agent.add(streamInfo); 
+      	else agent.add(iostreamInfo);});
   }
   
   function handleupcasting(agent){
