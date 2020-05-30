@@ -4,7 +4,12 @@
 # 프로젝트 
 기존 DGU IDE에 dialogflow를 이용해서 만든 c++ Q&A 챗봇을 추가하는 프로젝트를 진행 중입니다.👨‍💻
 
-😉진행사항  
+# 개발환경
+개발환경 : ubuntu
+개발툴 : dialogflow, javascript
+데이터베이스 : firebase
+
+# 진행사항 😉 
 4 월 30 일  
 ✔챗봇 테스트 db추가  
 
