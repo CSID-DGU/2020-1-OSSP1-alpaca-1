@@ -87,7 +87,17 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	agent.add(ideaInfo+"이고 "+codeInfo+"를 추가하면 된다.");});
   }
   
+  function handlestream(agent){
+  	a=agent.parameters.stream;
+    b=agent.parameters.iostream;
+    if(a=="stream"){ b='idea'; }
+    else {a='stream';}
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var streamInfo=snapshot.child('answer/'+a+'/'+b).val();
+      	agent.add(ideaInfo);});
+  }
   
+ 
   
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
