@@ -97,7 +97,14 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	agent.add(ideaInfo);});
   }
   
- 
+  function handleupcasting(agent){
+  	const a=agent.parameters.upcasting;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
+      	agent.add(ideaInfo); });
+  }
+  
+  
   
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
