@@ -117,5 +117,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('STLIntent',handleSTL);
   intentMap.set('abstractionIntent',handleabstraction);
   intentMap.set('vectorIntent',handlevector);
+  intentMap.set('iteratorIntent',handleiterator);
+
   agent.handleRequest(intentMap);
 });
