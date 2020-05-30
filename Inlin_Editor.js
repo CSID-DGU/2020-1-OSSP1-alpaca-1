@@ -81,10 +81,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   
   function handlemap(agent){
   	const a=agent.parameters.map;
+     b=agent.parameters.function;
+    if(b=="function"){b='function';} else{b='idea';}
     return admin.database().ref().once("value").then((snapshot)=>{
-    	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
-      	var codeInfo=snapshot.child('answer/'+a+'/need').val();
-      	agent.add(ideaInfo+"이고 "+codeInfo+"를 추가하면 된다.");});
+    	var  mapInfo=snapshot.child('answer/'+a+'/'+b).val();
+      	agent.add(mapInfo); });
   }
   
   function handlestream(agent){
@@ -123,6 +124,13 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(ideaInfo); });
   }
+  function handlemalloc(agent){
+  	const a=agent.parameters.malloc;
+    const b=agent.parameters.need;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/'+a+'/'+b).val();
+      	agent.add(ideaInfo); });
+  }
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -139,5 +147,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('overridingIntent',handleoverriding);
   intentMap.set('operatingoverloadingIntent',handleoperatingoverloading);
   intentMap.set('memoryallocationIntent',handlememoryallocation);
+  intentMap.set('mallocIntent',handlemalloc);
   agent.handleRequest(intentMap);
 });
