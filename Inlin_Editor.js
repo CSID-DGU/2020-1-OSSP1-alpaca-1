@@ -116,6 +116,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('Default Fallback Intent', fallback);
   intentMap.set('STLIntent',handleSTL);
   intentMap.set('abstractionIntent',handleabstraction);
- 
+  intentMap.set('vectorIntent',handlevector);
   agent.handleRequest(intentMap);
 });
