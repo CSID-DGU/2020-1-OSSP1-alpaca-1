@@ -116,6 +116,13 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(ideaInfo); });
   }
+  function handlememoryallocation(agent){
+	const a=agent.parameters.memoryallocation;
+    const b=agent.parameters.careful;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/'+a+'/'+b).val();
+      	agent.add(ideaInfo); });
+  }
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -131,5 +138,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('upcastingIntent',handleupcasting);
   intentMap.set('overridingIntent',handleoverriding);
   intentMap.set('operatingoverloadingIntent',handleoperatingoverloading);
+  intentMap.set('memoryallocationIntent',handlememoryallocation);
   agent.handleRequest(intentMap);
 });
