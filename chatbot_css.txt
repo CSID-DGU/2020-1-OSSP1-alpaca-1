@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IDE/User 동국대학교</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- CSS  -->
+    <!-- <link href="/vendors/css/bootstrap.css" rel="stylesheet"> -->
+    <!-- JavaScript -->
+    <script src="/vendors/js/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<style>#chatbot{
+position:fixed;
+top:200px;
+right:0px;
+}
+#chatbot{
+	--df-messenger-bot-message:#878fac;
+	--df-messenger-button-titlebar-color:#df9b56;
+	--df-messenger-chat-background-color:#fafafa;
+	--df-messenger-font-color:white;
+	--df-messenger-send-icon:#878fac;
+	--df-messenger-user-message:#479b3d;}
+</style>
+    <!-- <script src="/vendors/js/bootstrap.min.js"></script> -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="chatbot">
+    <iframe
+	    allow="microphone;"
+	    width="350"
+	    height="430"
+	    src="https://console.dialogflow.com/api-client/demo/embedded/1af311e2-f7db-4ce9-9dd0-061344c0837a"></iframe>
+    </div>
+  <script src="/static/js/bundle.js"></script><script src="/static/js/0.chunk.js"></script><script src="/static/js/main.chunk.js"></script></body>
+</html>
