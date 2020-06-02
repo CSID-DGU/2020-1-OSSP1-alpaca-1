@@ -1,0 +1,9 @@
+{
+  "id": "04cd2251-fc66-4ab8-8df7-bff3a4ed39bf",
+  "name": "discount",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}
