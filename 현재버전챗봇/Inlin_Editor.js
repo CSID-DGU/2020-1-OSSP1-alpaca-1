@@ -33,12 +33,14 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var STLInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(STLInfo);});
   }
+	
   function handlestaticallocation(agent){
   	const a=agent.parameters.staticallocation;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var allocationInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(allocationInfo);});
   }
+	
   function handlestream(agent){
     a=agent.parameters.stream;
     b=agent.parameters.iostream;
@@ -153,6 +155,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(ideaInfo); });
   }
+	
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
