@@ -155,15 +155,5 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('iteratorIntent',handleiterator);
   intentMap.set('genericIntent',handlegeneric);
   intentMap.set('mapIntent',handlemap);
-  intentMap.set('staticallocationIntent',handlestaticallocation);
-  intentMap.set('streamIntent',handlestream);
-  intentMap.set('templateIntent',handletemplate);
-  intentMap.set('upcastingIntent',handleupcasting);
-  intentMap.set('overridingIntent',handleoverriding);
-  intentMap.set('operatingoverloadingIntent',handleoperatingoverloading);
-  intentMap.set('memoryallocationIntent',handlememoryallocation);
-  intentMap.set('mallocIntent',handlemalloc);
-  intentMap.set('reuseIntent',handlereuse);
-  intentMap.set('dynamicbindingIntent',handledynamicbinding);
   agent.handleRequest(intentMap);
 });
