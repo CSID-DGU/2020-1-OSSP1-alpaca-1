@@ -1,0 +1,21 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "careful",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "careful",
+      "synonyms": [
+        "careful",
+        "주의점",
+        "조심할 점",
+        "조심",
+        "주의 사항"
+      ]
+    }
+  ],
+  "id": "95159076-9676-42dc-9ab4-ff1c02e187c4",
+  "isOverridable": false
+}

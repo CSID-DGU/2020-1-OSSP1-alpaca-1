@@ -1,0 +1,20 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "advantage",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "advantage",
+      "synonyms": [
+        "장점",
+        "이점",
+        "좋은점",
+        "advantage"
+      ]
+    }
+  ],
+  "id": "3e1a2b3d-738c-4b9e-abaf-2b5791a839c8",
+  "isOverridable": false
+}

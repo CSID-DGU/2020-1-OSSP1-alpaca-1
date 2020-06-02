@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "component",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "component",
+      "synonyms": [
+        "component",
+        "구성 요소"
+      ]
+    }
+  ],
+  "id": "337ca721-6d97-4376-999e-6d9a65995add",
+  "isOverridable": false
+}

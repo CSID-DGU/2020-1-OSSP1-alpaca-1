@@ -1,0 +1,21 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "default",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "default",
+      "synonyms": [
+        "default변수",
+        "디폴트변수",
+        "디폴트 변수",
+        "default 변수",
+        "default"
+      ]
+    }
+  ],
+  "id": "a642e3e2-be44-427c-992b-32b575742767",
+  "isOverridable": false
+}
