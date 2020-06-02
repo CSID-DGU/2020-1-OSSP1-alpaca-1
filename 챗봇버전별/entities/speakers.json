@@ -1,0 +1,9 @@
+{
+  "id": "15648c65-6985-4b84-8ab0-77ed59f89888",
+  "name": "speakers",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "bee7cd88-8c9d-442b-92e8-8dc46c0cb661",
+  "name": "ticket",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}
