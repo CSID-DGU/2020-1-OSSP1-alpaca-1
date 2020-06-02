@@ -1,0 +1,149 @@
+{
+  "id": "277072ca-d869-485c-91e0-d07a06ced851",
+  "name": "reuseIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "reuse",
+          "dataType": "@reuse",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$reuse",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "mean",
+          "dataType": "@mean",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$mean",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "how",
+          "dataType": "@how",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$how",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "코드를 ",
+          "userDefined": false
+        },
+        {
+          "text": "재사용",
+          "userDefined": false,
+          "alias": "reuse",
+          "meta": "@reuse"
+        },
+        {
+          "text": "하기 위한 ",
+          "userDefined": false
+        },
+        {
+          "text": "방법",
+          "userDefined": false,
+          "alias": "how",
+          "meta": "@how"
+        },
+        {
+          "text": "에는 무엇이 있나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "재사용",
+          "userDefined": false,
+          "alias": "reuse",
+          "meta": "@reuse"
+        },
+        {
+          "text": "을 ",
+          "userDefined": false
+        },
+        {
+          "text": "사용",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": "하는 ",
+          "userDefined": false
+        },
+        {
+          "text": "의미",
+          "userDefined": false,
+          "alias": "mean",
+          "meta": "@mean"
+        },
+        {
+          "text": "가 있나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
