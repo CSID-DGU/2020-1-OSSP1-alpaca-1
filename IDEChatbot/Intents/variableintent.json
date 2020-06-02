@@ -1,0 +1,288 @@
+{
+  "id": "18ad13dd-c0da-412a-ae29-dc02ededabca",
+  "name": "variableintent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "type",
+          "dataType": "@type",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$type",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "exam",
+          "dataType": "@exam",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$exam",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "idea",
+          "dataType": "@idea",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$idea",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "default",
+          "dataType": "@default",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$default",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "Variable",
+          "dataType": "@Variable",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$Variable",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "advantage",
+          "dataType": "@advantage",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$advantage",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "default변수",
+          "userDefined": true,
+          "alias": "default",
+          "meta": "@default"
+        },
+        {
+          "text": "에 대해 ",
+          "userDefined": false
+        },
+        {
+          "text": "알려주세요",
+          "userDefined": true,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "default변수",
+          "userDefined": true,
+          "alias": "default",
+          "meta": "@default"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "개념",
+          "userDefined": false,
+          "alias": "idea",
+          "meta": "@idea"
+        },
+        {
+          "text": "이",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " 궁금해요",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "default변수",
+          "userDefined": true,
+          "alias": "default",
+          "meta": "@default"
+        },
+        {
+          "text": "가 ",
+          "userDefined": false
+        },
+        {
+          "text": "뭐에요",
+          "userDefined": true,
+          "alias": "idea",
+          "meta": "@idea"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "default변수",
+          "userDefined": true,
+          "alias": "default",
+          "meta": "@default"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "예시",
+          "userDefined": false,
+          "alias": "exam",
+          "meta": "@exam"
+        },
+        {
+          "text": "에 대해 알려주세요",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "default변수",
+          "userDefined": true,
+          "alias": "default",
+          "meta": "@default"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "장점",
+          "userDefined": false,
+          "alias": "advantage",
+          "meta": "@advantage"
+        },
+        {
+          "text": "은?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "변수",
+          "userDefined": true,
+          "alias": "Variable",
+          "meta": "@Variable"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "종류",
+          "userDefined": false,
+          "alias": "type",
+          "meta": "@type"
+        },
+        {
+          "text": "에 대해 알려주세요",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
