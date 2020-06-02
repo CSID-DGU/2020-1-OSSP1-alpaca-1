@@ -48,6 +48,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	if(a=="stream") agent.add(streamInfo); 
       	else agent.add(iostreamInfo);});
   }
+	
   function handleabstraction(agent){
   	a=agent.parameters.abstraction;
     b=agent.parameters.use;
@@ -56,6 +57,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var  abstractionInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(abstractionInfo);});
   }
+	
   function handlevector(agent){
   	const a=agent.parameters.vector;
     b=agent.parameters.function;
@@ -66,8 +68,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var  vectorInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(vectorInfo); });
   }
-  
-
   
   function handletemplate(agent){
   	const a=agent.parameters.template;
@@ -82,6 +82,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var iteratorInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(iteratorInfo);});
   }
+	
   function handlegeneric(agent){
   	const a=agent.parameters.generic;
     return admin.database().ref().once("value").then((snapshot)=>{
@@ -112,12 +113,14 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(ideaInfo); });
   }
+	
   function handleoperatingoverloading(agent){
 	const a=agent.parameters.operatingoverloading;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(ideaInfo); });
   }
+	
   function handlememoryallocation(agent){
 	const a=agent.parameters.memoryallocation;
     const b=agent.parameters.careful;
@@ -125,6 +128,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(ideaInfo); });
   }
+	
   function handlemalloc(agent){
   	const a=agent.parameters.malloc;
     const b=agent.parameters.need;
@@ -132,6 +136,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(ideaInfo); });
   }
+	
   function handlereuse(agent){
   	const a=agent.parameters.reuse;
     const b=agent.parameters.how;
