@@ -67,12 +67,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	agent.add(vectorInfo); });
   }
   
-  function handleiterator(agent){
-  	const a=agent.parameters.iterator;
-    return admin.database().ref().once("value").then((snapshot)=>{
-    	var iteratorInfo=snapshot.child('answer/'+a+'/idea').val();
-      	agent.add(iteratorInfo);});
-  }
+
   
   function handletemplate(agent){
   	const a=agent.parameters.template;
