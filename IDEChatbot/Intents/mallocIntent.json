@@ -1,0 +1,104 @@
+{
+  "id": "3fd4193f-3326-4505-b82b-72f6e58d670d",
+  "name": "mallocIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "malloc",
+          "dataType": "@malloc",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$malloc",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "need",
+          "dataType": "@need",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$need",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "malloc",
+          "userDefined": false,
+          "alias": "malloc",
+          "meta": "@malloc"
+        },
+        {
+          "text": "을 ",
+          "userDefined": false
+        },
+        {
+          "text": "사용",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": "하기 위해 ",
+          "userDefined": false
+        },
+        {
+          "text": "필요한",
+          "userDefined": false,
+          "alias": "need",
+          "meta": "@need"
+        },
+        {
+          "text": " 라이브러리는 뭔가요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
