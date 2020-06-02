@@ -1,0 +1,108 @@
+{
+  "id": "44c48e98-44d6-4456-b2e9-8a93a990e6e8",
+  "name": "STLIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "STL",
+          "dataType": "@STL",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$STL",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "component",
+          "dataType": "@component",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$component",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "STL",
+          "userDefined": true,
+          "alias": "STL",
+          "meta": "@STL"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "구성요소",
+          "userDefined": true,
+          "alias": "component",
+          "meta": "@component"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "STL",
+          "userDefined": true,
+          "alias": "STL",
+          "meta": "@STL"
+        },
+        {
+          "text": " 이란?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

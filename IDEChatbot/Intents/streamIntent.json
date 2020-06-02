@@ -1,0 +1,185 @@
+{
+  "id": "675d7e6f-3259-4558-9023-ab7e413ac2e5",
+  "name": "streamIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "stream",
+          "dataType": "@stream",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$stream",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "function",
+          "dataType": "@function",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$function",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "iostream",
+          "dataType": "@iostream",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$iostream",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "istream",
+          "userDefined": true,
+          "alias": "iostream",
+          "meta": "@iostream"
+        },
+        {
+          "text": "이란?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "istream",
+          "userDefined": true,
+          "alias": "iostream",
+          "meta": "@iostream"
+        },
+        {
+          "text": "에 멤버",
+          "userDefined": false
+        },
+        {
+          "text": "함수",
+          "userDefined": true,
+          "alias": "function",
+          "meta": "@function"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ostream",
+          "userDefined": true,
+          "alias": "iostream",
+          "meta": "@iostream"
+        },
+        {
+          "text": "에 멤버",
+          "userDefined": false
+        },
+        {
+          "text": "함수",
+          "userDefined": true,
+          "alias": "function",
+          "meta": "@function"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ostream",
+          "userDefined": true,
+          "alias": "iostream",
+          "meta": "@iostream"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "stream",
+          "userDefined": false,
+          "alias": "stream",
+          "meta": "@stream"
+        },
+        {
+          "text": "이란?",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
