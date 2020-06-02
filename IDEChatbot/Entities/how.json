@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "how",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "how",
+      "synonyms": [
+        "how",
+        "방법"
+      ]
+    }
+  ],
+  "id": "13dc269a-4c38-48f2-8e68-11f8578577c3",
+  "isOverridable": false
+}

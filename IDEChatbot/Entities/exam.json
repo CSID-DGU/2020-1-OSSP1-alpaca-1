@@ -1,0 +1,20 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "exam",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "예시",
+      "synonyms": [
+        "예시",
+        "exam",
+        "example",
+        "예"
+      ]
+    }
+  ],
+  "id": "8ff87edc-56f9-42e5-bd6f-2faef8548ac0",
+  "isOverridable": false
+}

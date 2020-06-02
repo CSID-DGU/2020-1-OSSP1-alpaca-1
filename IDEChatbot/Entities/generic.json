@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "generic",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "generic",
+      "synonyms": [
+        "generic",
+        "제네릭",
+        "제너릭"
+      ]
+    }
+  ],
+  "id": "6e0330b6-4bf2-40b4-89e7-ba9b5362eac5",
+  "isOverridable": false
+}

@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "function",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "function",
+      "synonyms": [
+        "function",
+        "함수",
+        "내장함수"
+      ]
+    }
+  ],
+  "id": "f400cca0-a797-4bf0-9d1e-f1e77d3f8f09",
+  "isOverridable": false
+}
