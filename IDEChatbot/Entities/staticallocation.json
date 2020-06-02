@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "staticallocation",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "staticallocation",
+      "synonyms": [
+        "static allocation",
+        "동적 할당"
+      ]
+    }
+  ],
+  "id": "12025e6f-c8a5-4351-8745-c38803765c13",
+  "isOverridable": false
+}

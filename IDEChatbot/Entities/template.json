@@ -1,0 +1,17 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "template",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "template",
+      "synonyms": [
+        "template"
+      ]
+    }
+  ],
+  "id": "36f9adc1-10b0-458b-b46d-cf14c7d06545",
+  "isOverridable": false
+}

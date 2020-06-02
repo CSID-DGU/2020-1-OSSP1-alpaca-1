@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "STL",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "STL",
+      "synonyms": [
+        "STL",
+        "standard library",
+        "표준라이브러리"
+      ]
+    }
+  ],
+  "id": "e5951453-0628-4b6b-b23b-1b6b5ff3a1de",
+  "isOverridable": false
+}

@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "stream",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "stream",
+      "synonyms": [
+        "stream",
+        "스트림"
+      ]
+    }
+  ],
+  "id": "bd80f438-0554-4929-bd1f-d43c2db02671",
+  "isOverridable": false
+}
