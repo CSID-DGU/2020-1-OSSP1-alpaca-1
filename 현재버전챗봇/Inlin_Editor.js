@@ -75,6 +75,13 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var templateInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(templateInfo);});
   }
+	
+ function handleiterator(agent){
+    const a=agent.parameters.iterator;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var iteratorInfo=snapshot.child('answer/'+a+'/idea').val();
+      	agent.add(iteratorInfo);});
+  }
   function handlegeneric(agent){
   	const a=agent.parameters.generic;
     return admin.database().ref().once("value").then((snapshot)=>{
