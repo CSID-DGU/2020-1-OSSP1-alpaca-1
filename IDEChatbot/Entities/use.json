@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "use",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "use",
+      "synonyms": [
+        "use",
+        "사용",
+        "쓰는"
+      ]
+    }
+  ],
+  "id": "70030000-588b-4c63-8512-378964b8f5e6",
+  "isOverridable": false
+}

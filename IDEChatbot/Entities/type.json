@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "type",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "type",
+      "synonyms": [
+        "종류",
+        "type"
+      ]
+    }
+  ],
+  "id": "42760e9a-75a3-4220-83f3-9ed22ebea133",
+  "isOverridable": false
+}

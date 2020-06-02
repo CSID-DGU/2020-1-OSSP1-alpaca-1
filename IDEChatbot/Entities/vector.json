@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "vector",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "vector",
+      "synonyms": [
+        "vector",
+        "벡터"
+      ]
+    }
+  ],
+  "id": "51dee406-65c9-4ef7-aa2d-3008aaba4da7",
+  "isOverridable": false
+}

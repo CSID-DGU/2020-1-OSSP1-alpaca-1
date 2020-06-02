@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "Variable",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "Variable",
+      "synonyms": [
+        "변수",
+        "variable",
+        "Variable"
+      ]
+    }
+  ],
+  "id": "b9c8dda2-2195-4c87-9518-3a84e042b93d",
+  "isOverridable": false
+}

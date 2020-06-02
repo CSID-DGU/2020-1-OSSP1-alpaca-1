@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "upcasting",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "upcasting",
+      "synonyms": [
+        "upcasting",
+        "업캐스팅"
+      ]
+    }
+  ],
+  "id": "8dde37c9-224f-401e-bf8d-ee25f4afee73",
+  "isOverridable": false
+}
