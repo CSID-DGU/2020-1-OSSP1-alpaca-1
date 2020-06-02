@@ -39,6 +39,15 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var allocationInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(allocationInfo);});
   }
+  function handlestream(agent){
+    a=agent.parameters.stream;
+    b=agent.parameters.iostream;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var streamInfo=snapshot.child('answer/'+a+'/idea').val();
+      	var iostreamInfo=snapshot.child('answer/stream/'+b).val();
+      	if(a=="stream") agent.add(streamInfo); 
+      	else agent.add(iostreamInfo);});
+  }
   function handleabstraction(agent){
   	a=agent.parameters.abstraction;
     b=agent.parameters.use;
