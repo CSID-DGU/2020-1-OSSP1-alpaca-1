@@ -1,0 +1,112 @@
+{
+  "id": "2fcf39ef-b7a1-4e5a-a54b-e6b4103b9cc3",
+  "name": "mapIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "map",
+          "dataType": "@map",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$map",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "function",
+          "dataType": "@function",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$function",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "map",
+          "userDefined": false,
+          "alias": "map",
+          "meta": "@map"
+        },
+        {
+          "text": "에 ",
+          "userDefined": false
+        },
+        {
+          "text": "함수",
+          "userDefined": true,
+          "alias": "function",
+          "meta": "@function"
+        },
+        {
+          "text": "에는 무엇이 입습니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "map",
+          "userDefined": false,
+          "alias": "map",
+          "meta": "@map"
+        },
+        {
+          "text": "이란?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
