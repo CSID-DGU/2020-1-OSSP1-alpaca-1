@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "abstraction",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "abstraction",
+      "synonyms": [
+        "abstraction",
+        "추상화"
+      ]
+    }
+  ],
+  "id": "70452d23-c318-4149-ae95-2c263311cad4",
+  "isOverridable": false
+}
