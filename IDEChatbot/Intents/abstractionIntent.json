@@ -1,0 +1,112 @@
+{
+  "id": "9b7d7f80-b072-49a0-a654-9f3f758d9b9b",
+  "name": "abstractionIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "abstraction",
+          "dataType": "@abstraction",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$abstraction",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "use",
+          "dataType": "@use",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$use",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "추상화",
+          "userDefined": false,
+          "alias": "abstraction",
+          "meta": "@abstraction"
+        },
+        {
+          "text": "는 ",
+          "userDefined": false
+        },
+        {
+          "text": "사용",
+          "userDefined": false,
+          "alias": "use",
+          "meta": "@use"
+        },
+        {
+          "text": "하는 목적은 무엇입니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "추상화",
+          "userDefined": false,
+          "alias": "abstraction",
+          "meta": "@abstraction"
+        },
+        {
+          "text": "란?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
