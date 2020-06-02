@@ -11,7 +11,7 @@
 
 ![채팅방image](https://user-images.githubusercontent.com/62542277/83505606-f8255280-a500-11ea-9730-23fbb6cb5284.jpg)
 
--교수님과 질문 답변을 나눌 수 는 게시판
+-교수님과 질문 답변을 나눌 수 있는 게시판
 
 # 개발환경
 개발환경 : ubuntu
