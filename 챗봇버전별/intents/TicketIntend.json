@@ -1,0 +1,80 @@
+{
+  "id": "08bfd4bc-3c25-429e-839d-3874b6f42863",
+  "name": "TicketIntend",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "60df439c-ff7a-4d32-b546-4695e866549a",
+          "required": false,
+          "dataType": "@ticket",
+          "name": "ticket",
+          "value": "$ticket",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "921c4826-eeeb-4510-bfb0-64543e80ecc5",
+          "required": false,
+          "dataType": "@price",
+          "name": "price",
+          "value": "$price",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "56cb1bac-1c56-487a-94f5-0236593eeee5",
+          "required": false,
+          "dataType": "@payment",
+          "name": "payment",
+          "value": "$payment",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "a15e2005-251e-45c2-8f5d-f223802f9db1",
+          "required": false,
+          "dataType": "@discount",
+          "name": "discount",
+          "value": "$discount",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ko",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

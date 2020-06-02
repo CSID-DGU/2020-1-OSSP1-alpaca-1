@@ -1,0 +1,175 @@
+[
+  {
+    "id": "6ff38c26-4781-43ab-b8b7-245bb909cb52",
+    "data": [
+      {
+        "text": "내용",
+        "alias": "info",
+        "meta": "@info",
+        "userDefined": false
+      },
+      {
+        "text": "이",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " 뭐야",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "35c734ef-7204-46ac-8e6b-9820ffad6d4c",
+    "data": [
+      {
+        "text": "행사 ",
+        "userDefined": false
+      },
+      {
+        "text": "정보",
+        "alias": "info",
+        "meta": "@info",
+        "userDefined": true
+      },
+      {
+        "text": " 알려줘",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ed590721-017a-40a1-bcdd-fd591727a59d",
+    "data": [
+      {
+        "text": "행사 ",
+        "userDefined": false
+      },
+      {
+        "text": "주소",
+        "alias": "location",
+        "meta": "@location",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8aafa817-0995-4755-b6bd-5b612996f52b",
+    "data": [
+      {
+        "text": "시작 ",
+        "userDefined": false
+      },
+      {
+        "text": "날짜",
+        "alias": "time",
+        "meta": "@time",
+        "userDefined": true
+      },
+      {
+        "text": "는 ",
+        "userDefined": false
+      },
+      {
+        "text": "언제",
+        "alias": "time",
+        "meta": "@time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "582b5167-84bb-44b5-9791-739e9332cc52",
+    "data": [
+      {
+        "text": "몇시",
+        "alias": "time",
+        "meta": "@time",
+        "userDefined": true
+      },
+      {
+        "text": "부터 시작",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4783e546-262d-4963-bfab-19fb1420c544",
+    "data": [
+      {
+        "text": "어디서",
+        "alias": "location",
+        "meta": "@location",
+        "userDefined": true
+      },
+      {
+        "text": " 하나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4e4c925b-80fd-431f-bd10-2ac9820422a7",
+    "data": [
+      {
+        "text": "스피커 리스트",
+        "alias": "speakers",
+        "meta": "@speakers",
+        "userDefined": true
+      },
+      {
+        "text": "가 어떻게 되나요?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8a60320c-2c82-4e05-ba23-61352068bccb",
+    "data": [
+      {
+        "text": "시간",
+        "alias": "time",
+        "meta": "@time",
+        "userDefined": true
+      },
+      {
+        "text": "과 ",
+        "userDefined": false
+      },
+      {
+        "text": "장소",
+        "alias": "location",
+        "meta": "@location",
+        "userDefined": true
+      },
+      {
+        "text": "는?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

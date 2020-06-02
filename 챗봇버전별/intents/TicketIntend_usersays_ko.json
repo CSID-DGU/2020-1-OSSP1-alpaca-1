@@ -1,0 +1,166 @@
+[
+  {
+    "id": "202a6682-72cb-4c2c-8bfb-fae83c87604c",
+    "data": [
+      {
+        "text": "티켓",
+        "alias": "ticket",
+        "meta": "@ticket",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "얼마",
+        "alias": "price",
+        "meta": "@price",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e230ab61-a561-42fd-9a3f-7a249b5641e5",
+    "data": [
+      {
+        "text": "가격",
+        "alias": "price",
+        "meta": "@price",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2f426b7a-e65f-4172-a77b-0def8ee89ba7",
+    "data": [
+      {
+        "text": "티켓",
+        "alias": "ticket",
+        "meta": "@ticket",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "가격",
+        "alias": "price",
+        "meta": "@price",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "26e969a7-186b-48ef-a323-15a4bdee3c89",
+    "data": [
+      {
+        "text": "할인정보",
+        "alias": "discount",
+        "meta": "@discount",
+        "userDefined": true
+      },
+      {
+        "text": " 알려줘",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f69555e2-e3ca-4373-ba3a-63d85b9dbc35",
+    "data": [
+      {
+        "text": "티켓",
+        "alias": "ticket",
+        "meta": "@ticket",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "할인",
+        "alias": "discount",
+        "meta": "@discount",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7454d30f-72e5-41f4-b502-9272630511b5",
+    "data": [
+      {
+        "text": "결제",
+        "alias": "payment",
+        "meta": "@payment",
+        "userDefined": true
+      },
+      {
+        "text": " 어떻게 해",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2577f367-60d6-44e5-aaf6-d03729adcb14",
+    "data": [
+      {
+        "text": "결제방식",
+        "alias": "payment",
+        "meta": "@payment",
+        "userDefined": true
+      },
+      {
+        "text": " 알려줘",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9daef5b9-4cbd-408e-b83a-dc918c250382",
+    "data": [
+      {
+        "text": "티켓",
+        "alias": "ticket",
+        "meta": "@ticket",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "결제",
+        "alias": "payment",
+        "meta": "@payment",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]
