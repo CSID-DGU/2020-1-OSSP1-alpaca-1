@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "operatingoverloading",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "operatingoverloading",
+      "synonyms": [
+        "operatingoverloading",
+        "operating overloading",
+        "연산자 오버로딩"
+      ]
+    }
+  ],
+  "id": "8463af10-5f63-40f6-a984-c4b3260cf0d6",
+  "isOverridable": false
+}

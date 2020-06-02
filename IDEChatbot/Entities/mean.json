@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "mean",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "mean",
+      "synonyms": [
+        "mean",
+        "의미",
+        "뜻"
+      ]
+    }
+  ],
+  "id": "b933c683-dfc9-4b35-a0c8-9a0e40f0bcc7",
+  "isOverridable": false
+}

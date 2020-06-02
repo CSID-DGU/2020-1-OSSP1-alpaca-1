@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "overriding",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "overriding",
+      "synonyms": [
+        "overriding",
+        "오버라이딩"
+      ]
+    }
+  ],
+  "id": "dc89bd3c-4354-4419-be2e-591948846bca",
+  "isOverridable": false
+}

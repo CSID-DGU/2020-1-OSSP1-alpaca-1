@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "memoryallocation",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "memoryallocation",
+      "synonyms": [
+        "메모리 할당",
+        "메모리할당",
+        "memory allocation"
+      ]
+    }
+  ],
+  "id": "ff829add-de39-4a3a-a74b-8098afffd218",
+  "isOverridable": false
+}

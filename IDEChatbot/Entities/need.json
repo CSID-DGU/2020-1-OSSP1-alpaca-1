@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "need",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "need",
+      "synonyms": [
+        "need",
+        "필요한",
+        "필요"
+      ]
+    }
+  ],
+  "id": "260667e0-751e-4407-8c73-85cc4989bb52",
+  "isOverridable": false
+}
