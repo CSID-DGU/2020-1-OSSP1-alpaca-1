@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "malloc",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "malloc",
+      "synonyms": [
+        "malloc",
+        "말록"
+      ]
+    }
+  ],
+  "id": "8ca87389-8c95-4e78-ac9b-7fef1f92dfa1",
+  "isOverridable": false
+}

@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "map",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "map",
+      "synonyms": [
+        "map",
+        "맵"
+      ]
+    }
+  ],
+  "id": "3a250940-0b95-437e-8b31-bd3f25ba7ac6",
+  "isOverridable": false
+}

@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "iterator",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "iterator",
+      "synonyms": [
+        "iterator",
+        "반복자"
+      ]
+    }
+  ],
+  "id": "cda6b168-fa3a-42b6-9093-7d59d4877bb4",
+  "isOverridable": false
+}

@@ -1,0 +1,23 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "iostream",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "istream",
+      "synonyms": [
+        "istream"
+      ]
+    },
+    {
+      "value": "ostream",
+      "synonyms": [
+        "ostream"
+      ]
+    }
+  ],
+  "id": "0a87a30c-a296-4c81-bb83-becbbc1b041e",
+  "isOverridable": false
+}

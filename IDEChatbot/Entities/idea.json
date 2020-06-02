@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "idea",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "idea",
+      "synonyms": [
+        "개념",
+        "내용",
+        "idea"
+      ]
+    }
+  ],
+  "id": "b239fffd-2e2e-4293-9672-9714f78f1e28",
+  "isOverridable": false
+}
