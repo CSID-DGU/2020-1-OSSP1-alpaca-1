@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "handling",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "handling",
+      "synonyms": [
+        "handling",
+        "처리"
+      ]
+    }
+  ],
+  "id": "610f70f7-5154-47b2-91b3-2d5edd83f20b",
+  "isOverridable": false
+}
