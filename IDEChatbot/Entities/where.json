@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "where",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "where",
+      "synonyms": [
+        "where",
+        "어디"
+      ]
+    }
+  ],
+  "id": "90ac1c1d-679f-42b7-a15e-379596e5e891",
+  "isOverridable": false
+}
