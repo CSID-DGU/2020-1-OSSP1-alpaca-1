@@ -169,12 +169,27 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         agent.add(variabletype);
       }});
   }
+  function handlethis(agent){
+  	const a=agent.parameters.this;
+    const b=agent.parameters.where;
+    const c=agent.parameters.need;
+    const d=agent.parameters.handling;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
+      	var whereInfo=snapshot.child('answer/'+a+'/'+b).val();
+      	var needInfo=snapshot.child('answer/'+a+'/'+c).val();
+      	var handlingInfo=snapshot.child('answer/'+a+'/'+d).val();
+      	if(b=="where") agent.add(whereInfo);
+      	else if(c=="need") agent.add(needInfo);
+      	else if(d=="handling") agent.add(handlingInfo);
+      	else agent.add(ideaInfo);
+    });
+  }
    function handleoperatingoverloading(agent){
 	const a=agent.parameters.operatingoverloading;
-    const f=agent.parameters.idea;
     return admin.database().ref().once("value").then((snapshot)=>{
       var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
-       if(f=="idea"){agent.add(ideaInfo);}
+      {agent.add(ideaInfo);}
     });
   }
   let intentMap = new Map();
