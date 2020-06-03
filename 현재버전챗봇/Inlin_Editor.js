@@ -33,24 +33,12 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var STLInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(STLInfo);});
   }
-	
   function handlestaticallocation(agent){
   	const a=agent.parameters.staticallocation;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var allocationInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(allocationInfo);});
   }
-	
-  function handlestream(agent){
-    a=agent.parameters.stream;
-    b=agent.parameters.iostream;
-    return admin.database().ref().once("value").then((snapshot)=>{
-    	var streamInfo=snapshot.child('answer/'+a+'/idea').val();
-      	var iostreamInfo=snapshot.child('answer/stream/'+b).val();
-      	if(a=="stream") agent.add(streamInfo); 
-      	else agent.add(iostreamInfo);});
-  }
-	
   function handleabstraction(agent){
   	a=agent.parameters.abstraction;
     b=agent.parameters.use;
@@ -59,7 +47,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var  abstractionInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(abstractionInfo);});
   }
-	
   function handlevector(agent){
   	const a=agent.parameters.vector;
     b=agent.parameters.function;
@@ -71,20 +58,19 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	agent.add(vectorInfo); });
   }
   
+  function handleiterator(agent){
+  	const a=agent.parameters.iterator;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var iteratorInfo=snapshot.child('answer/'+a+'/idea').val();
+      	agent.add(iteratorInfo);});
+  }
+  
   function handletemplate(agent){
   	const a=agent.parameters.template;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var templateInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(templateInfo);});
   }
-	
- function handleiterator(agent){
-    const a=agent.parameters.iterator;
-    return admin.database().ref().once("value").then((snapshot)=>{
-    	var iteratorInfo=snapshot.child('answer/'+a+'/idea').val();
-      	agent.add(iteratorInfo);});
-  }
-	
   function handlegeneric(agent){
   	const a=agent.parameters.generic;
     return admin.database().ref().once("value").then((snapshot)=>{
@@ -101,13 +87,24 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var  mapInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(mapInfo); });
   }
- 
+  
+  function handlestream(agent){
+  	a=agent.parameters.stream;
+    b=agent.parameters.iostream;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var streamInfo=snapshot.child('answer/'+a+'/idea').val();
+      	var iostreamInfo=snapshot.child('answer/stream/'+b).val();
+      	if(a=="stream") agent.add(streamInfo); 
+      	else agent.add(iostreamInfo);});
+  }
+  
   function handleupcasting(agent){
   	const a=agent.parameters.upcasting;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(ideaInfo); });
   }
+
   
   function handleoverriding(agent){
 	const a=agent.parameters.overriding;
@@ -115,14 +112,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(ideaInfo); });
   }
-	
-  function handleoperatingoverloading(agent){
-	const a=agent.parameters.operatingoverloading;
-    return admin.database().ref().once("value").then((snapshot)=>{
-    	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
-      	agent.add(ideaInfo); });
-  }
-	
+
   function handlememoryallocation(agent){
 	const a=agent.parameters.memoryallocation;
     const b=agent.parameters.careful;
@@ -130,7 +120,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(ideaInfo); });
   }
-	
   function handlemalloc(agent){
   	const a=agent.parameters.malloc;
     const b=agent.parameters.need;
@@ -138,7 +127,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(ideaInfo); });
   }
-	
   function handlereuse(agent){
   	const a=agent.parameters.reuse;
     const b=agent.parameters.how;
@@ -155,7 +143,40 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(ideaInfo); });
   }
-	
+   function handlevariable(agent)
+  {
+    const a=agent.parameters.Variable;
+    const b=agent.parameters.type;
+    const c=agent.parameters.default;
+    const d=agent.parameters.advantage;
+    const e=agent.parameters.exam;
+    const f=agent.parameters.idea;
+    return admin.database().ref().once("value").then((snapshot)=>{
+      if(c=="default")
+      {
+        var ideaInfo=snapshot.child('answer/Variable/'+c+'/idea').val();
+        var examInfo=snapshot.child('answer/Variable/'+c+'/exam').val();
+        var adInfo=snapshot.child('answer/Variable/'+c+'/advantage').val();
+        if(f=="idea") 
+        { agent.add(ideaInfo);}
+         else if(e=="exam")
+         {agent.add(examInfo);}
+        else{agent.add(adInfo);}
+      }
+      else if(b=="type")
+      {
+        var variabletype=snapshot.child('answer/'+a+'/type').val();
+        agent.add(variabletype);
+      }});
+  }
+   function handleoperatingoverloading(agent){
+	const a=agent.parameters.operatingoverloading;
+    const f=agent.parameters.idea;
+    return admin.database().ref().once("value").then((snapshot)=>{
+      var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
+       if(f=="idea"){agent.add(ideaInfo);}
+    });
+  }
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -175,5 +196,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('mallocIntent',handlemalloc);
   intentMap.set('reuseIntent',handlereuse);
   intentMap.set('dynamicbindingIntent',handledynamicbinding);
+  intentMap.set('variableIntent',handlevariable);
+  intentMap.set('thisIntent',handlethis);
   agent.handleRequest(intentMap);
 });
