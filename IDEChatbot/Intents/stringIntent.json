@@ -1,0 +1,135 @@
+{
+  "id": "32ee96e5-0d34-4e98-b3e9-7a26aa2f1b6d",
+  "name": "stringIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "string",
+          "dataType": "@string",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$string",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "header",
+          "dataType": "@header",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$header",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "function",
+          "dataType": "@function",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$function",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "string",
+          "userDefined": false,
+          "alias": "string",
+          "meta": "@string"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "함수",
+          "userDefined": false,
+          "alias": "function",
+          "meta": "@function"
+        },
+        {
+          "text": "는?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "string",
+          "userDefined": false,
+          "alias": "string",
+          "meta": "@string"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "헤더",
+          "userDefined": false,
+          "alias": "header",
+          "meta": "@header"
+        },
+        {
+          "text": "는?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

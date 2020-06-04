@@ -1,0 +1,290 @@
+{
+  "id": "2125e998-996c-4446-b70b-f81dd1859aa7",
+  "name": "operatingoverloadingIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "operatingoverloading",
+          "dataType": "@operatingoverloading",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$operatingoverloading",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "idea",
+          "dataType": "@idea",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$idea",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "format",
+          "dataType": "@format",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$format",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "function",
+          "dataType": "@function",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$function",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "prefixoperator",
+          "dataType": "@prefixoperator",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$prefixoperator",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "postfixoperator",
+          "dataType": "@postfixoperator",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$postfixoperator",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "전위연산자",
+          "userDefined": false,
+          "alias": "postfixoperator",
+          "meta": "@postfixoperator"
+        },
+        {
+          "text": "란?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "후위연산자",
+          "userDefined": false,
+          "alias": "prefixoperator",
+          "meta": "@prefixoperator"
+        },
+        {
+          "text": "란?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "연산자중복",
+          "userDefined": false,
+          "alias": "operatingoverloading",
+          "meta": "@operatingoverloading"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "함수",
+          "userDefined": true,
+          "alias": "function",
+          "meta": "@function"
+        },
+        {
+          "text": "예시",
+          "userDefined": true,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "연산자중복",
+          "userDefined": false,
+          "alias": "operatingoverloading",
+          "meta": "@operatingoverloading"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "함수",
+          "userDefined": true,
+          "alias": "function",
+          "meta": "@function"
+        },
+        {
+          "text": "형태",
+          "userDefined": true,
+          "alias": "format",
+          "meta": "@format"
+        },
+        {
+          "text": "는?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "연산자중복",
+          "userDefined": false,
+          "alias": "operatingoverloading",
+          "meta": "@operatingoverloading"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "개념",
+          "userDefined": false,
+          "alias": "idea",
+          "meta": "@idea"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "연산자 중복",
+          "userDefined": false,
+          "alias": "operatingoverloading",
+          "meta": "@operatingoverloading"
+        },
+        {
+          "text": "에 ",
+          "userDefined": false
+        },
+        {
+          "text": "대해 알려주세요",
+          "userDefined": true,
+          "alias": "idea",
+          "meta": "@idea"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "연산자중복",
+          "userDefined": true,
+          "alias": "operatingoverloading",
+          "meta": "@operatingoverloading"
+        },
+        {
+          "text": "이란",
+          "userDefined": true,
+          "alias": "idea",
+          "meta": "@idea"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
