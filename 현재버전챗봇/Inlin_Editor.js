@@ -143,6 +143,15 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(ideaInfo); });
   }
+   function handleoperatingoverloading(agent)
+  {
+    const a=agent.parameters.operatingoverloading;
+    const f=agent.parameters.idea;
+    return admin.database().ref().once("value").then((snapshot)=>{
+      var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
+      if(f=="idea") 
+        { agent.add(ideaInfo);}});
+  }
    function handlevariable(agent)
   {
     const a=agent.parameters.Variable;
@@ -185,13 +194,17 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	else agent.add(ideaInfo);
     });
   }
-   function handleoperatingoverloading(agent){
-	const a=agent.parameters.operatingoverloading;
+  function handlestring(agent){
+    const a=agent.parameters.string;
+    const b=agent.parameters.function;
+    const c=agent.parameters.header;
     return admin.database().ref().once("value").then((snapshot)=>{
-      var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
-      {agent.add(ideaInfo);}
-    });
+      var functionInfo=snapshot.child('answer/string/function').val();
+      var headerInfo=snapshot.child('answer/string/header').val();
+      if(b=="function")agent.add(functionInfo);
+      else agent.add(headerInfo);});
   }
+      
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -206,12 +219,15 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('templateIntent',handletemplate);
   intentMap.set('upcastingIntent',handleupcasting);
   intentMap.set('overridingIntent',handleoverriding);
-  intentMap.set('operatingoverloadingIntent',handleoperatingoverloading);
   intentMap.set('memoryallocationIntent',handlememoryallocation);
   intentMap.set('mallocIntent',handlemalloc);
   intentMap.set('reuseIntent',handlereuse);
   intentMap.set('dynamicbindingIntent',handledynamicbinding);
+  intentMap.set('operatingoverloadingIntent',handleoperatingoverloading);
   intentMap.set('variableIntent',handlevariable);
   intentMap.set('thisIntent',handlethis);
+  intentMap.set('stringIntent',handlestring);
   agent.handleRequest(intentMap);
+	
+	
 });
