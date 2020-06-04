@@ -143,14 +143,26 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(ideaInfo); });
   }
-   function handleoperatingoverloading(agent)
+  function handleoperatingoverloading(agent)
   {
     const a=agent.parameters.operatingoverloading;
+    const b=agent.parameters.exam;
+    const c=agent.parameters.function;
+    const d=agent.parameters.postfixoperator;
+    const e=agent.parameters.prefixoperator;
     const f=agent.parameters.idea;
     return admin.database().ref().once("value").then((snapshot)=>{
       var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
-      if(f=="idea") 
-        { agent.add(ideaInfo);}});
+      var examInfo=snapshot.child('answer/'+a+'/exam').val();
+      var postfixInfo=snapshot.child('answer/operatingoverloading/'+d).val();
+      var prefixInfo=snapshot.child('answer/operatingoverloading/'+e).val();
+      if(b=="exam")agent.add(examInfo);
+      else if(d=="postfixoperator")
+      {agent.add(postfixInfo);}
+      else if(e=="prefixoperator")
+      {agent.add(prefixInfo);}
+      else{agent.add(ideaInfo);}
+   });
   }
    function handlevariable(agent)
   {
