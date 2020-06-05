@@ -25,7 +25,7 @@ const renderFullPage = html => {
   <!doctype html>
   <html lang="utf-8">
     <head>
-      <title>Codeflow Chat</title>
+      <title>Dongguk University Chat</title>
       <link rel="stylesheet" href="/static/bundle.css" />
       <meta name="viewport" content="width=device-width, user-scalable=no">
     </head>
