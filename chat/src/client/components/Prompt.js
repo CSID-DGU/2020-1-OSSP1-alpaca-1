@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { observer } from 'mobx-react';
 import { avatarUrls } from '../core/data';
@@ -35,7 +36,7 @@ export default class Prompt extends React.Component {
   }
 
   componentDidMount() {
-    this.setState(state => ({...state, nickname: '손님'+parseInt((new Date).getTime()).toString().substr(-4)}))
+    this.setState(state => ({...state, nickname: '홍길동'}))
     this.nicknameInputRef.focus();
   }
 
@@ -44,7 +45,7 @@ export default class Prompt extends React.Component {
       <Card fluid raised>
         <Card.Content
           header={
-            <Header content='채팅방에 오신 것을 환영합니다.' icon='comments' />
+            <Header content='동국대 토론방에 오신 것을 환영합니다.' icon='comments' />
           }
           description={
             <div className='flex-vert'>
@@ -70,14 +71,14 @@ export default class Prompt extends React.Component {
                   <Input
                     ref={ref => this.nicknameInputRef = ref}
                     type='text'
-                    placeholder='이름을 입력하세요.'
+                    placeholder='학번과 이름을 입력하세요.'
                     value={this.state.nickname}
                     onChange={(e) => this.setNickname(e.target.value)}
                   />
                 </Form.Field>
                 <Button
                   fluid
-                  color='blue'
+                  color='orange'
                   size='large'
                   onClick={this.submit}
                 >입장하기</Button>
