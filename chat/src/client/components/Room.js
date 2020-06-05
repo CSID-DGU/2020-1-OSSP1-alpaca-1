@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { observer } from 'mobx-react';
 import { Card, Header, Form, Button, Input, Image, Dimmer, Loader, Feed, List } from 'semantic-ui-react';
@@ -126,7 +127,7 @@ export default class Room extends React.Component {
               <form onSubmit={this.submit} className='flex-bottom'>
                 <Input
                   fluid
-                  action={{content: '보내기', color: 'blue', icon: 'send'}}
+                  action={{content: '보내기', color: 'orange', icon: 'send'}}
                   size='large'
                   ref={ref => this.inputMessageInputRef = ref}
                   placeholder='메세지를 입력하세요.'
