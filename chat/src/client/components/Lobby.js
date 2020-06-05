@@ -46,7 +46,7 @@ export default class Lobby extends React.Component {
       <Card fluid raised>
         <Card.Content
           header={
-            <Header content='입장 할 채팅방을 선택하세요.' icon='comments' />
+            <Header content='입장 할 토론방을 선택하세요.' icon='comments' />
           }
           description={
             <Dimmer.Dimmable className='flex-vert'>
@@ -68,7 +68,7 @@ export default class Lobby extends React.Component {
                 )) : (
                   <List.Item style={{cursor: 'default', background: 'none'}}>
                     <List.Content>
-                      <List.Description>개설된 채팅방이 없습니다.</List.Description>
+                      <List.Description>개설된 토론방이 없습니다.</List.Description>
                     </List.Content>
                   </List.Item>
                 )}
@@ -80,8 +80,8 @@ export default class Lobby extends React.Component {
                     fluid
                     ref={ref => this.roomTitleInputRef = ref}
                     size='large'
-                    action={{content: '개설하기', color: !this.state.loading && rooms.length == 0 ? 'blue' : null}}
-                    placeholder='또는 개설 할 채팅방의 제목을 입력하세요.'
+                    action={{content: '개설하기', color: !this.state.loading && rooms.length == 0 ? 'orange' : null}}
+                    placeholder='개설 할 토론방의 이름을 입력하세요.'
                     value={this.state.roomTitle}
                     onChange={e => this.setRoomTitle(e.target.value)}
                   />
