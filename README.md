@@ -10,6 +10,7 @@
 -익명으로 자유롭게 질문과 답변을 나눌 수 있는 토론방  
 
 ![UI](https://user-images.githubusercontent.com/62545246/83891076-99bdd580-a787-11ea-913c-a43592570b28.JPG)
+![UI2](https://user-images.githubusercontent.com/62545246/83891398-0f29a600-a788-11ea-8521-95108ccb3d37.JPG)
 
 
 -교수님과 질문 답변을 나눌 수 있는 게시판
