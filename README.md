@@ -9,7 +9,8 @@
 ![chatbot_image](https://user-images.githubusercontent.com/62542277/83505405-b4cae400-a500-11ea-9425-88139bb57133.jpg)
 -익명으로 자유롭게 질문과 답변을 나눌 수 있는 토론방  
 
-![채팅방image](https://user-images.githubusercontent.com/62542277/83505606-f8255280-a500-11ea-9730-23fbb6cb5284.jpg)
+![UI](https://user-images.githubusercontent.com/62545246/83891076-99bdd580-a787-11ea-913c-a43592570b28.JPG)
+
 
 -교수님과 질문 답변을 나눌 수 있는 게시판
 
