@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "string",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "string",
+      "synonyms": [
+        "string",
+        "스트링",
+        "문자열"
+      ]
+    }
+  ],
+  "id": "8df43bb2-b8f7-495c-bb70-63bfd94a301f",
+  "isOverridable": false
+}
