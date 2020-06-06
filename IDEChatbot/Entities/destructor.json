@@ -2,18 +2,17 @@
   "isRegexp": false,
   "isEnum": false,
   "allowFuzzyExtraction": false,
-  "name": "how",
+  "name": "destructor",
   "automatedExpansion": false,
   "entries": [
     {
-      "value": "how",
+      "value": "destructor",
       "synonyms": [
-        "how",
-        "방법",
-        "어떻게"
+        "destructor",
+        "소멸자"
       ]
     }
   ],
-  "id": "13dc269a-4c38-48f2-8e68-11f8578577c3",
+  "id": "c12cdfdb-e18f-44f6-b7f6-05e996877bb8",
   "isOverridable": false
 }

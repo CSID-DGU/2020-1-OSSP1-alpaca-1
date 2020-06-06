@@ -2,18 +2,17 @@
   "isRegexp": false,
   "isEnum": false,
   "allowFuzzyExtraction": false,
-  "name": "how",
+  "name": "order",
   "automatedExpansion": false,
   "entries": [
     {
-      "value": "how",
+      "value": "order",
       "synonyms": [
-        "how",
-        "방법",
-        "어떻게"
+        "order",
+        "순서"
       ]
     }
   ],
-  "id": "13dc269a-4c38-48f2-8e68-11f8578577c3",
+  "id": "f12cd5fa-43e6-42c1-ab9c-128637d003c2",
   "isOverridable": false
 }

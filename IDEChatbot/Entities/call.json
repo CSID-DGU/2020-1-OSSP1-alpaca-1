@@ -2,18 +2,18 @@
   "isRegexp": false,
   "isEnum": false,
   "allowFuzzyExtraction": false,
-  "name": "how",
+  "name": "call",
   "automatedExpansion": false,
   "entries": [
     {
-      "value": "how",
+      "value": "call",
       "synonyms": [
-        "how",
-        "방법",
-        "어떻게"
+        "call",
+        "부르다",
+        "호출"
       ]
     }
   ],
-  "id": "13dc269a-4c38-48f2-8e68-11f8578577c3",
+  "id": "d710a5b5-0657-4922-abc4-7564ec7c78c9",
   "isOverridable": false
 }

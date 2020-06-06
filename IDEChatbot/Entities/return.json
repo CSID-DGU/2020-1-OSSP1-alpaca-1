@@ -2,18 +2,18 @@
   "isRegexp": false,
   "isEnum": false,
   "allowFuzzyExtraction": false,
-  "name": "how",
+  "name": "return",
   "automatedExpansion": false,
   "entries": [
     {
-      "value": "how",
+      "value": "return",
       "synonyms": [
-        "how",
-        "방법",
-        "어떻게"
+        "return",
+        "리턴",
+        "반환"
       ]
     }
   ],
-  "id": "13dc269a-4c38-48f2-8e68-11f8578577c3",
+  "id": "c4c05c16-97a9-427b-a2d6-b9372660d625",
   "isOverridable": false
 }

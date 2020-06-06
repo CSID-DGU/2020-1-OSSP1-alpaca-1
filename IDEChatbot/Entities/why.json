@@ -2,18 +2,18 @@
   "isRegexp": false,
   "isEnum": false,
   "allowFuzzyExtraction": false,
-  "name": "how",
+  "name": "why",
   "automatedExpansion": false,
   "entries": [
     {
-      "value": "how",
+      "value": "why",
       "synonyms": [
-        "how",
-        "방법",
-        "어떻게"
+        "why",
+        "왜",
+        "이유"
       ]
     }
   ],
-  "id": "13dc269a-4c38-48f2-8e68-11f8578577c3",
+  "id": "19c58355-13ad-4eaf-b483-a684fd6b7c81",
   "isOverridable": false
 }
