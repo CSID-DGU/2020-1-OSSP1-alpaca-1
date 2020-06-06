@@ -1,0 +1,239 @@
+{
+  "id": "9c8bb8d5-ecbf-449e-822a-94175b84e8a2",
+  "name": "vectorIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "vector",
+          "dataType": "@vector",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$vector",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "function",
+          "dataType": "@function",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$function",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "idea",
+          "dataType": "@idea",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$idea",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "벡터",
+          "userDefined": false,
+          "alias": "vector",
+          "meta": "@vector"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "내장함수",
+          "userDefined": false,
+          "alias": "function",
+          "meta": "@function"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "벡터",
+          "userDefined": false,
+          "alias": "vector",
+          "meta": "@vector"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "함수",
+          "userDefined": false,
+          "alias": "function",
+          "meta": "@function"
+        },
+        {
+          "text": "의 내용은?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "vector",
+          "userDefined": false,
+          "alias": "vector",
+          "meta": "@vector"
+        },
+        {
+          "text": "에서 사용할 ",
+          "userDefined": false
+        },
+        {
+          "text": "수",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " 있는 ",
+          "userDefined": false
+        },
+        {
+          "text": "함수",
+          "userDefined": false,
+          "alias": "function",
+          "meta": "@function"
+        },
+        {
+          "text": "는 무엇이 있을까요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "vector",
+          "userDefined": false,
+          "alias": "vector",
+          "meta": "@vector"
+        },
+        {
+          "text": "에 대해 알려주세요",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "vector",
+          "userDefined": false,
+          "alias": "vector",
+          "meta": "@vector"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "내장함수",
+          "userDefined": false,
+          "alias": "function",
+          "meta": "@function"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "vector",
+          "userDefined": true,
+          "alias": "vector",
+          "meta": "@vector"
+        },
+        {
+          "text": "란",
+          "userDefined": true,
+          "alias": "idea",
+          "meta": "@idea"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
