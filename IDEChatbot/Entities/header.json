@@ -1,0 +1,20 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "header",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "header",
+      "synonyms": [
+        "header",
+        "헤더",
+        "헤더파일",
+        "헤더 파일"
+      ]
+    }
+  ],
+  "id": "cde435a3-0ec9-4644-b09e-41f654dfe48e",
+  "isOverridable": false
+}
