@@ -15,8 +15,6 @@
 ![UI2](https://user-images.githubusercontent.com/62545246/83891398-0f29a600-a788-11ea-8521-95108ccb3d37.JPG)
 
 
--교수님과 질문 답변을 나눌 수 있는 게시판
-
 # 개발환경
 개발환경 : ubuntu
 개발툴 : dialogflow, javascript
@@ -47,7 +45,7 @@
 
 6월 5일    
 ✔토론방UI변경    
-✔챗봇UI
+✔챗봇UI변경
 # 팀원
 권예진, 이선아, 윤영식, 최은지  
 
