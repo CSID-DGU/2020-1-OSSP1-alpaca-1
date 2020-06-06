@@ -1,0 +1,414 @@
+{
+  "id": "e2db7365-7923-4d77-8e3b-0085819b8f6c",
+  "name": "destructorIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "destructor",
+          "dataType": "@destructor",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$destructor",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "how",
+          "dataType": "@how",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$how",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "idea",
+          "dataType": "@idea",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$idea",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "order",
+          "dataType": "@order",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$order",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "redundancy",
+          "dataType": "@redundancy",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$redundancy",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "return",
+          "dataType": "@return",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$return",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "why",
+          "dataType": "@why",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$why",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "when",
+          "dataType": "@when",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$when",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "call",
+          "dataType": "@call",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$call",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "dynamicobject",
+          "dataType": "@dynamicobject",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$dynamicobject",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "동적객체",
+          "userDefined": true,
+          "alias": "dynamicobject",
+          "meta": "@dynamicobject"
+        },
+        {
+          "text": "에 ",
+          "userDefined": false
+        },
+        {
+          "text": "대해 알려주세요",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "소멸자",
+          "userDefined": false,
+          "alias": "destructor",
+          "meta": "@destructor"
+        },
+        {
+          "text": "는 ",
+          "userDefined": false
+        },
+        {
+          "text": "왜",
+          "userDefined": true,
+          "alias": "why",
+          "meta": "@why"
+        },
+        {
+          "text": "필요한",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": "가요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "소멸자",
+          "userDefined": false,
+          "alias": "destructor",
+          "meta": "@destructor"
+        },
+        {
+          "text": "는 ",
+          "userDefined": false
+        },
+        {
+          "text": "언제",
+          "userDefined": true,
+          "alias": "when",
+          "meta": "@when"
+        },
+        {
+          "text": " 소멸하나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "소멸자",
+          "userDefined": false,
+          "alias": "destructor",
+          "meta": "@destructor"
+        },
+        {
+          "text": "는 ",
+          "userDefined": false
+        },
+        {
+          "text": "리턴",
+          "userDefined": false,
+          "alias": "return",
+          "meta": "@return"
+        },
+        {
+          "text": "이",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": "되나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "소멸자",
+          "userDefined": false,
+          "alias": "destructor",
+          "meta": "@destructor"
+        },
+        {
+          "text": "는 ",
+          "userDefined": false
+        },
+        {
+          "text": "중복",
+          "userDefined": false,
+          "alias": "redundancy",
+          "meta": "@redundancy"
+        },
+        {
+          "text": "이",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " 가능한가요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "소멸자",
+          "userDefined": false,
+          "alias": "destructor",
+          "meta": "@destructor"
+        },
+        {
+          "text": "의 실행",
+          "userDefined": false
+        },
+        {
+          "text": "순서",
+          "userDefined": false,
+          "alias": "order",
+          "meta": "@order"
+        },
+        {
+          "text": "는?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "소멸자",
+          "userDefined": false,
+          "alias": "destructor",
+          "meta": "@destructor"
+        },
+        {
+          "text": "란",
+          "userDefined": false,
+          "alias": "idea",
+          "meta": "@idea"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "소멸자",
+          "userDefined": false,
+          "alias": "destructor",
+          "meta": "@destructor"
+        },
+        {
+          "text": "는 ",
+          "userDefined": false
+        },
+        {
+          "text": "어떻게",
+          "userDefined": true,
+          "alias": "how",
+          "meta": "@how"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "호출",
+          "userDefined": true,
+          "alias": "call",
+          "meta": "@call"
+        },
+        {
+          "text": "되나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
