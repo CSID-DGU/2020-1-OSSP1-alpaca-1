@@ -57,6 +57,19 @@
           "prompts": [],
           "value": "$function",
           "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "gap",
+          "dataType": "@gap",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$gap",
+          "outputDialogContexts": []
         }
       ],
       "defaultResponsePlatforms": {},
@@ -73,6 +86,144 @@
   "rootParentId": null,
   "templates": [],
   "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "스트링",
+          "userDefined": false,
+          "alias": "string",
+          "meta": "@string"
+        },
+        {
+          "text": "에서 ",
+          "userDefined": false
+        },
+        {
+          "text": "공백",
+          "userDefined": true,
+          "alias": "gap",
+          "meta": "@gap"
+        },
+        {
+          "text": "을 입력받고 싶어요",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "스트링",
+          "userDefined": false,
+          "alias": "string",
+          "meta": "@string"
+        },
+        {
+          "text": "에 포함되어있는 ",
+          "userDefined": false
+        },
+        {
+          "text": "함수",
+          "userDefined": false,
+          "alias": "function",
+          "meta": "@function"
+        },
+        {
+          "text": "는 무엇인가요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "스트링",
+          "userDefined": false,
+          "alias": "string",
+          "meta": "@string"
+        },
+        {
+          "text": "을 사용하기 위해서 무슨 ",
+          "userDefined": false
+        },
+        {
+          "text": "헤더",
+          "userDefined": false,
+          "alias": "header",
+          "meta": "@header"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "파일이",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " 필요한가요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "공백",
+          "userDefined": true,
+          "alias": "gap",
+          "meta": "@gap"
+        },
+        {
+          "text": "이",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " 있는 ",
+          "userDefined": false
+        },
+        {
+          "text": "문자열",
+          "userDefined": false,
+          "alias": "string",
+          "meta": "@string"
+        },
+        {
+          "text": "을 입력받는 방법",
+          "userDefined": false
+        },
+        {
+          "text": "이",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " 있나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
     {
       "isTemplate": false,
       "data": [
