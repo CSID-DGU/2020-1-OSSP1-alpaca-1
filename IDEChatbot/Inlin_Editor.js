@@ -33,12 +33,14 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var STLInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(STLInfo);});
   }
+  
   function handlestaticallocation(agent){
   	const a=agent.parameters.staticallocation;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var allocationInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(allocationInfo);});
   }
+  
   function handleabstraction(agent){
   	a=agent.parameters.abstraction;
     b=agent.parameters.use;
@@ -47,6 +49,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var  abstractionInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(abstractionInfo);});
   }
+  
   function handlevector(agent){
   	const a=agent.parameters.vector;
     b=agent.parameters.function;
@@ -71,6 +74,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var templateInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(templateInfo);});
   }
+  
   function handlegeneric(agent){
   	const a=agent.parameters.generic;
     return admin.database().ref().once("value").then((snapshot)=>{
@@ -105,7 +109,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	agent.add(ideaInfo); });
   }
 
-  
   function handleoverriding(agent){
 	const a=agent.parameters.overriding;
     return admin.database().ref().once("value").then((snapshot)=>{
@@ -120,6 +123,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(ideaInfo); });
   }
+  
   function handlemalloc(agent){
   	const a=agent.parameters.malloc;
     const b=agent.parameters.need;
@@ -127,6 +131,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/'+b).val();
       	agent.add(ideaInfo); });
   }
+  
   function handlereuse(agent){
   	const a=agent.parameters.reuse;
     const b=agent.parameters.how;
@@ -143,8 +148,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
       	agent.add(ideaInfo); });
   }
-  function handleoperatingoverloading(agent)
-  {
+  
+   function handleoperatingoverloading(agent){
     const a=agent.parameters.operatingoverloading;
     const b=agent.parameters.exam;
     const c=agent.parameters.function;
@@ -164,8 +169,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       else{agent.add(ideaInfo);}
    });
   }
-   function handlevariable(agent)
-  {
+  
+   function handlevariable(agent){
     const a=agent.parameters.Variable;
     const b=agent.parameters.type;
     const c=agent.parameters.default;
@@ -190,6 +195,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         agent.add(variabletype);
       }});
   }
+  
   function handlethis(agent){
   	const a=agent.parameters.this;
     const b=agent.parameters.where;
@@ -206,6 +212,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	else agent.add(ideaInfo);
     });
   }
+  
   function handlestring(agent){
     const a=agent.parameters.string;
     const b=agent.parameters.function;
@@ -216,8 +223,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       if(b=="function")agent.add(functionInfo);
       else agent.add(headerInfo);});
   }
-      
-function handledestructor(agent){
+  
+  function handledestructor(agent){
     const a=agent.parameters.destructor;
     const b=agent.parameters.call;
     const c=agent.parameters.dynamicobject;
