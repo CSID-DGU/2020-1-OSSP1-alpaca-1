@@ -5,9 +5,9 @@
 기존 DGU IDE를 발전시킨 DGU IDE.VERSION2를 만듭니다.  
 추가할 기능은 다음과 같습니다.  
 -c++ Q&A 챗봇👨‍💻  
-
-
-<img width="271" alt="주석 2020-06-06 120913" src="https://user-images.githubusercontent.com/62542277/83934886-eb4d7b00-a7ee-11ea-99e9-e43f24ebbd0c.png"><img width="257" alt="주석 2020-06-06 121703" src="https://user-images.githubusercontent.com/62542277/83934971-c9a0c380-a7ef-11ea-9475-5eb05df194e6.png"><img width="59" alt="주석 2020-06-06 120934" src="https://user-images.githubusercontent.com/62542277/83934923-539c5c80-a7ef-11ea-9a13-7dded584816b.png">  
+![캡처](https://user-images.githubusercontent.com/62545246/83936015-1d180f00-a7fa-11ea-9502-ff50f637422f.JPG)
+![캡처2](https://user-images.githubusercontent.com/62545246/83936022-391bb080-a7fa-11ea-9471-526f751fbef1.JPG)
+ 
 
 -익명으로 자유롭게 질문과 답변을 나눌 수 있는 토론방  
 
