@@ -6,7 +6,9 @@
 추가할 기능은 다음과 같습니다.  
 -c++ Q&A 챗봇👨‍💻  
 
-![chatbot_image](https://user-images.githubusercontent.com/62542277/83505405-b4cae400-a500-11ea-9425-88139bb57133.jpg)
+
+<img width="271" alt="주석 2020-06-06 120913" src="https://user-images.githubusercontent.com/62542277/83934886-eb4d7b00-a7ee-11ea-99e9-e43f24ebbd0c.png"><img width="257" alt="주석 2020-06-06 121703" src="https://user-images.githubusercontent.com/62542277/83934971-c9a0c380-a7ef-11ea-9475-5eb05df194e6.png"><img width="59" alt="주석 2020-06-06 120934" src="https://user-images.githubusercontent.com/62542277/83934923-539c5c80-a7ef-11ea-9a13-7dded584816b.png">  
+
 -익명으로 자유롭게 질문과 답변을 나눌 수 있는 토론방  
 
 ![UI](https://user-images.githubusercontent.com/62545246/83891076-99bdd580-a787-11ea-913c-a43592570b28.JPG)
@@ -45,7 +47,7 @@
 
 6월 5일    
 ✔토론방UI변경    
-
+✔챗봇UI
 # 팀원
 권예진, 이선아, 윤영식, 최은지  
 
