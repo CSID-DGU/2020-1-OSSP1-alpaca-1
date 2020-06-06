@@ -217,6 +217,37 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       else agent.add(headerInfo);});
   }
       
+function handledestructor(agent){
+    const a=agent.parameters.destructor;
+    const b=agent.parameters.call;
+    const c=agent.parameters.dynamicobject;
+    const d=agent.parameters.idea;
+    const e=agent.parameters.order;
+    const f=agent.parameters.redundancy;
+    const g=agent.parameters.return;
+    const h=agent.parameters.when;
+    const i=agent.parameters.why;
+     const j=agent.parameters.how;
+    return admin.database().ref().once("value").then((snapshot)=>{
+      var callInfo=snapshot.child('answer/'+a+'/'+b+'/'+j).val();
+      var dynamicobjectInfo=snapshot.child('answer/destructor/'+c).val();
+      var ideaInfo=snapshot.child('answer/'+a+'/'+d).val();
+      var orderInfo=snapshot.child('answer/'+a+'/'+e).val();
+      var redundancyInfo=snapshot.child('answer/'+a+'/'+f).val();
+      var returnInfo=snapshot.child('answer/'+a+'/'+g).val();
+      var whenInfo=snapshot.child('answer/'+a+'/'+h).val();
+       var whyInfo=snapshot.child('answer/'+a+'/'+i).val();
+      if(c=="dynamicobject")agent.add(dynamicobjectInfo);
+      else if(e=="order")agent.add(orderInfo);
+      else if(f=="redundancy")agent.add(redundancyInfo);
+      else if(g=="return")agent.add(returnInfo);
+      else if(h=="when")agent.add(whenInfo);
+      else if(i=="why")agent.add(whyInfo);
+      else if(j=="how")agent.add(callInfo);
+      else agent.add(ideaInfo);
+      });
+  }
+      
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -239,7 +270,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('variableIntent',handlevariable);
   intentMap.set('thisIntent',handlethis);
   intentMap.set('stringIntent',handlestring);
+  intentMap.set('destructorIntent',handledestructor);
   agent.handleRequest(intentMap);
-	
-	
 });
