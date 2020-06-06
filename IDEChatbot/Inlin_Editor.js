@@ -217,10 +217,16 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     const a=agent.parameters.string;
     const b=agent.parameters.function;
     const c=agent.parameters.header;
+    const d=agent.paramerters.gap;
     return admin.database().ref().once("value").then((snapshot)=>{
       var functionInfo=snapshot.child('answer/string/function').val();
       var headerInfo=snapshot.child('answer/string/header').val();
+      var gapInfo=snapshot.child('answer/string/gap').val();
       if(b=="function")agent.add(functionInfo);
+      else if(d=="gap")
+      {
+        agent.add(gapInfo);
+      }
       else agent.add(headerInfo);});
   }
   
