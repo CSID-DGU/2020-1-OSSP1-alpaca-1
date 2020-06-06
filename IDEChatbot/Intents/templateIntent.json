@@ -31,6 +31,19 @@
           "prompts": [],
           "value": "$template",
           "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "idea",
+          "dataType": "@idea",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$idea",
+          "outputDialogContexts": []
         }
       ],
       "defaultResponsePlatforms": {},
@@ -57,7 +70,67 @@
           "meta": "@template"
         },
         {
-          "text": "란?",
+          "text": "에 개념에 대해서 알고 싶어요",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "template",
+          "userDefined": false,
+          "alias": "template",
+          "meta": "@template"
+        },
+        {
+          "text": "에 정의는 무엇입니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "template",
+          "userDefined": false,
+          "alias": "template",
+          "meta": "@template"
+        },
+        {
+          "text": "에 대해서 알고 싶어요",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "template",
+          "userDefined": true,
+          "alias": "template",
+          "meta": "@template"
+        },
+        {
+          "text": "란",
+          "userDefined": true,
+          "alias": "idea",
+          "meta": "@idea"
+        },
+        {
+          "text": "?",
           "userDefined": false
         }
       ],
