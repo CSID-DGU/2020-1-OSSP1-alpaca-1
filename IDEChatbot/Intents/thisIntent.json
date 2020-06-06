@@ -1,0 +1,296 @@
+{
+  "id": "dabbdfb6-d455-4609-ae8d-60a93c271f44",
+  "name": "thisIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "this",
+          "dataType": "@this",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$this",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "where",
+          "dataType": "@where",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$where",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "need",
+          "dataType": "@need",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$need",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "handling",
+          "dataType": "@handling",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$handling",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this",
+          "userDefined": false,
+          "alias": "this",
+          "meta": "@this"
+        },
+        {
+          "text": "는 프로그램에서 어떻게 ",
+          "userDefined": false
+        },
+        {
+          "text": "처리",
+          "userDefined": false,
+          "alias": "handling",
+          "meta": "@handling"
+        },
+        {
+          "text": "되나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this",
+          "userDefined": false,
+          "alias": "this",
+          "meta": "@this"
+        },
+        {
+          "text": "가 어디서 ",
+          "userDefined": false
+        },
+        {
+          "text": "필요한",
+          "userDefined": true,
+          "alias": "need",
+          "meta": "@need"
+        },
+        {
+          "text": "지 잘 모르겠어요",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this",
+          "userDefined": false,
+          "alias": "this",
+          "meta": "@this"
+        },
+        {
+          "text": "가 무엇입니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this",
+          "userDefined": false,
+          "alias": "this",
+          "meta": "@this"
+        },
+        {
+          "text": "에 정의에 대해서 알고 싶어요",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this",
+          "userDefined": false,
+          "alias": "this",
+          "meta": "@this"
+        },
+        {
+          "text": "포인터는 어떻게 ",
+          "userDefined": false
+        },
+        {
+          "text": "처리",
+          "userDefined": true,
+          "alias": "handling",
+          "meta": "@handling"
+        },
+        {
+          "text": "되나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this",
+          "userDefined": false,
+          "alias": "this",
+          "meta": "@this"
+        },
+        {
+          "text": "가 ",
+          "userDefined": false
+        },
+        {
+          "text": "필요한",
+          "userDefined": true,
+          "alias": "need",
+          "meta": "@need"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "경우",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": "는?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this",
+          "userDefined": false,
+          "alias": "this",
+          "meta": "@this"
+        },
+        {
+          "text": "는 ",
+          "userDefined": false
+        },
+        {
+          "text": "어디",
+          "userDefined": true,
+          "alias": "where",
+          "meta": "@where"
+        },
+        {
+          "text": "에서 사용가능한가요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this",
+          "userDefined": false,
+          "alias": "this",
+          "meta": "@this"
+        },
+        {
+          "text": "란?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
