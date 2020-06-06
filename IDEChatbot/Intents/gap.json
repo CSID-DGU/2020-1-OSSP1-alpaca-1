@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "gap",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "gap",
+      "synonyms": [
+        "gap",
+        "공백"
+      ]
+    }
+  ],
+  "id": "a77f7622-e5e7-4252-8308-42585ff95ec5",
+  "isOverridable": false
+}
