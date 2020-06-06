@@ -31,6 +31,19 @@
           "prompts": [],
           "value": "$upcasting",
           "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "idea",
+          "dataType": "@idea",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$idea",
+          "outputDialogContexts": []
         }
       ],
       "defaultResponsePlatforms": {},
@@ -51,13 +64,113 @@
       "isTemplate": false,
       "data": [
         {
+          "text": "업캐스팅",
+          "userDefined": false,
+          "alias": "upcasting",
+          "meta": "@upcasting"
+        },
+        {
+          "text": "의 개념에 대해서 알고 싶습니다.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
           "text": "upcasting",
           "userDefined": false,
           "alias": "upcasting",
           "meta": "@upcasting"
         },
         {
-          "text": " 이란?",
+          "text": "의 정의에 대해서 알려주세요",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "업캐스팅",
+          "userDefined": false,
+          "alias": "upcasting",
+          "meta": "@upcasting"
+        },
+        {
+          "text": "의 정의가 무엇입니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "업캐스팅",
+          "userDefined": true,
+          "alias": "upcasting",
+          "meta": "@upcasting"
+        },
+        {
+          "text": "이란?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "upcasting",
+          "userDefined": false,
+          "alias": "upcasting",
+          "meta": "@upcasting"
+        },
+        {
+          "text": "에 대해 알고 싶어요",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "upcasting",
+          "userDefined": false,
+          "alias": "upcasting",
+          "meta": "@upcasting"
+        },
+        {
+          "text": " 이",
+          "userDefined": false
+        },
+        {
+          "text": "란",
+          "userDefined": true,
+          "alias": "idea",
+          "meta": "@idea"
+        },
+        {
+          "text": "?",
           "userDefined": false
         }
       ],
