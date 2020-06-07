@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "array",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "array",
+      "synonyms": [
+        "array",
+        "배열"
+      ]
+    }
+  ],
+  "id": "fd826fc4-d57f-412d-ae36-7d4e436f00d2",
+  "isOverridable": false
+}
