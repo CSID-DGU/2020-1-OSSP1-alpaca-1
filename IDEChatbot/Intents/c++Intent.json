@@ -1,0 +1,94 @@
+{
+  "id": "3dc42ba9-550b-4e91-9d40-2e672e874d1b",
+  "name": "c++Intent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "c",
+          "dataType": "@c",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$c",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "similar",
+          "dataType": "@similar",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$similar",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "c++",
+          "userDefined": true,
+          "alias": "c",
+          "meta": "@c"
+        },
+        {
+          "text": "은 뭐랑 ",
+          "userDefined": false
+        },
+        {
+          "text": "유사",
+          "userDefined": true,
+          "alias": "similar",
+          "meta": "@similar"
+        },
+        {
+          "text": "합니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
