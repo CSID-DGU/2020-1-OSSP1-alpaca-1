@@ -260,6 +260,26 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       else agent.add(ideaInfo);
       });
   }
+    function handlefriend(agent){
+    const a=agent.parameters.friend;
+    const b=agent.parameters.how;
+    const c=agent.parameters.idea;
+    const d=agent.parameters.location;
+    const e=agent.parameters.possible;
+    const f=agent.parameters.when;
+    return admin.database().ref().once("value").then((snapshot)=>{
+      var howInfo=snapshot.child('answer/'+a+'/'+b).val();
+       var ideaInfo=snapshot.child('answer/'+a+'/'+c).val();
+       var locationInfo=snapshot.child('answer/'+a+'/'+d).val();
+       var possibleInfo=snapshot.child('answer/'+a+'/'+e).val();
+       var whenInfo=snapshot.child('answer/'+a+'/'+f).val();
+      if(b=="how")agent.add(howInfo);
+      else if(d=="location")agent.add(locationInfo);
+      else if(e=="possible")agent.add(possibleInfo);
+      else if(f=="when")agent.add(whenInfo);
+      else agent.add(ideaInfo);
+      });
+  }
   
   function handlec(agent){
   	const a=agent.parameters.c;
@@ -294,6 +314,22 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       }
     });
   }
+  
+  function handlecall(agent){
+  	const a=agent.parameters.call;
+    const b=agent.parameters.value;
+    const c=agent.parameters.reference;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var referenceInfo=snapshot.child('answer/call/reference/idea').val();
+      	var valueInfo=snapshot.child('answer/call/value/idea').val();
+        if(c=="reference"){
+        	agent.add(referenceInfo);
+        }
+      	else{
+        	agent.add(valueInfo);
+        }
+      	});
+  }
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -319,5 +355,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('destructorIntent',handledestructor);
   intentMap.set('arrayIntent',handlearray);
   intentMap.set('c++Intent',handlec);
+  intentMap.set('callIntent',handlecall);
   agent.handleRequest(intentMap);
 });
