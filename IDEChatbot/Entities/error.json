@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "error",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "error",
+      "synonyms": [
+        "error",
+        "오류",
+        "에러"
+      ]
+    }
+  ],
+  "id": "6c18e060-fd7a-497a-ac2f-67cf58d51f94",
+  "isOverridable": false
+}
