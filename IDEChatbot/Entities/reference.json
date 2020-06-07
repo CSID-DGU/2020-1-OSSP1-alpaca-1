@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "reference",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "reference",
+      "synonyms": [
+        "reference",
+        "주소"
+      ]
+    }
+  ],
+  "id": "c20d9090-a568-4f93-8830-7f0c5acd9c90",
+  "isOverridable": false
+}

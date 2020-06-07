@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "value",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "value",
+      "synonyms": [
+        "value",
+        "값"
+      ]
+    }
+  ],
+  "id": "f6dddd74-ff5e-4bcd-809e-4bbde4670942",
+  "isOverridable": false
+}
