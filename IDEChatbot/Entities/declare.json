@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "declare",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "declare",
+      "synonyms": [
+        "declare",
+        "선언"
+      ]
+    }
+  ],
+  "id": "0ff91a25-3b8d-4eda-80f9-d225d07c6c56",
+  "isOverridable": false
+}
