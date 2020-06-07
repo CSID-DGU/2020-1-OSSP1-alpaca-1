@@ -1,0 +1,135 @@
+{
+  "id": "c1e46f63-c880-445d-9bef-d9d98872c042",
+  "name": "callIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "value",
+          "dataType": "@value",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$value",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "call",
+          "dataType": "@call",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$call",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "reference",
+          "dataType": "@reference",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$reference",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "주소",
+          "userDefined": true,
+          "alias": "reference",
+          "meta": "@reference"
+        },
+        {
+          "text": "에 의한 ",
+          "userDefined": false
+        },
+        {
+          "text": "호출",
+          "userDefined": false,
+          "alias": "call",
+          "meta": "@call"
+        },
+        {
+          "text": "에 대해 설명해 주세요.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "값",
+          "userDefined": false,
+          "alias": "value",
+          "meta": "@value"
+        },
+        {
+          "text": "에 의한 ",
+          "userDefined": false
+        },
+        {
+          "text": "호출",
+          "userDefined": false,
+          "alias": "call",
+          "meta": "@call"
+        },
+        {
+          "text": "에 대해 설명해 주세요",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
