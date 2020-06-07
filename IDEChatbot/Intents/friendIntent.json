@@ -1,0 +1,363 @@
+{
+  "id": "595c7f3c-5c7a-40af-b584-03346b88039c",
+  "name": "friendIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "friend",
+          "dataType": "@friend",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$friend",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "when",
+          "dataType": "@when",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$when",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "location",
+          "dataType": "@location",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$location",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "idea",
+          "dataType": "@idea",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$idea",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "how",
+          "dataType": "@how",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$how",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "have",
+          "dataType": "@have",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$have",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "possible",
+          "dataType": "@possible",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$possible",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "프렌드 함수",
+          "userDefined": false,
+          "alias": "friend",
+          "meta": "@friend"
+        },
+        {
+          "text": "가 ",
+          "userDefined": false
+        },
+        {
+          "text": "가능한",
+          "userDefined": true,
+          "alias": "possible",
+          "meta": "@possible"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "위치",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": "는?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "프렌드 함수",
+          "userDefined": false,
+          "alias": "friend",
+          "meta": "@friend"
+        },
+        {
+          "text": "는 어떤 권한을 ",
+          "userDefined": false
+        },
+        {
+          "text": "가지나요",
+          "userDefined": true,
+          "alias": "have",
+          "meta": "@have"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "프렌드",
+          "userDefined": false,
+          "alias": "friend",
+          "meta": "@friend"
+        },
+        {
+          "text": "는 ",
+          "userDefined": false
+        },
+        {
+          "text": "어떻게",
+          "userDefined": false,
+          "alias": "how",
+          "meta": "@how"
+        },
+        {
+          "text": " 쓰나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "프렌드 함수",
+          "userDefined": false,
+          "alias": "friend",
+          "meta": "@friend"
+        },
+        {
+          "text": "가 ",
+          "userDefined": false
+        },
+        {
+          "text": "뭐에요",
+          "userDefined": false,
+          "alias": "idea",
+          "meta": "@idea"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "프렌드 함수",
+          "userDefined": false,
+          "alias": "friend",
+          "meta": "@friend"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "개념",
+          "userDefined": false,
+          "alias": "idea",
+          "meta": "@idea"
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "프렌드함수",
+          "userDefined": false,
+          "alias": "friend",
+          "meta": "@friend"
+        },
+        {
+          "text": "란",
+          "userDefined": false,
+          "alias": "idea",
+          "meta": "@idea"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "프렌드 함수",
+          "userDefined": false,
+          "alias": "friend",
+          "meta": "@friend"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "위치",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@location"
+        },
+        {
+          "text": "는?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "프렌드 함수",
+          "userDefined": false,
+          "alias": "friend",
+          "meta": "@friend"
+        },
+        {
+          "text": "는 ",
+          "userDefined": false
+        },
+        {
+          "text": "언제",
+          "userDefined": false,
+          "alias": "when",
+          "meta": "@when"
+        },
+        {
+          "text": "사용",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": "하나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
