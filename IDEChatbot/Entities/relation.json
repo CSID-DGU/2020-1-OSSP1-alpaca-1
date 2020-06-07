@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "relation",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "relation",
+      "synonyms": [
+        "relation",
+        "관계"
+      ]
+    }
+  ],
+  "id": "60ee4fa5-b4f4-4505-a804-cbcee4c79d66",
+  "isOverridable": false
+}
