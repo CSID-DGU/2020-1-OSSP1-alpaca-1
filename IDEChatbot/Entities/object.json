@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "object",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "object",
+      "synonyms": [
+        "object",
+        "객체",
+        "오브젝트"
+      ]
+    }
+  ],
+  "id": "161ad4d1-3537-485d-a937-cfa4cca6cd85",
+  "isOverridable": false
+}
