@@ -260,6 +260,14 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       else agent.add(ideaInfo);
       });
   }
+  
+  function handlec(agent){
+  	const a=agent.parameters.c;
+    const b=agent.parameters.similar;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/c++/similar').val();
+      	agent.add(ideaInfo); });
+  }
   function handlearray(agent){
   	const a=agent.parameters.object;
     const b=agent.parameters.array;
@@ -310,5 +318,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('stringIntent',handlestring);
   intentMap.set('destructorIntent',handledestructor);
   intentMap.set('arrayIntent',handlearray);
+  intentMap.set('c++Intent',handlec);
   agent.handleRequest(intentMap);
 });
