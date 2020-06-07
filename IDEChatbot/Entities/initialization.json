@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "initialization",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "initialization",
+      "synonyms": [
+        "initialization",
+        "초기화"
+      ]
+    }
+  ],
+  "id": "e2813a98-7c0b-45f1-b8e7-61833c895b0e",
+  "isOverridable": false
+}
