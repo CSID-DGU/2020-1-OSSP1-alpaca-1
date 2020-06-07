@@ -260,7 +260,32 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       else agent.add(ideaInfo);
       });
   }
-      
+  function handlearray(agent){
+  	const a=agent.parameters.object;
+    const b=agent.parameters.array;
+    const c=agent.parameters.initialization;
+    const d=agent.parameters.destructor;
+    const e=agent.parameters.declare;
+    const f=agent.parameters.relation;
+    const g=agent.parameters.why;
+    const h=agent.parameters.error;
+    return admin.database().ref().once("value").then((snapshot)=>{
+      	var destructInfo=snapshot.child('answer/array/destruct').val();
+      	var relationInfo=snapshot.child('answer/array/object/constructor/relation').val();
+      	var whyInfo=snapshot.child('answer/array/object/compileerror/why').val();
+      	var declare=snapshot.child('answer/array/object/declare').val();
+      	var initInfo=snapshot.child('answer/array/object/initialization/exam').val();
+    	if(a=="object"){
+        	if(g=="why") agent.add(whyInfo);
+          	else if(f=="relation") agent.add(relationInfo);
+          	else if(e=="declare") agent.add(declare);
+          	else agent.add(initInfo);
+        }
+      else{
+      	agent.add(destructInfo);
+      }
+    });
+  }
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -284,5 +309,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('thisIntent',handlethis);
   intentMap.set('stringIntent',handlestring);
   intentMap.set('destructorIntent',handledestructor);
+  intentMap.set('arrayIntent',handlearray);
   agent.handleRequest(intentMap);
 });
