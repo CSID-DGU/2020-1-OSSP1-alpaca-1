@@ -1,0 +1,21 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "have",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "have",
+      "synonyms": [
+        "have",
+        "가지다",
+        "가지는",
+        "가진",
+        "가지나요"
+      ]
+    }
+  ],
+  "id": "d3e4828f-f535-41ff-91ad-f98c046e3a5a",
+  "isOverridable": false
+}

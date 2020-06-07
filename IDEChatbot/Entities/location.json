@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "location",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "location",
+      "synonyms": [
+        "location",
+        "위치",
+        "장소"
+      ]
+    }
+  ],
+  "id": "22107436-d282-4241-94e5-885f6af57f2a",
+  "isOverridable": false
+}

@@ -1,0 +1,20 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "possible",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "possible",
+      "synonyms": [
+        "possible",
+        "가능하다",
+        "가능한",
+        "가능"
+      ]
+    }
+  ],
+  "id": "0054332c-1d07-4812-911e-9c8341771dfe",
+  "isOverridable": false
+}

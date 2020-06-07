@@ -1,0 +1,21 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "friend",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "friend",
+      "synonyms": [
+        "friend",
+        "프렌드",
+        "프렌드함수",
+        "friend함수",
+        "프렌드 함수"
+      ]
+    }
+  ],
+  "id": "62885555-4b5d-4676-8248-2029c7e22a2e",
+  "isOverridable": false
+}
