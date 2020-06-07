@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "similar",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "similar",
+      "synonyms": [
+        "similar",
+        "비슷한",
+        "유사한"
+      ]
+    }
+  ],
+  "id": "6a833dd1-5eb7-4a5f-9171-ce0f978a5c1b",
+  "isOverridable": false
+}

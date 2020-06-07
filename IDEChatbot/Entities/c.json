@@ -1,0 +1,17 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "c",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "c++",
+      "synonyms": [
+        "c++"
+      ]
+    }
+  ],
+  "id": "26663d83-2735-4ba6-8f3f-c8a756f34840",
+  "isOverridable": false
+}
