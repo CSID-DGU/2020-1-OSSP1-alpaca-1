@@ -376,6 +376,14 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	else {agent.add(typeInfo);}
     });
   }
+  
+  function handlecopyconstructor(agent){
+  	const a=agent.parameters.copyconstructor;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/copyconstructor/idea');
+      	agent.add(ideaInfo);
+    });
+  }
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -406,5 +414,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('classIntent',handleclass);
   intentMap.set('constructorIntent',handleconstructor);
   intentMap.set('copyIntent',handlecopy);
+  intentMap.set('copyconstructorIntent',handlecopyconstructor);
   agent.handleRequest(intentMap);
 });
