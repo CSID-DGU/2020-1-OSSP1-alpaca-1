@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "class",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "class",
+      "synonyms": [
+        "class",
+        "클래스"
+      ]
+    }
+  ],
+  "id": "c9d5a401-0cb7-4c61-aa76-48cfbbf5d8b8",
+  "isOverridable": false
+}

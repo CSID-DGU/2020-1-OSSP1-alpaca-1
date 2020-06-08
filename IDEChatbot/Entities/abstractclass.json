@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "abstractclass",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "abstractclass",
+      "synonyms": [
+        "abstractclass",
+        "추상클래스"
+      ]
+    }
+  ],
+  "id": "899cdef3-39dd-462d-82f1-8b04e226a463",
+  "isOverridable": false
+}
