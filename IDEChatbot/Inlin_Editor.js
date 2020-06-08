@@ -380,7 +380,15 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   function handlecopyconstructor(agent){
   	const a=agent.parameters.copyconstructor;
     return admin.database().ref().once("value").then((snapshot)=>{
-    	var ideaInfo=snapshot.child('answer/copyconstructor/idea');
+    	var ideaInfo=snapshot.child('answer/copyconstructor/idea').val();
+      	agent.add(ideaInfo);
+    });
+  }
+  
+  function handledowncasting(agent){
+  	const a=agent.parameters.downcasting;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/downcasting/idea').val();
       	agent.add(ideaInfo);
     });
   }
@@ -415,5 +423,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('constructorIntent',handleconstructor);
   intentMap.set('copyIntent',handlecopy);
   intentMap.set('copyconstructorIntent',handlecopyconstructor);
+  intentMap.set('downcastingIntent',handledowncasting);
   agent.handleRequest(intentMap);
 });
