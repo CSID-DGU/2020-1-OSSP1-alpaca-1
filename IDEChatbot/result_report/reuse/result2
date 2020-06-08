@@ -1,0 +1,34 @@
+{
+  "responseId": "221f574c-153d-40ca-8c1e-99e40e963dcc-b4a98e7e",
+  "queryResult": {
+    "queryText": "재사용을 사용하는 의미가 있나요?",
+    "parameters": {
+      "reuse": "reuse",
+      "how": "",
+      "mean": "mean"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "코드를 반복해서 쓰지 않고, 한번쓴 함수를 호출해서 재사용",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "코드를 반복해서 쓰지 않고, 한번쓴 함수를 호출해서 재사용"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/277072ca-d869-485c-91e0-d07a06ced851",
+      "displayName": "reuseIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 2298
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
