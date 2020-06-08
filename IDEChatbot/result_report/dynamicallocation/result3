@@ -1,23 +1,23 @@
 {
-  "responseId": "cbf74139-6f61-4e3b-88e9-56d582fdfb9e-b4a98e7e",
+  "responseId": "d184fb28-67f9-4500-8834-7a578af89ed6-b4a98e7e",
   "queryResult": {
     "queryText": "동적할당 반환은 어떻게 합니까?",
     "parameters": {
-      "return": "return",
-      "array": "",
       "dynamicallocation": "dynamicallocation",
-      "when": "",
+      "return": "return",
       "how": "how",
+      "array": "",
       "impossible": "",
-      "initialization": ""
+      "initialization": "",
+      "when": ""
     },
     "allRequiredParamsPresent": true,
-    "fulfillmentText": "malloc(),free()라이브러리 함수 사용",
+    "fulfillmentText": "delete 연산자 사용하여 삭제, 소멸자 호출뒤 객체를 heap에 반환",
     "fulfillmentMessages": [
       {
         "text": {
           "text": [
-            "malloc(),free()라이브러리 함수 사용"
+            "delete 연산자 사용하여 삭제, 소멸자 호출뒤 객체를 heap에 반환"
           ]
         }
       }
@@ -28,7 +28,7 @@
     },
     "intentDetectionConfidence": 1,
     "diagnosticInfo": {
-      "webhook_latency_ms": 42
+      "webhook_latency_ms": 1111
     },
     "languageCode": "ko"
   },
