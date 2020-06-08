@@ -1,0 +1,221 @@
+{
+  "id": "89ca5d4d-d3ce-41a7-887c-00c2b848248c",
+  "name": "constructorIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "order",
+          "dataType": "@order",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$order",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "cstruct",
+          "dataType": "@cstruct",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$cstruct",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "why",
+          "dataType": "@why",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$why",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "생성자",
+          "userDefined": false,
+          "alias": "cstruct",
+          "meta": "@cstruct"
+        },
+        {
+          "text": "를 사용하는 ",
+          "userDefined": false
+        },
+        {
+          "text": "이유",
+          "userDefined": true,
+          "alias": "why",
+          "meta": "@why"
+        },
+        {
+          "text": "가 뭡니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "생성자",
+          "userDefined": false,
+          "alias": "cstruct",
+          "meta": "@cstruct"
+        },
+        {
+          "text": "는 ",
+          "userDefined": false
+        },
+        {
+          "text": "왜",
+          "userDefined": true,
+          "alias": "why",
+          "meta": "@why"
+        },
+        {
+          "text": " 사용하나요?'",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "생성자",
+          "userDefined": true,
+          "alias": "cstruct",
+          "meta": "@cstruct"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "호출",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "순서",
+          "userDefined": false,
+          "alias": "order",
+          "meta": "@order"
+        },
+        {
+          "text": "는?'",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "생성자",
+          "userDefined": true,
+          "alias": "cstruct",
+          "meta": "@cstruct"
+        },
+        {
+          "text": "가 ",
+          "userDefined": false
+        },
+        {
+          "text": "호출",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": "되는 ",
+          "userDefined": false
+        },
+        {
+          "text": "순서",
+          "userDefined": false,
+          "alias": "order",
+          "meta": "@order"
+        },
+        {
+          "text": "가 ",
+          "userDefined": false
+        },
+        {
+          "text": "어떻게",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " 됩니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
