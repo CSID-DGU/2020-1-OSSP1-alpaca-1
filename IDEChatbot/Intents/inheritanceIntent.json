@@ -1,0 +1,385 @@
+{
+  "id": "c514b3d2-5257-4a6a-b06c-2bf2150d7062",
+  "name": "inheritanceIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "inheritance",
+          "dataType": "@inheritance",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$inheritance",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "code",
+          "dataType": "@code",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$code",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "feature",
+          "dataType": "@feature",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$feature",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "give",
+          "dataType": "@give",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$give",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "idea",
+          "dataType": "@idea",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$idea",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "multi",
+          "dataType": "@multi",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$multi",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "role",
+          "dataType": "@role",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$role",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "virtual",
+          "dataType": "@virtual",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$virtual",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "declare",
+          "dataType": "@declare",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$declare",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "가상상속",
+          "userDefined": false,
+          "alias": "virtual",
+          "meta": "@virtual"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "개념",
+          "userDefined": false,
+          "alias": "idea",
+          "meta": "@idea"
+        },
+        {
+          "text": "은?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "가상상속",
+          "userDefined": false,
+          "alias": "virtual",
+          "meta": "@virtual"
+        },
+        {
+          "text": "은 어떤것을 ",
+          "userDefined": false
+        },
+        {
+          "text": "선언",
+          "userDefined": false,
+          "alias": "declare",
+          "meta": "@declare"
+        },
+        {
+          "text": "해야 하나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "상속",
+          "userDefined": false,
+          "alias": "inheritance",
+          "meta": "@inheritance"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "역할",
+          "userDefined": false,
+          "alias": "role",
+          "meta": "@role"
+        },
+        {
+          "text": "은?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "다중상속",
+          "userDefined": false,
+          "alias": "multi",
+          "meta": "@multi"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "코드",
+          "userDefined": false,
+          "alias": "code",
+          "meta": "@code"
+        },
+        {
+          "text": "예시",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "상속",
+          "userDefined": false,
+          "alias": "inheritance",
+          "meta": "@inheritance"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "개념",
+          "userDefined": false,
+          "alias": "idea",
+          "meta": "@idea"
+        },
+        {
+          "text": "은?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "상속",
+          "userDefined": false,
+          "alias": "inheritance",
+          "meta": "@inheritance"
+        },
+        {
+          "text": "은 어떤것을 ",
+          "userDefined": false
+        },
+        {
+          "text": "제공",
+          "userDefined": false,
+          "alias": "give",
+          "meta": "@give"
+        },
+        {
+          "text": "하나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "상속",
+          "userDefined": false,
+          "alias": "inheritance",
+          "meta": "@inheritance"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "특징",
+          "userDefined": false,
+          "alias": "feature",
+          "meta": "@feature"
+        },
+        {
+          "text": "은?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "상속",
+          "userDefined": false,
+          "alias": "inheritance",
+          "meta": "@inheritance"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "코드",
+          "userDefined": false,
+          "alias": "code",
+          "meta": "@code"
+        },
+        {
+          "text": "예시",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
