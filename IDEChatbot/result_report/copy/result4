@@ -1,0 +1,36 @@
+{
+  "responseId": "556d6df6-02b0-42f4-87f3-6f4c21bea12c-b4a98e7e",
+  "queryResult": {
+    "queryText": "깊은 복사는 어떻게 사용합니까?",
+    "parameters": {
+      "deep": "deep",
+      "how": "how",
+      "shallow": "",
+      "copy": "copy",
+      "type": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "객체 복사시, 객체의 멤버를 1:1로 복사한다.사본은 원본이 가진 메모리 크기 만큼 별도로 동적 할당한다. 원본의 동적 메모리에 있는 내용을 사본에 복사한다.",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "객체 복사시, 객체의 멤버를 1:1로 복사한다.사본은 원본이 가진 메모리 크기 만큼 별도로 동적 할당한다. 원본의 동적 메모리에 있는 내용을 사본에 복사한다."
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/d8b05682-14cf-4d23-947e-16ef77eb5f88",
+      "displayName": "copyIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 67
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
