@@ -1,0 +1,33 @@
+{
+  "responseId": "ee5422f0-53d8-40a1-ab58-738d4f91ac97-b4a98e7e",
+  "queryResult": {
+    "queryText": "다운캐스팅이란?",
+    "parameters": {
+      "idea": "idea",
+      "downcasting": "downcasting"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "기본 클래스의 포인터가 파생 클래스의 포인터에 치환되는 것",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "기본 클래스의 포인터가 파생 클래스의 포인터에 치환되는 것"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/a3371312-909d-48b1-9d9c-eec0c9a8e9d5",
+      "displayName": "downcastingIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 61
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
