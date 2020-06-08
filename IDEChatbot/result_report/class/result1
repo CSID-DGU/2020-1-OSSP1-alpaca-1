@@ -1,0 +1,37 @@
+{
+  "responseId": "313a386e-6d14-4f4d-900b-736ba3838635-b4a98e7e",
+  "queryResult": {
+    "queryText": "클래스는 왜 필요한가요",
+    "parameters": {
+      "class": "class",
+      "idea": "",
+      "mean": "",
+      "abstractclass": "",
+      "why": "why",
+      "how": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "재사용을 위해서",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "재사용을 위해서"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/d28eaa71-1246-4b91-9a48-9582c6682371",
+      "displayName": "classIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 49
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
