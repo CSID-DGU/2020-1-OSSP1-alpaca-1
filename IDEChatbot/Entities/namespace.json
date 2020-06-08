@@ -1,0 +1,20 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "namespace",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "namespace",
+      "synonyms": [
+        "namespace",
+        "네임스페이스",
+        "이름공간",
+        "네임 스페이스"
+      ]
+    }
+  ],
+  "id": "fed94626-088a-4382-8de5-876c8350f02f",
+  "isOverridable": false
+}

@@ -1,0 +1,17 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "using",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "using",
+      "synonyms": [
+        "using"
+      ]
+    }
+  ],
+  "id": "94f3f997-d25a-4af9-b0d5-8b59d2a11644",
+  "isOverridable": false
+}

@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "feature",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "feature",
+      "synonyms": [
+        "feature",
+        "특징"
+      ]
+    }
+  ],
+  "id": "e9fb1795-9c3a-4110-a5b5-450123f58f50",
+  "isOverridable": false
+}

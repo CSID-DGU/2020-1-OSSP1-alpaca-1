@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "must",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "must",
+      "synonyms": [
+        "must",
+        "해야한다",
+        "금지"
+      ]
+    }
+  ],
+  "id": "82f22403-9192-40d3-abf5-715b4fdd46c9",
+  "isOverridable": false
+}

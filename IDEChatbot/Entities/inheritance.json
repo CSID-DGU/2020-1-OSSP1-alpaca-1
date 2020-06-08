@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "inheritance",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "inheritance",
+      "synonyms": [
+        "inheritance",
+        "상속"
+      ]
+    }
+  ],
+  "id": "29320a40-f25c-4936-891f-78dcd27e4a56",
+  "isOverridable": false
+}

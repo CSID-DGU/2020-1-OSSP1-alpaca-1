@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "code",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "code",
+      "synonyms": [
+        "code",
+        "코드"
+      ]
+    }
+  ],
+  "id": "95bae9b2-f8b4-4d32-8757-593d96e2a329",
+  "isOverridable": false
+}

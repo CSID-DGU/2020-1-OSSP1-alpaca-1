@@ -1,0 +1,20 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "virtual",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "virtual",
+      "synonyms": [
+        "virtual",
+        "가상",
+        "가상상속",
+        "가상 상속"
+      ]
+    }
+  ],
+  "id": "aebc5439-f55f-4988-b58a-be9979f2383c",
+  "isOverridable": false
+}
