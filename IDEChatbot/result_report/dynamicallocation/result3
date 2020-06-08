@@ -1,0 +1,38 @@
+{
+  "responseId": "cbf74139-6f61-4e3b-88e9-56d582fdfb9e-b4a98e7e",
+  "queryResult": {
+    "queryText": "동적할당 반환은 어떻게 합니까?",
+    "parameters": {
+      "return": "return",
+      "array": "",
+      "dynamicallocation": "dynamicallocation",
+      "when": "",
+      "how": "how",
+      "impossible": "",
+      "initialization": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "malloc(),free()라이브러리 함수 사용",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "malloc(),free()라이브러리 함수 사용"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/2c0def38-d56f-4294-92f1-9ff466d295cb",
+      "displayName": "dynamicallocationIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 42
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
