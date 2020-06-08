@@ -137,8 +137,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     const b=agent.parameters.how;
     const c=agent.parameters.mean;
     return admin.database().ref().once("value").then((snapshot)=>{
-    	var howInfo=snapshot.child('answer/'+a+'/'+b).val();
-      	var meanInfo=snapshot.child('answer/'+a+'/'+c).val();
+    	var howInfo=snapshot.child('answer/reuse/how').val();
+      	var meanInfo=snapshot.child('answer/reuse/mean').val();
       	if(b=="how") agent.add(howInfo); else agent.add(meanInfo); });
   }
   
@@ -392,7 +392,39 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	agent.add(ideaInfo);
     });
   }
-function handlefunctionredundancy(agent){
+  
+  function handledynamicallocation(agent){
+  	const a=agent.parameters.dynamicallocation;
+    const b=agent.parameters.array;
+    const c=agent.parameters.impossible;
+    const d=agent.parameters.return;
+    const e=agent.parameters.how;
+    const f=agent.parameters.initialization;
+    const g=agent.parameters.when;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var arrayhow=snapshot.child('answer/dynamicallocation/array/how').val();
+      	var arrayim=snapshot.child('answer/dynamicallocation/array/impossible').val();
+      	var arrayre=snapshot.child('answer/dynamicallocation/array/return').val();
+      	var how=snapshot.child('answer/dynamicallocation/how').val();
+      	var inithow=snapshot.child('answer/dynamicallocation/initialization/how').val();
+      	var re=snapshot.child('answer/dynamicallocation/return').val();
+      	var when=snapshot.child('answer/dynamicallocation/when').val();
+      	if(b=="array"){
+        	if(e=="how"){agent.add(arrayhow);}
+          	else if(c=="impossible"){agent.add(arrayim);}
+          	else {agent.add(arrayre);}
+        }
+      	else if(f=="initialization"){
+        	agent.add(inithow);
+        }
+      	else{
+        	if(e=="how"&&d=="return"){agent.add(re);}
+          	else if(e=="how"){agent.add(how);}
+          	else {agent.add(when);}
+        }
+    });
+  }
+  function handlefunctionredundancy(agent){
     const a=agent.parameters.functionredundancy;
     const b=agent.parameters.idea;
     const c=agent.parameters.relation;
@@ -409,14 +441,14 @@ function handlefunctionredundancy(agent){
       else{agent.add(whyInfo);}
        });
   }
-  function handlenamespace(agent){
+   function handlenamespace(agent){
   	const a=agent.parameters.namespace;
     const b=agent.parameters.must;
     const c=agent.parameters.role;
     const d=agent.parameters.how;
     const e=agent.parameters.idea;
     return admin.database().ref().once("value").then((snapshot)=>{
-    	var mustInfo=snapshot.child('answer/namespace/must').val();
+      var mustInfo=snapshot.child('answer/namespace/must').val();
       var roleInfo=snapshot.child('answer/namespace/role').val();
       var howInfo=snapshot.child('answer/namespace/using/how').val();
       var ideaInfo=snapshot.child('answer/namespace/using/idea').val();
@@ -427,6 +459,16 @@ function handlefunctionredundancy(agent){
     });
   }
   
+  function handleencapsulation(agent){
+  	const a=agent.parameters.encapsulation;
+    const b=agent.parameters.how;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/encapsulation/idea').val();
+      	var howInfo=snapshot.child('answer/encapsulation/how').val();
+      	if(b!=""){agent.add(howInfo);}
+      	else{agent.add(ideaInfo);}
+    });
+  }
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -459,7 +501,9 @@ function handlefunctionredundancy(agent){
   intentMap.set('copyIntent',handlecopy);
   intentMap.set('copyconstructorIntent',handlecopyconstructor);
   intentMap.set('downcastingIntent',handledowncasting);
+  intentMap.set('dynamicallocationIntent',handledynamicallocation);
   intentMap.set('functionredundancyIntent',handlefunctionredundancy);
- intentMap.set('namespaceIntent',handlenamespace);
+  intentMap.set('namespaceIntent',handlenamespace);
+  intentMap.set('encapsulationIntent',handleencapsulation);
   agent.handleRequest(intentMap);
 });
