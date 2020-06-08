@@ -1,0 +1,41 @@
+{
+  "responseId": "28227e9d-9f81-47bd-b06e-acf42f8ab1ca-b4a98e7e",
+  "queryResult": {
+    "queryText": "소멸자는 언제 소멸하나요?",
+    "parameters": {
+      "why": "",
+      "call": "",
+      "redundancy": "",
+      "destructor": "destructor",
+      "how": "",
+      "when": "when",
+      "order": "",
+      "idea": "",
+      "dynamicobject": "",
+      "return": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "함수종료시",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "함수종료시"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/e2db7365-7923-4d77-8e3b-0085819b8f6c",
+      "displayName": "destructorIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 268
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
