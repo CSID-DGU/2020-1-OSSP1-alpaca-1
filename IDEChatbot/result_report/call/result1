@@ -1,0 +1,34 @@
+{
+  "responseId": "02ebd1b7-d283-43bd-91f7-63082423007c-b4a98e7e",
+  "queryResult": {
+    "queryText": "주소에 의한 호출에 대해 설명해주세요",
+    "parameters": {
+      "value": "",
+      "call": "call",
+      "reference": "reference"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "매개변수는 포인터타입이며 호출하는 코드에서 주소를 넘기고 넘어온 주소값이 매개변수에 저장",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "매개변수는 포인터타입이며 호출하는 코드에서 주소를 넘기고 넘어온 주소값이 매개변수에 저장"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/c1e46f63-c880-445d-9bef-d9d98872c042",
+      "displayName": "callIntent"
+    },
+    "intentDetectionConfidence": 0.7557238,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 56
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
