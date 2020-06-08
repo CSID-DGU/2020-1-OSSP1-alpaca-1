@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "downcasting",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "downcasting",
+      "synonyms": [
+        "downcasting",
+        "다운캐스팅"
+      ]
+    }
+  ],
+  "id": "6e1f7e2f-cce7-42d5-8dad-502d4284e174",
+  "isOverridable": false
+}
