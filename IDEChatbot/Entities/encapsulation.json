@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "encapsulation",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "encapsulation",
+      "synonyms": [
+        "encapsulation",
+        "캡슐화"
+      ]
+    }
+  ],
+  "id": "85ec30ae-da9e-4be7-8eec-6f93f09f814d",
+  "isOverridable": false
+}
