@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "copy",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "copy",
+      "synonyms": [
+        "copy",
+        "복사"
+      ]
+    }
+  ],
+  "id": "1bef14f3-8d41-4518-9358-f51ff376f83f",
+  "isOverridable": false
+}
