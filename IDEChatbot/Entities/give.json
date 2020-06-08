@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "give",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "give",
+      "synonyms": [
+        "give",
+        "제공"
+      ]
+    }
+  ],
+  "id": "28c4b5cb-5325-4181-9941-55fe1cea344b",
+  "isOverridable": false
+}
