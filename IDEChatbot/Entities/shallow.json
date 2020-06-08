@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "shallow",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "shallow",
+      "synonyms": [
+        "shallow",
+        "얕은"
+      ]
+    }
+  ],
+  "id": "43a759b9-1459-4c0a-96b4-282da211aa18",
+  "isOverridable": false
+}

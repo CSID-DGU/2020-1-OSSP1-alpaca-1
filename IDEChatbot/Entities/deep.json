@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "deep",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "deep",
+      "synonyms": [
+        "deep",
+        "깊은"
+      ]
+    }
+  ],
+  "id": "418b1553-7311-402f-b7e9-8cad295b31a5",
+  "isOverridable": false
+}
