@@ -1,0 +1,33 @@
+{
+  "responseId": "b034cd39-4962-40f9-a200-6661c934b270-b4a98e7e",
+  "queryResult": {
+    "queryText": "추상화를 사용하는 목적은 무엇입니까?",
+    "parameters": {
+      "abstraction": "abstraction",
+      "use": "use"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "복잡성을 제어하는데 사용",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "복잡성을 제어하는데 사용"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/9b7d7f80-b072-49a0-a654-9f3f758d9b9b",
+      "displayName": "abstractionIntent"
+    },
+    "intentDetectionConfidence": 0.7098856,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 134
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
