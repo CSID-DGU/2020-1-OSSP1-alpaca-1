@@ -1,0 +1,323 @@
+{
+  "id": "d8b05682-14cf-4d23-947e-16ef77eb5f88",
+  "name": "copyIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "copy",
+          "dataType": "@copy",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$copy",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "type",
+          "dataType": "@type",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$type",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "deep",
+          "dataType": "@deep",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$deep",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "how",
+          "dataType": "@how",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$how",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "shallow",
+          "dataType": "@shallow",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$shallow",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "얕은",
+          "userDefined": false,
+          "alias": "shallow",
+          "meta": "@shallow"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "복사",
+          "userDefined": false,
+          "alias": "copy",
+          "meta": "@copy"
+        },
+        {
+          "text": "를 사용하는 ",
+          "userDefined": false
+        },
+        {
+          "text": "방법",
+          "userDefined": false,
+          "alias": "how",
+          "meta": "@how"
+        },
+        {
+          "text": "은 무엇입니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "깊은",
+          "userDefined": false,
+          "alias": "deep",
+          "meta": "@deep"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "복사",
+          "userDefined": false,
+          "alias": "copy",
+          "meta": "@copy"
+        },
+        {
+          "text": "를 사용하는 ",
+          "userDefined": false
+        },
+        {
+          "text": "방법",
+          "userDefined": false,
+          "alias": "how",
+          "meta": "@how"
+        },
+        {
+          "text": "은 무엇입니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "얕은",
+          "userDefined": false,
+          "alias": "shallow",
+          "meta": "@shallow"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "복사",
+          "userDefined": false,
+          "alias": "copy",
+          "meta": "@copy"
+        },
+        {
+          "text": "는 ",
+          "userDefined": false
+        },
+        {
+          "text": "어떻게",
+          "userDefined": false,
+          "alias": "how",
+          "meta": "@how"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "사용",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": "합니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "깊은",
+          "userDefined": false,
+          "alias": "deep",
+          "meta": "@deep"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "복사",
+          "userDefined": false,
+          "alias": "copy",
+          "meta": "@copy"
+        },
+        {
+          "text": "는 ",
+          "userDefined": false
+        },
+        {
+          "text": "어떻게",
+          "userDefined": true,
+          "alias": "how",
+          "meta": "@how"
+        },
+        {
+          "text": " 사용합니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "복사",
+          "userDefined": false,
+          "alias": "copy",
+          "meta": "@copy"
+        },
+        {
+          "text": "의 여려 ",
+          "userDefined": false
+        },
+        {
+          "text": "종류",
+          "userDefined": false,
+          "alias": "type",
+          "meta": "@type"
+        },
+        {
+          "text": "가 알고 싶습니다.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "복사",
+          "userDefined": false,
+          "alias": "copy",
+          "meta": "@copy"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "종류",
+          "userDefined": false,
+          "alias": "type",
+          "meta": "@type"
+        },
+        {
+          "text": "는 뭐가 있습니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
