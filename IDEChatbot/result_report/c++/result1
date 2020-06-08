@@ -1,0 +1,33 @@
+{
+  "responseId": "3763b530-c06f-48e9-adb5-4058529ab840-b4a98e7e",
+  "queryResult": {
+    "queryText": "c++은 뭐랑 유사합니까?",
+    "parameters": {
+      "c": "c++",
+      "similar": "유사"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "c++,FORTRAN,어셈블러 또는 다른 언어로 작성된 라이브러리에서 C API를 내보내는것과 매우비슷",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "c++,FORTRAN,어셈블러 또는 다른 언어로 작성된 라이브러리에서 C API를 내보내는것과 매우비슷"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/3dc42ba9-550b-4e91-9d40-2e672e874d1b",
+      "displayName": "c++Intent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 152
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
