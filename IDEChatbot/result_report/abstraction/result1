@@ -1,0 +1,33 @@
+{
+  "responseId": "05438041-8338-4333-8c86-691037e4f5d4-b4a98e7e",
+  "queryResult": {
+    "queryText": "추상화란?",
+    "parameters": {
+      "use": "",
+      "abstraction": "abstraction"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "객체 공통의 속성이나 기능을 묶어 특성을 일반화하고 세부사항을 제거하여 단순하게 만드는것, 객체 지향적 관점에서 클래스를 정의하는 것",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "객체 공통의 속성이나 기능을 묶어 특성을 일반화하고 세부사항을 제거하여 단순하게 만드는것, 객체 지향적 관점에서 클래스를 정의하는 것"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/9b7d7f80-b072-49a0-a654-9f3f758d9b9b",
+      "displayName": "abstractionIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 90
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
