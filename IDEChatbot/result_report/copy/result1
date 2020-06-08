@@ -1,0 +1,36 @@
+{
+  "responseId": "072aecb1-6251-473a-8a94-9238bdcc9d1e-b4a98e7e",
+  "queryResult": {
+    "queryText": "얕은 복사를 사용하는 방법은 무엇입니까?",
+    "parameters": {
+      "copy": "copy",
+      "type": "",
+      "how": "how",
+      "shallow": "shallow",
+      "deep": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "객체복사시 객체의 멤버를 1:1로 복사한다. 사본은 원본 객체가 할당 받은 메모리를 공유하는 문제가 발생한다.",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "객체복사시 객체의 멤버를 1:1로 복사한다. 사본은 원본 객체가 할당 받은 메모리를 공유하는 문제가 발생한다."
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/d8b05682-14cf-4d23-947e-16ef77eb5f88",
+      "displayName": "copyIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 63
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
