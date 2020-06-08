@@ -1,0 +1,41 @@
+{
+  "responseId": "0517528b-7e5f-467a-8498-fe8a354783db-b4a98e7e",
+  "queryResult": {
+    "queryText": "소멸자란?",
+    "parameters": {
+      "destructor": "destructor",
+      "dynamicobject": "",
+      "redundancy": "",
+      "order": "",
+      "call": "",
+      "idea": "idea",
+      "why": "",
+      "when": "",
+      "return": "",
+      "how": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "객체가 소멸되는 시점에서 자동으로 호출되는 함수",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "객체가 소멸되는 시점에서 자동으로 호출되는 함수"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/e2db7365-7923-4d77-8e3b-0085819b8f6c",
+      "displayName": "destructorIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 62
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
