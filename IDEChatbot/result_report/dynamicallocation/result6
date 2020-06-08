@@ -1,0 +1,38 @@
+{
+  "responseId": "5728a2b8-dd66-4c87-88cd-637784dfe986-b4a98e7e",
+  "queryResult": {
+    "queryText": "동적할당시에 초기화 하는 방법이 궁금해요.",
+    "parameters": {
+      "when": "",
+      "array": "",
+      "impossible": "",
+      "dynamicallocation": "",
+      "how": "how",
+      "initialization": "initialization",
+      "return": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "데이터타입 *포인터변수=new 데이터타입(초깃값);",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "데이터타입 *포인터변수=new 데이터타입(초깃값);"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/2c0def38-d56f-4294-92f1-9ff466d295cb",
+      "displayName": "dynamicallocationIntent"
+    },
+    "intentDetectionConfidence": 0.583825,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 177
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
