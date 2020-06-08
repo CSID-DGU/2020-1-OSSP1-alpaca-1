@@ -1,0 +1,37 @@
+{
+  "responseId": "3e887760-e927-4323-b31d-93a9ead15a6c-b4a98e7e",
+  "queryResult": {
+    "queryText": "클래스는 어떻게 사용하나요?",
+    "parameters": {
+      "why": "",
+      "how": "how",
+      "mean": "",
+      "abstractclass": "",
+      "idea": "",
+      "class": "class"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "class 키워드 이용",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "class 키워드 이용"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/d28eaa71-1246-4b91-9a48-9582c6682371",
+      "displayName": "classIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 106
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
