@@ -469,6 +469,34 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	else{agent.add(ideaInfo);}
     });
   }
+	function handleinheritance(agent){
+  	const a=agent.parameters.inheritance;
+    const b=agent.parameters.code;
+    const c=agent.parameters.feature;
+    const d=agent.parameters.give;
+    const e=agent.parameters.idea;
+    const f=agent.parameters.multi;
+    const g=agent.parameters.role;
+    const h=agent.parameters.virtual;
+    const i=agent.parameters.declare;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var codeInfo=snapshot.child('answer/inheritance/code').val();
+      	var featureInfo=snapshot.child('answer/inheritance/feature').val();
+        var giveInfo=snapshot.child('answer/inheritance/give').val();
+        var ideaInfo=snapshot.child('answer/inheritance/idea').val();
+        var multicodeInfo=snapshot.child('answer/inheritance/multi/code').val();
+      	var roleInfo=snapshot.child('answer/inheritance/role').val();
+        var virtualideaInfo=snapshot.child('answer/inheritance/virtual/idea').val();
+        var virtualdeclareInfo=snapshot.child('answer/inheritance/virtual/declare').val();
+      if(b=="code"){agent.add(codeInfo);}
+      	else if(c=="feature"){agent.add(featureInfo);}
+      else if(d=="give"){agent.add(giveInfo);}
+      else if(f=="multi"&&b=="code"){agent.add(multicodeInfo);}
+      else if(g=="role"){agent.add(roleInfo);}
+      else if(h=="virtual"&&e=="idea"){agent.add(virtualideaInfo);}
+      else if(h=="virtual"&&i=="declare"){agent.add(virtualdeclareInfo);}
+    });
+  }
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -505,5 +533,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('functionredundancyIntent',handlefunctionredundancy);
   intentMap.set('namespaceIntent',handlenamespace);
   intentMap.set('encapsulationIntent',handleencapsulation);
+  intentMap.set('inheritanceIntent',handleinheritance);
   agent.handleRequest(intentMap);
 });
