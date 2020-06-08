@@ -1,0 +1,33 @@
+{
+  "responseId": "1c0f61b9-60d6-4847-8a69-dce89a2fa370-b4a98e7e",
+  "queryResult": {
+    "queryText": "map이란?",
+    "parameters": {
+      "map": "map",
+      "function": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "('키','값')의 쌍을 원소로 저장하는 제네릭 컨테이너이고 #include<map>를 추가하면 된다.",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "('키','값')의 쌍을 원소로 저장하는 제네릭 컨테이너이고 #include<map>를 추가하면 된다."
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/2fcf39ef-b7a1-4e5a-a54b-e6b4103b9cc3",
+      "displayName": "mapIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 58
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
