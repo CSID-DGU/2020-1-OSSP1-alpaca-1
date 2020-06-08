@@ -1,0 +1,38 @@
+{
+  "responseId": "baa3774c-c0c5-4d34-8f26-33d21c5a3b7f-b4a98e7e",
+  "queryResult": {
+    "queryText": "동적할당한 배열을 반환하고 싶어요.",
+    "parameters": {
+      "array": "array",
+      "initialization": "",
+      "how": "",
+      "impossible": "",
+      "return": "return",
+      "when": "",
+      "dynamicallocation": "dynamicallocation"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "delete []포인터변수; ",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "delete []포인터변수; "
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/2c0def38-d56f-4294-92f1-9ff466d295cb",
+      "displayName": "dynamicallocationIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 277
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
