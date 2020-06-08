@@ -1,0 +1,38 @@
+{
+  "responseId": "66fcbfec-c168-4e13-89e8-6ebff95a0a50-b4a98e7e",
+  "queryResult": {
+    "queryText": "프렌드 함수의 개념",
+    "parameters": {
+      "have": "",
+      "how": "",
+      "when": "",
+      "friend": "friend",
+      "location": "",
+      "idea": "idea",
+      "possible": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "클래스의 멤버함수가 아닌 외부함수, 즉 전역함수나 다른 클래스의 멤버함수",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "클래스의 멤버함수가 아닌 외부함수, 즉 전역함수나 다른 클래스의 멤버함수"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/595c7f3c-5c7a-40af-b584-03346b88039c",
+      "displayName": "friendIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 38
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
