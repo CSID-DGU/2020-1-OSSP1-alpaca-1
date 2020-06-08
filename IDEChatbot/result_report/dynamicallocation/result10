@@ -1,0 +1,38 @@
+{
+  "responseId": "a9ac7c3c-cd96-40fd-9f91-ce01ad8fdfcb-b4a98e7e",
+  "queryResult": {
+    "queryText": "배열의 동적할당은 어떻게 하나요.",
+    "parameters": {
+      "initialization": "",
+      "how": "how",
+      "array": "array",
+      "return": "",
+      "dynamicallocation": "dynamicallocation",
+      "impossible": "",
+      "when": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "데이터타입 *포인터변수=new 데이터타입[배열의 크기];",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "데이터타입 *포인터변수=new 데이터타입[배열의 크기];"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/2c0def38-d56f-4294-92f1-9ff466d295cb",
+      "displayName": "dynamicallocationIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 931
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
