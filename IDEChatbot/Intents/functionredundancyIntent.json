@@ -1,0 +1,227 @@
+{
+  "id": "95f49fa2-6bbe-4dab-b658-f4d63e1f0ba7",
+  "name": "functionredundancyIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "functionredundancy",
+          "dataType": "@functionredundancy",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$functionredundancy",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "ambiguity",
+          "dataType": "@ambiguity",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$ambiguity",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "idea",
+          "dataType": "@idea",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$idea",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "why",
+          "dataType": "@why",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$why",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "relation",
+          "dataType": "@relation",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$relation",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "함수 중복",
+          "userDefined": false,
+          "alias": "functionredundancy",
+          "meta": "@functionredundancy"
+        },
+        {
+          "text": "은 어떤 ",
+          "userDefined": false
+        },
+        {
+          "text": "관계",
+          "userDefined": false,
+          "alias": "relation",
+          "meta": "@relation"
+        },
+        {
+          "text": "들 사이에 ",
+          "userDefined": false
+        },
+        {
+          "text": "일어",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": "나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "함수 중복",
+          "userDefined": false,
+          "alias": "functionredundancy",
+          "meta": "@functionredundancy"
+        },
+        {
+          "text": "을 하는 ",
+          "userDefined": false
+        },
+        {
+          "text": "이유",
+          "userDefined": false,
+          "alias": "why",
+          "meta": "@why"
+        },
+        {
+          "text": "는?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "함수 중복",
+          "userDefined": false,
+          "alias": "functionredundancy",
+          "meta": "@functionredundancy"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "개념",
+          "userDefined": false,
+          "alias": "idea",
+          "meta": "@idea"
+        },
+        {
+          "text": "은?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "함수 중복",
+          "userDefined": false,
+          "alias": "functionredundancy",
+          "meta": "@functionredundancy"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "모호성",
+          "userDefined": false,
+          "alias": "ambiguity",
+          "meta": "@ambiguity"
+        },
+        {
+          "text": "에는 무엇이있나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
