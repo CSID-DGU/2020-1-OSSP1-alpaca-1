@@ -1,0 +1,19 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "functionredundancy",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "functionredundancy",
+      "synonyms": [
+        "functionredundancy",
+        "함수중복",
+        "함수 중복"
+      ]
+    }
+  ],
+  "id": "6789a077-338f-4178-86f5-a47e1e308a58",
+  "isOverridable": false
+}
