@@ -1,0 +1,41 @@
+{
+  "responseId": "88fbf2fa-cfd8-4b99-879b-104eb474814d-b4a98e7e",
+  "queryResult": {
+    "queryText": "소멸자는 리턴이되나요?",
+    "parameters": {
+      "idea": "",
+      "return": "return",
+      "how": "",
+      "call": "",
+      "dynamicobject": "",
+      "destructor": "destructor",
+      "when": "",
+      "order": "",
+      "redundancy": "",
+      "why": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "리턴타입이 없으며 리턴불가",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "리턴타입이 없으며 리턴불가"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/e2db7365-7923-4d77-8e3b-0085819b8f6c",
+      "displayName": "destructorIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 68
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
