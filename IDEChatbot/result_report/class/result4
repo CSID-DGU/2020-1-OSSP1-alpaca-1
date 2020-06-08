@@ -1,0 +1,37 @@
+{
+  "responseId": "66bbd563-d8d7-4d39-87d2-f65f5439230a-b4a98e7e",
+  "queryResult": {
+    "queryText": "추상클래스란?",
+    "parameters": {
+      "abstractclass": "abstractclass",
+      "idea": "idea",
+      "mean": "",
+      "class": "",
+      "how": "",
+      "why": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "최소한 하나의 순수가상함수를 가진 클래스",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "최소한 하나의 순수가상함수를 가진 클래스"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/d28eaa71-1246-4b91-9a48-9582c6682371",
+      "displayName": "classIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 102
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
