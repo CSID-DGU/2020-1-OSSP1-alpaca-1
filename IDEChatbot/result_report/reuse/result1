@@ -1,0 +1,34 @@
+{
+  "responseId": "e3403ffd-53ce-41cd-b054-9d15242fb75f-b4a98e7e",
+  "queryResult": {
+    "queryText": "코드를 재사용하기 위한 방법에는 무엇이 있나요?",
+    "parameters": {
+      "mean": "",
+      "how": "how",
+      "reuse": "reuse"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "클래스, 상속",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "클래스, 상속"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/277072ca-d869-485c-91e0-d07a06ced851",
+      "displayName": "reuseIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 133
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
