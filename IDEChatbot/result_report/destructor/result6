@@ -1,0 +1,41 @@
+{
+  "responseId": "9f61589a-fa9e-431a-9e2e-64c3037af9a2-b4a98e7e",
+  "queryResult": {
+    "queryText": "소멸자의 실행순서는?",
+    "parameters": {
+      "when": "",
+      "order": "order",
+      "how": "",
+      "why": "",
+      "return": "",
+      "call": "",
+      "idea": "",
+      "dynamicobject": "",
+      "redundancy": "",
+      "destructor": "destructor"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "함수가 종료하면, 지역 객체가 생성된 순서의 역순으로 소멸 프로그램이 종료하면, 전역 객체가 생성된 순서의 역순으로 소멸",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "함수가 종료하면, 지역 객체가 생성된 순서의 역순으로 소멸 프로그램이 종료하면, 전역 객체가 생성된 순서의 역순으로 소멸"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/e2db7365-7923-4d77-8e3b-0085819b8f6c",
+      "displayName": "destructorIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 50
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
