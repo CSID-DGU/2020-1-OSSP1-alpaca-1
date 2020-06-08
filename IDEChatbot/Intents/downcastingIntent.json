@@ -1,0 +1,90 @@
+{
+  "id": "a3371312-909d-48b1-9d9c-eec0c9a8e9d5",
+  "name": "downcastingIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "downcasting",
+          "dataType": "@downcasting",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$downcasting",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "idea",
+          "dataType": "@idea",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$idea",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "다운캐스팅",
+          "userDefined": false,
+          "alias": "downcasting",
+          "meta": "@downcasting"
+        },
+        {
+          "text": "이란",
+          "userDefined": false,
+          "alias": "idea",
+          "meta": "@idea"
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
