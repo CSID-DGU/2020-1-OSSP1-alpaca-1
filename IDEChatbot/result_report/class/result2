@@ -1,0 +1,37 @@
+{
+  "responseId": "8a95a6d7-66f3-4036-b625-797517231a54-b4a98e7e",
+  "queryResult": {
+    "queryText": "클래스는 무엇을 의미하나요",
+    "parameters": {
+      "class": "class",
+      "abstractclass": "",
+      "mean": "mean",
+      "idea": "",
+      "how": "",
+      "why": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "객체를 만들어 내기 위해 정의된 설계도",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "객체를 만들어 내기 위해 정의된 설계도"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/d28eaa71-1246-4b91-9a48-9582c6682371",
+      "displayName": "classIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 56
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
