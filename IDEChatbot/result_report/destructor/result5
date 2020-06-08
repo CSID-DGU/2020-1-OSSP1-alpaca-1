@@ -1,0 +1,41 @@
+{
+  "responseId": "41f82430-b9a5-42df-8f4f-6195bea9d2f7-b4a98e7e",
+  "queryResult": {
+    "queryText": "소멸자는 중복이 가능한가요?",
+    "parameters": {
+      "how": "",
+      "order": "",
+      "why": "",
+      "dynamicobject": "",
+      "idea": "",
+      "call": "",
+      "redundancy": "redundancy",
+      "when": "",
+      "destructor": "destructor",
+      "return": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "불가능하며 한클래스내에 하나만 작성가능",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "불가능하며 한클래스내에 하나만 작성가능"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/e2db7365-7923-4d77-8e3b-0085819b8f6c",
+      "displayName": "destructorIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 140
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
