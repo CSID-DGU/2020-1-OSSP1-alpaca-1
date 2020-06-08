@@ -409,6 +409,23 @@ function handlefunctionredundancy(agent){
       else{agent.add(whyInfo);}
        });
   }
+  function handlenamespace(agent){
+  	const a=agent.parameters.namespace;
+    const b=agent.parameters.must;
+    const c=agent.parameters.role;
+    const d=agent.parameters.how;
+    const e=agent.parameters.idea;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var mustInfo=snapshot.child('answer/namespace/must').val();
+      var roleInfo=snapshot.child('answer/namespace/role').val();
+      var howInfo=snapshot.child('answer/namespace/using/how').val();
+      var ideaInfo=snapshot.child('answer/namespace/using/idea').val();
+      if(b=="must"){agent.add(mustInfo);}
+      else if(c=="role"){agent.add(roleInfo);}
+      else if(d=="how"){agent.add(howInfo);}
+      else{agent.add(ideaInfo);}
+    });
+  }
   
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
@@ -443,5 +460,6 @@ function handlefunctionredundancy(agent){
   intentMap.set('copyconstructorIntent',handlecopyconstructor);
   intentMap.set('downcastingIntent',handledowncasting);
   intentMap.set('functionredundancyIntent',handlefunctionredundancy);
+ intentMap.set('namespaceIntent',handlenamespace);
   agent.handleRequest(intentMap);
 });
