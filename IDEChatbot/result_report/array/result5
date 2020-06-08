@@ -1,0 +1,39 @@
+{
+  "responseId": "1a263638-6ebb-4f3f-a481-f0e9ac8f01e1-b4a98e7e",
+  "queryResult": {
+    "queryText": "객체 배열의 초기화 방법에 대해 알려주세요",
+    "parameters": {
+      "destructor": "",
+      "object": "object",
+      "why": "",
+      "array": "array",
+      "initialization": "initialization",
+      "error": "",
+      "relation": "",
+      "declare": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "Circle circleArray[3]={Circle(10),Circle(20),Circle()};",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "Circle circleArray[3]={Circle(10),Circle(20),Circle()};"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/f78245a7-ffd5-4e66-b28b-0f8256c44fa8",
+      "displayName": "arrayIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 59
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
