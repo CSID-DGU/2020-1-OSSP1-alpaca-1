@@ -1,0 +1,519 @@
+{
+  "id": "2c0def38-d56f-4294-92f1-9ff466d295cb",
+  "name": "dynamicallocationIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "array",
+          "dataType": "@array",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$array",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "initialization",
+          "dataType": "@initialization",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$initialization",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "impossible",
+          "dataType": "@impossible",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$impossible",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "return",
+          "dataType": "@return",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$return",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "how",
+          "dataType": "@how",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$how",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "dynamicallocation",
+          "dataType": "@dynamicallocation",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$dynamicallocation",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "when",
+          "dataType": "@when",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$when",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "동적할당",
+          "userDefined": true,
+          "alias": "dynamicallocation",
+          "meta": "@dynamicallocation"
+        },
+        {
+          "text": "을 ",
+          "userDefined": false
+        },
+        {
+          "text": "한",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "배열",
+          "userDefined": false,
+          "alias": "array",
+          "meta": "@array"
+        },
+        {
+          "text": "이",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "초기화",
+          "userDefined": false,
+          "alias": "initialization",
+          "meta": "@initialization"
+        },
+        {
+          "text": "가 ",
+          "userDefined": false
+        },
+        {
+          "text": "불가능",
+          "userDefined": true,
+          "alias": "impossible",
+          "meta": "@impossible"
+        },
+        {
+          "text": "하다고 합니다.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "동적할당",
+          "userDefined": true,
+          "alias": "dynamicallocation",
+          "meta": "@dynamicallocation"
+        },
+        {
+          "text": " 사용은 ",
+          "userDefined": false
+        },
+        {
+          "text": "언제",
+          "userDefined": true,
+          "alias": "when",
+          "meta": "@when"
+        },
+        {
+          "text": "합니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "동적할당",
+          "userDefined": true,
+          "alias": "dynamicallocation",
+          "meta": "@dynamicallocation"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "반환",
+          "userDefined": false,
+          "alias": "return",
+          "meta": "@return"
+        },
+        {
+          "text": "은 ",
+          "userDefined": false
+        },
+        {
+          "text": "어떻게",
+          "userDefined": false,
+          "alias": "how",
+          "meta": "@how"
+        },
+        {
+          "text": " 합니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "동적할당",
+          "userDefined": true,
+          "alias": "dynamicallocation",
+          "meta": "@dynamicallocation"
+        },
+        {
+          "text": "은 ",
+          "userDefined": false
+        },
+        {
+          "text": "언제",
+          "userDefined": true,
+          "alias": "when",
+          "meta": "@when"
+        },
+        {
+          "text": " 사용하나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "동적할당",
+          "userDefined": true,
+          "alias": "dynamicallocation",
+          "meta": "@dynamicallocation"
+        },
+        {
+          "text": "은 ",
+          "userDefined": false
+        },
+        {
+          "text": "어떻게",
+          "userDefined": false,
+          "alias": "how",
+          "meta": "@how"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "반환",
+          "userDefined": false,
+          "alias": "return",
+          "meta": "@return"
+        },
+        {
+          "text": "하나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "동적할당",
+          "userDefined": true,
+          "alias": "dynamicallocation",
+          "meta": "@dynamicallocation"
+        },
+        {
+          "text": "시에 ",
+          "userDefined": false
+        },
+        {
+          "text": "초기화",
+          "userDefined": false,
+          "alias": "initialization",
+          "meta": "@initialization"
+        },
+        {
+          "text": " 하는 ",
+          "userDefined": false
+        },
+        {
+          "text": "방법",
+          "userDefined": false,
+          "alias": "how",
+          "meta": "@how"
+        },
+        {
+          "text": "이",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " 궁금해요.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "동적할당",
+          "userDefined": true,
+          "alias": "dynamicallocation",
+          "meta": "@dynamicallocation"
+        },
+        {
+          "text": "은 ",
+          "userDefined": false
+        },
+        {
+          "text": "어떻게",
+          "userDefined": false,
+          "alias": "how",
+          "meta": "@how"
+        },
+        {
+          "text": " 하나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "동적할당",
+          "userDefined": true,
+          "alias": "dynamicallocation",
+          "meta": "@dynamicallocation"
+        },
+        {
+          "text": "한",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "배열",
+          "userDefined": false,
+          "alias": "array",
+          "meta": "@array"
+        },
+        {
+          "text": "을 ",
+          "userDefined": false
+        },
+        {
+          "text": "반환",
+          "userDefined": false,
+          "alias": "return",
+          "meta": "@return"
+        },
+        {
+          "text": "하고 싶어요.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "배열",
+          "userDefined": false,
+          "alias": "array",
+          "meta": "@array"
+        },
+        {
+          "text": "을 ",
+          "userDefined": false
+        },
+        {
+          "text": "동적할당",
+          "userDefined": true,
+          "alias": "dynamicallocation",
+          "meta": "@dynamicallocation"
+        },
+        {
+          "text": " 했는데 ",
+          "userDefined": false
+        },
+        {
+          "text": "초기화",
+          "userDefined": false,
+          "alias": "initialization",
+          "meta": "@initialization"
+        },
+        {
+          "text": "가 ",
+          "userDefined": false
+        },
+        {
+          "text": "안",
+          "userDefined": true,
+          "alias": "impossible",
+          "meta": "@impossible"
+        },
+        {
+          "text": " 되요.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "배열",
+          "userDefined": false,
+          "alias": "array",
+          "meta": "@array"
+        },
+        {
+          "text": "을 ",
+          "userDefined": false
+        },
+        {
+          "text": "동적할당",
+          "userDefined": true,
+          "alias": "dynamicallocation",
+          "meta": "@dynamicallocation"
+        },
+        {
+          "text": " 하고 싶어요.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
