@@ -330,7 +330,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         }
       	});
   }
-	function handleclass(agent){
+  function handleclass(agent){
   	const a=agent.parameters.class;
     const b=agent.parameters.how;
     const c=agent.parameters.mean;
@@ -347,6 +347,18 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
        else if(d=="why"){agent.add(whyInfo);}
       else{agent.add(meanInfo);}
       	});
+  }
+  
+  function handleconstructor(agent){
+  	const a=agent.parameters.cstructor;
+    const b=agent.parameters.order;
+    const c=agent.parameters.why;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var orderInfo=snapshot.child('answer/constructor/order').val();
+      	var whyInfo=snapshot.child('answer/constructor/why').val();
+      	if(b=="order"){agent.add(orderInfo);}
+      	else if(c=="why"){agent.add(whyInfo);}
+    });
   }
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
@@ -376,5 +388,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('callIntent',handlecall);
   intentMap.set('friendIntent',handlefriend);
   intentMap.set('classIntent',handleclass);
+  intentMap.set('constructorIntent',handleconstructor);
   agent.handleRequest(intentMap);
 });
