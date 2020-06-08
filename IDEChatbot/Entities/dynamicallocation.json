@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "dynamicallocation",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "dynamicallocation",
+      "synonyms": [
+        "dynamicallocation",
+        "동적할당"
+      ]
+    }
+  ],
+  "id": "e6f2bdb7-4284-434c-af00-5b2b7d2ebafa",
+  "isOverridable": false
+}
