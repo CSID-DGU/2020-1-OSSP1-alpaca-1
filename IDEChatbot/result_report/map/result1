@@ -1,0 +1,33 @@
+{
+  "responseId": "85912374-bc39-47bd-9bed-c739b10497ab-b4a98e7e",
+  "queryResult": {
+    "queryText": "map에 함수에는 무엇이 있습니까?",
+    "parameters": {
+      "map": "map",
+      "function": "function"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "insert(pair<> &element) : 맵에 '키'와 '값'으로 구성된 pair객체 element 삽입 at(key_type&key) : 맵에서 '키' 값에 해당하는 '값' 리턴 begin() : 맵의 첫번째 원소에 대한 참조 리턴 end() : 맵의 끝(마지막 원소 다음)을 가리키는 참조 리턴 empty() : 맵이 비어있으면 true 리턴 find(key_type&key) : 맵에서 '키' 값에 해당하는 원소를 가리키는 iterator리턴 erase(iterator it) : 맵에서 it가 가리키는 원소 삭제 size() : 맵에 들어있는 원소의 개수 리턴 operator[key_type& key]() : 맵에서 '키' 값에 해당하는 원소를 찾아 '값'리턴 operator=() : 맵 치환(복사)",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "insert(pair<> &element) : 맵에 '키'와 '값'으로 구성된 pair객체 element 삽입 at(key_type&key) : 맵에서 '키' 값에 해당하는 '값' 리턴 begin() : 맵의 첫번째 원소에 대한 참조 리턴 end() : 맵의 끝(마지막 원소 다음)을 가리키는 참조 리턴 empty() : 맵이 비어있으면 true 리턴 find(key_type&key) : 맵에서 '키' 값에 해당하는 원소를 가리키는 iterator리턴 erase(iterator it) : 맵에서 it가 가리키는 원소 삭제 size() : 맵에 들어있는 원소의 개수 리턴 operator[key_type& key]() : 맵에서 '키' 값에 해당하는 원소를 찾아 '값'리턴 operator=() : 맵 치환(복사)"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/2fcf39ef-b7a1-4e5a-a54b-e6b4103b9cc3",
+      "displayName": "mapIntent"
+    },
+    "intentDetectionConfidence": 0.7388066,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 61
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
