@@ -1,0 +1,41 @@
+{
+  "responseId": "fa37dfb9-a8ba-4e24-b2e9-eff5c41ffc5f-b4a98e7e",
+  "queryResult": {
+    "queryText": "소멸자는 어떻게 호출되나요?",
+    "parameters": {
+      "idea": "",
+      "order": "",
+      "call": "call",
+      "dynamicobject": "",
+      "destructor": "destructor",
+      "redundancy": "",
+      "why": "",
+      "how": "how",
+      "when": "",
+      "return": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "한번만 자동호출",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "한번만 자동호출"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/e2db7365-7923-4d77-8e3b-0085819b8f6c",
+      "displayName": "destructorIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 42
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
