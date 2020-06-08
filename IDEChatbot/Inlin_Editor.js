@@ -392,6 +392,24 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	agent.add(ideaInfo);
     });
   }
+function handlefunctionredundancy(agent){
+    const a=agent.parameters.functionredundancy;
+    const b=agent.parameters.idea;
+    const c=agent.parameters.relation;
+    const d=agent.parameters.when;
+    const e=agent.parameters.why;
+    return admin.database().ref().once("value").then((snapshot)=>{
+      var ideaInfo=snapshot.child('answer/functionredundancy/idea').val();
+      var relationInfo=snapshot.child('answer/functionredundancy/relation').val();
+      var whenInfo=snapshot.child('answer/functionredundancy/when').val();
+      var whyInfo=snapshot.child('answer/functionredundancy/why').val();
+      if(b=="idea"){agent.add(ideaInfo);}
+      else if(c=="relation"){agent.add(relationInfo);}
+      else if(d=="when"){agent.add(whenInfo);}
+      else{agent.add(whyInfo);}
+       });
+  }
+  
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -424,5 +442,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('copyIntent',handlecopy);
   intentMap.set('copyconstructorIntent',handlecopyconstructor);
   intentMap.set('downcastingIntent',handledowncasting);
+  intentMap.set('functionredundancyIntent',handlefunctionredundancy);
   agent.handleRequest(intentMap);
 });
