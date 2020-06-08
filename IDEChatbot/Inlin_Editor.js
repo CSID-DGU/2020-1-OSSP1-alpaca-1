@@ -360,6 +360,22 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	else if(c=="why"){agent.add(whyInfo);}
     });
   }
+  
+  function handlecopy(agent){
+   	const a=agent.parameters.copy;
+    const b=agent.parameters.type;
+    const c=agent.parameters.deep;
+    const d=agent.parameters.shallow;
+    const e=agent.parameters.how;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var deepInfo=snapshot.child('answer/copy/deep/how').val();
+      	var shallowInfo=snapshot.child('answer/copy/shallow/how').val();
+      	var typeInfo=snapshot.child('answer/copy/type').val();
+      	if(c=="deep"&&e=="how"){agent.add(deepInfo);}
+      	else if(d=="shallow"&&e=="how"){agent.add(shallowInfo);}
+      	else {agent.add(typeInfo);}
+    });
+  }
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -389,5 +405,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('friendIntent',handlefriend);
   intentMap.set('classIntent',handleclass);
   intentMap.set('constructorIntent',handleconstructor);
+  intentMap.set('copyIntent',handlecopy);
   agent.handleRequest(intentMap);
 });
