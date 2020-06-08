@@ -1,0 +1,41 @@
+{
+  "responseId": "0f73ea2d-4152-4a88-b6b5-39a738a06245-b4a98e7e",
+  "queryResult": {
+    "queryText": "소멸자는 왜필요한가요?",
+    "parameters": {
+      "idea": "",
+      "how": "",
+      "redundancy": "",
+      "order": "",
+      "dynamicobject": "",
+      "call": "",
+      "when": "",
+      "return": "",
+      "destructor": "destructor",
+      "why": "why"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "객체가 사라질때 필요한 마무리 작업을 하기 위해 필요",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "객체가 사라질때 필요한 마무리 작업을 하기 위해 필요"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/e2db7365-7923-4d77-8e3b-0085819b8f6c",
+      "displayName": "destructorIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 69
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
