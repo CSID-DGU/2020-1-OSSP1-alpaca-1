@@ -1,0 +1,34 @@
+{
+  "responseId": "32bb3437-3052-4fb7-ad6c-0fd436cb0ee2-2db64ae0",
+  "queryResult": {
+    "queryText": "ostream",
+    "parameters": {
+      "iostream": "ostream",
+      "function": "",
+      "stream": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "ostream& put(char ch)-ch의 문자를 스트림에 출력 ostream& write(char* str,int n)-str 배열에 있는n개의 문자를 스트림에 출력 ostream& flush()-현재 스트림 버퍼에 있는 내용 강제 출력 ",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "ostream& put(char ch)-ch의 문자를 스트림에 출력 ostream& write(char* str,int n)-str 배열에 있는n개의 문자를 스트림에 출력 ostream& flush()-현재 스트림 버퍼에 있는 내용 강제 출력 "
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/675d7e6f-3259-4558-9023-ab7e413ac2e5",
+      "displayName": "streamIntent"
+    },
+    "intentDetectionConfidence": 0.79557776,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 91
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
