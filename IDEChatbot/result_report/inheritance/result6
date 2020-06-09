@@ -1,0 +1,40 @@
+{
+  "responseId": "3a73c7f8-c99c-4c6d-a9f0-f2e5059e536d-2db64ae0",
+  "queryResult": {
+    "queryText": "상속의 특징은?",
+    "parameters": {
+      "give": "",
+      "multi": "",
+      "declare": "",
+      "feature": "feature",
+      "code": "",
+      "role": "",
+      "idea": "",
+      "virtual": "",
+      "inheritance": "inheritance"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "추상화,캡슐화와 더불어 객체지향 프로그래밍을 구성하는 특징",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "추상화,캡슐화와 더불어 객체지향 프로그래밍을 구성하는 특징"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/c514b3d2-5257-4a6a-b06c-2bf2150d7062",
+      "displayName": "inheritanceIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 259
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
