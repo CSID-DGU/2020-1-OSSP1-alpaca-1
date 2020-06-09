@@ -1,0 +1,37 @@
+{
+  "responseId": "ff6b4784-4aaa-4cd8-80f5-dc4584eff5f8-2db64ae0",
+  "queryResult": {
+    "queryText": "using은 어떻게 쓰이나요?",
+    "parameters": {
+      "using": "using",
+      "namespace": "",
+      "idea": "",
+      "role": "",
+      "how": "how",
+      "must": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "using std; 처럼 namespace 지칭",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "using std; 처럼 namespace 지칭"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/018b72bc-104f-452b-b458-070a21a7a495",
+      "displayName": "namespaceIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 189
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
