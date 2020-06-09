@@ -1,0 +1,34 @@
+{
+  "responseId": "7f96978c-be99-4ea6-bc22-e8441963337c-2db64ae0",
+  "queryResult": {
+    "queryText": "istream에 멤버함수?",
+    "parameters": {
+      "iostream": "istream",
+      "stream": "",
+      "function": "function"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "int get():입력 스트림에서 문자를 읽어 리턴, 오류나 EOF를 만나면 -1(EOF)리턴 istream& get(char& ch): 입력 스트림에서 문자를 읽어 ch에 저장, 현재 입력 스트림 객체(*this)의 참조.",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "int get():입력 스트림에서 문자를 읽어 리턴, 오류나 EOF를 만나면 -1(EOF)리턴 istream& get(char& ch): 입력 스트림에서 문자를 읽어 ch에 저장, 현재 입력 스트림 객체(*this)의 참조."
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/675d7e6f-3259-4558-9023-ab7e413ac2e5",
+      "displayName": "streamIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 246
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
