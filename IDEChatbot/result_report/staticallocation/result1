@@ -1,0 +1,32 @@
+{
+  "responseId": "c631b775-b813-4b96-a092-df917923d708-2db64ae0",
+  "queryResult": {
+    "queryText": "동적할당 이란?",
+    "parameters": {
+      "staticallocation": "staticallocation"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "변수선언을 통해 필요한 메모리 할당",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "변수선언을 통해 필요한 메모리 할당"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/339fa47e-752d-4beb-84b4-6206b47c258d",
+      "displayName": "staticallocationIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 75
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
