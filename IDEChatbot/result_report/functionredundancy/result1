@@ -1,0 +1,36 @@
+{
+  "responseId": "2f1b6bd8-b0e3-4f22-9dbb-e29d1468964d-2db64ae0",
+  "queryResult": {
+    "queryText": "함수 중복을 하는 이유는?",
+    "parameters": {
+      "ambiguity": "",
+      "idea": "",
+      "functionredundancy": "functionredundancy",
+      "why": "why",
+      "relation": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "객체 생성시, 매개변수를 통해 다양한 형태의 초깃값을 전달",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "객체 생성시, 매개변수를 통해 다양한 형태의 초깃값을 전달"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/95f49fa2-6bbe-4dab-b658-f4d63e1f0ba7",
+      "displayName": "functionredundancyIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 400
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
