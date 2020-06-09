@@ -1,0 +1,36 @@
+{
+  "responseId": "ba464a86-b06a-4a52-af06-a028f4e6946a-2db64ae0",
+  "queryResult": {
+    "queryText": "함수 중복은 어떤 관계들 사이에 일어나요?",
+    "parameters": {
+      "why": "",
+      "idea": "",
+      "relation": "relation",
+      "ambiguity": "",
+      "functionredundancy": "functionredundancy"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "함수들사이와 클래스의 멤버함수들 사이, 상속 관계에 있는 기본클래스와 파생클래스의 멤버함수들 사이",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "함수들사이와 클래스의 멤버함수들 사이, 상속 관계에 있는 기본클래스와 파생클래스의 멤버함수들 사이"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/95f49fa2-6bbe-4dab-b658-f4d63e1f0ba7",
+      "displayName": "functionredundancyIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 364
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
