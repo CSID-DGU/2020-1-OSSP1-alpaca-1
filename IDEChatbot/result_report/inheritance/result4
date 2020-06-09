@@ -1,0 +1,40 @@
+{
+  "responseId": "bf240df7-c92d-4ae4-939a-78d8cec55e2e-2db64ae0",
+  "queryResult": {
+    "queryText": "다중상속의 코드예시",
+    "parameters": {
+      "inheritance": "",
+      "virtual": "",
+      "multi": "multi",
+      "give": "",
+      "role": "",
+      "code": "code",
+      "declare": "",
+      "idea": "",
+      "feature": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "class Point{}; class ColorPoint:public Point{};",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "class Point{}; class ColorPoint:public Point{};"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/c514b3d2-5257-4a6a-b06c-2bf2150d7062",
+      "displayName": "inheritanceIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 961
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
