@@ -1,0 +1,37 @@
+{
+  "responseId": "819b4247-e495-4951-ad70-5a00c4580eff-2db64ae0",
+  "queryResult": {
+    "queryText": "변수의 종류에 대해 알려주세요",
+    "parameters": {
+      "Variable": "Variable",
+      "idea": "",
+      "default": "",
+      "exam": "",
+      "advantage": "",
+      "type": "type"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "포인터변수 매개변수 지역변수 참조변수",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "포인터변수 매개변수 지역변수 참조변수"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/18ad13dd-c0da-412a-ae29-dc02ededabca",
+      "displayName": "variableIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 229
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
