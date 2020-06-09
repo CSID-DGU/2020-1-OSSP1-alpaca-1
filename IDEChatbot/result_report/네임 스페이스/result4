@@ -1,0 +1,37 @@
+{
+  "responseId": "0bd66568-1dd3-4411-9b8b-3cb77dc22ef3-2db64ae0",
+  "queryResult": {
+    "queryText": "using의 개념은?",
+    "parameters": {
+      "namespace": "",
+      "how": "",
+      "idea": "idea",
+      "using": "using",
+      "role": "",
+      "must": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "namespace를 선언된 위치로 모두 끌고오는 명령",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "namespace를 선언된 위치로 모두 끌고오는 명령"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/018b72bc-104f-452b-b458-070a21a7a495",
+      "displayName": "namespaceIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 308
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
