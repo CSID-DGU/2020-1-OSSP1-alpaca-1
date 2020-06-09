@@ -1,0 +1,40 @@
+{
+  "responseId": "e3c625d6-ff92-4799-805c-b0795d7e0511-2db64ae0",
+  "queryResult": {
+    "queryText": "가상상속은 어떤것을 선언해야 하나요?",
+    "parameters": {
+      "give": "",
+      "feature": "",
+      "multi": "",
+      "code": "",
+      "virtual": "virtual",
+      "idea": "",
+      "declare": "declare",
+      "inheritance": "",
+      "role": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "기본클래스 앞에 virtual",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "기본클래스 앞에 virtual"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/c514b3d2-5257-4a6a-b06c-2bf2150d7062",
+      "displayName": "inheritanceIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 242
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
