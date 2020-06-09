@@ -1,0 +1,34 @@
+{
+  "responseId": "dca0fea1-fb03-4b9e-958b-d311c37b3810-2db64ae0",
+  "queryResult": {
+    "queryText": "stream이란?",
+    "parameters": {
+      "function": "",
+      "stream": "stream",
+      "iostream": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "데이터의 흐름 혹은 데이터를 전송하는 소프트웨어 모듈",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "데이터의 흐름 혹은 데이터를 전송하는 소프트웨어 모듈"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/675d7e6f-3259-4558-9023-ab7e413ac2e5",
+      "displayName": "streamIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 308
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
