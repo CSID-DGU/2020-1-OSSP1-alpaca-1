@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "share",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "share",
+      "synonyms": [
+        "share",
+        "공유"
+      ]
+    }
+  ],
+  "id": "81097813-b8dd-4348-99c0-143f7d7d77b7",
+  "isOverridable": false
+}
