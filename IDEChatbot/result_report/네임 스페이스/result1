@@ -1,0 +1,37 @@
+{
+  "responseId": "b7449347-7cc2-4717-838f-537c1e44a8c8-2db64ae0",
+  "queryResult": {
+    "queryText": "namespace에서 금지된 것은?",
+    "parameters": {
+      "how": "",
+      "using": "",
+      "namespace": "namespace",
+      "idea": "",
+      "role": "",
+      "must": "must"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "1. 네임스페이스 using 헤더파일금지 2. #include 전에 using 금지",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "1. 네임스페이스 using 헤더파일금지 2. #include 전에 using 금지"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/018b72bc-104f-452b-b458-070a21a7a495",
+      "displayName": "namespaceIntent"
+    },
+    "intentDetectionConfidence": 0.79139394,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 275
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
