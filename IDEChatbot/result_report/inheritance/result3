@@ -1,0 +1,40 @@
+{
+  "responseId": "25404f99-a2a9-4e6d-8ad2-8332192e7372-2db64ae0",
+  "queryResult": {
+    "queryText": "상속의 역할은?",
+    "parameters": {
+      "inheritance": "inheritance",
+      "feature": "",
+      "idea": "",
+      "virtual": "",
+      "give": "",
+      "code": "",
+      "role": "role",
+      "declare": "",
+      "multi": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "클래스간의 계층적 관계 구성",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "클래스간의 계층적 관계 구성"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/c514b3d2-5257-4a6a-b06c-2bf2150d7062",
+      "displayName": "inheritanceIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 119
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
