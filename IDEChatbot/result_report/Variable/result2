@@ -1,0 +1,37 @@
+{
+  "responseId": "6fa17984-6b95-425f-ba0d-4edddf09b14e-2db64ae0",
+  "queryResult": {
+    "queryText": "default변수가 뭐에요?",
+    "parameters": {
+      "idea": "idea",
+      "type": "",
+      "Variable": "",
+      "advantage": "",
+      "exam": "",
+      "default": "default"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "매개변수에 값이 넘어오지 않는 경우 디폴트 값을 받도록 선언된 매개변수. 매개변수=디폴트값 형태로 선언",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "매개변수에 값이 넘어오지 않는 경우 디폴트 값을 받도록 선언된 매개변수. 매개변수=디폴트값 형태로 선언"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/18ad13dd-c0da-412a-ae29-dc02ededabca",
+      "displayName": "variableIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 249
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
