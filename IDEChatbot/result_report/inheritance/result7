@@ -1,0 +1,40 @@
+{
+  "responseId": "e9617699-bebe-4fbf-aa0a-6c49587da079-2db64ae0",
+  "queryResult": {
+    "queryText": "상속의 코드예시",
+    "parameters": {
+      "virtual": "",
+      "feature": "",
+      "idea": "",
+      "role": "",
+      "declare": "",
+      "inheritance": "inheritance",
+      "multi": "",
+      "code": "code",
+      "give": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "class Point{}; class ColorPoint:public Point{};",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "class Point{}; class ColorPoint:public Point{};"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/c514b3d2-5257-4a6a-b06c-2bf2150d7062",
+      "displayName": "inheritanceIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 351
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
