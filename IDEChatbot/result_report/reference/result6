@@ -1,0 +1,38 @@
+{
+  "responseId": "616aa48e-5a13-47a8-bb1e-c6979408f4fe-2db64ae0",
+  "queryResult": {
+    "queryText": "참조란?",
+    "parameters": {
+      "Variable": [],
+      "share": "",
+      "space": "",
+      "parameter": "",
+      "reference": "reference",
+      "error": "",
+      "return": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "가리킨다는 뜻으로 이미 존재하는 객체나 변수에 대한 별명",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "가리킨다는 뜻으로 이미 존재하는 객체나 변수에 대한 별명"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/ea8e9c4a-df06-485d-8c4e-68cfd9cf971d",
+      "displayName": "referenceIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 274
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
