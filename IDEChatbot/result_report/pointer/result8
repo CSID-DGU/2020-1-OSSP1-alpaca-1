@@ -1,0 +1,41 @@
+{
+  "responseId": "b64b57c4-6b6c-46de-8e66-d1ab8d3b0483-2db64ae0",
+  "queryResult": {
+    "queryText": "객체포인터에서 에러가 발생합니다.",
+    "parameters": {
+      "role": "",
+      "save": "",
+      "call": "",
+      "why": "",
+      "pointer": "pointer",
+      "array": "",
+      "object": "object",
+      "how": "",
+      "Variable": "",
+      "error": "error"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "초기화 되지 않으면 오류발생",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "초기화 되지 않으면 오류발생"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/a6c9de91-3678-43c4-9eb8-f1844babcdaf",
+      "displayName": "pointerIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 274
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
