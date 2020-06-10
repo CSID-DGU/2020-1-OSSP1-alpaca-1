@@ -524,6 +524,40 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     });
   }
   
+  function handlepointer(agent){
+  	const a=agent.parameters.error;
+    const b=agent.parameters.pointer;
+    const c=agent.parameters.object;
+    const d=agent.parameters.array;
+    const e=agent.parameters.how;
+    const f=agent.parameters.save;
+    const g=agent.parameters.call;
+    const h=agent.parameters.Variable;
+    const i=agent.parameters.role;
+    const j=agent.parameters.why;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var o_e=snapshot.child('answer/pointer/object/error').val();
+      	var o_n=snapshot.child('answer/pointer/object/name').val();
+      	var o_a_h=snapshot.child('answer/pointer/object/use/array/how').val();
+      	var s=snapshot.child('answer/pointer/save').val();
+      	var v_c=snapshot.child('answer/pointer/variable/call').val();
+      	var v_r=snapshot.child('answer/pointer/variable/role').val();
+      	var v_w=snapshot.child('answer/pointer/variable/why').val();
+      	if(c=="object"){
+        	if(d=="array"){
+            	if(e=="how"){agent.add(o_a_h);}
+            }
+          	else if(a=="error"){agent.add(o_e);}
+        }
+      	else if(f=="save"){agent.add(s);}
+      	else if(h=="Variable"){
+        	if(g=="call"){agent.add(v_c);}
+          	else if(i=="role"){agent.add(v_r);}
+          	else if(j=="why"){agent.add(v_w);}
+        }
+    });
+  }
+  
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -562,5 +596,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('encapsulationIntent',handleencapsulation);
   intentMap.set('inheritanceIntent',handleinheritance);
   intentMap.set('referenceIntent',handlereference);
+  intentMap.set('pointerIntent',handlepointer);
   agent.handleRequest(intentMap);
 });
