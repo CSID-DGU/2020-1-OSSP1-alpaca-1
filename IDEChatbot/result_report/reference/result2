@@ -1,0 +1,38 @@
+{
+  "responseId": "9cc5c550-d58e-4be7-af45-1670a522b248-2db64ae0",
+  "queryResult": {
+    "queryText": "참조 매개변수를 활용하면 공간을 할당하나요?",
+    "parameters": {
+      "return": "",
+      "reference": "reference",
+      "parameter": "parameter",
+      "share": "",
+      "space": "space",
+      "error": "",
+      "Variable": []
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "이름만생기고 공간할당을 하지 않는다",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "이름만생기고 공간할당을 하지 않는다"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/ea8e9c4a-df06-485d-8c4e-68cfd9cf971d",
+      "displayName": "referenceIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 279
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
