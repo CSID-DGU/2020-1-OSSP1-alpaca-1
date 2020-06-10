@@ -1,0 +1,353 @@
+{
+  "id": "ea8e9c4a-df06-485d-8c4e-68cfd9cf971d",
+  "name": "referenceIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "reference",
+          "dataType": "@reference",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$reference",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "Variable",
+          "dataType": "@Variable",
+          "isList": true,
+          "required": false,
+          "prompts": [],
+          "value": "$Variable",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "return",
+          "dataType": "@return",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$return",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "parameter",
+          "dataType": "@parameter",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$parameter",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "share",
+          "dataType": "@share",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$share",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "space",
+          "dataType": "@space",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$space",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "error",
+          "dataType": "@error",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$error",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "참조",
+          "userDefined": false,
+          "alias": "reference",
+          "meta": "@reference"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "매개변수",
+          "userDefined": false,
+          "alias": "parameter",
+          "meta": "@parameter"
+        },
+        {
+          "text": "는 어떤 상황에서 ",
+          "userDefined": false
+        },
+        {
+          "text": "오류",
+          "userDefined": true,
+          "alias": "error",
+          "meta": "@error"
+        },
+        {
+          "text": "가 발생합니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "참조",
+          "userDefined": false,
+          "alias": "reference",
+          "meta": "@reference"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "매개변수",
+          "userDefined": false,
+          "alias": "parameter",
+          "meta": "@parameter"
+        },
+        {
+          "text": "를 활용하면 ",
+          "userDefined": false
+        },
+        {
+          "text": "공간",
+          "userDefined": true,
+          "alias": "space",
+          "meta": "@space"
+        },
+        {
+          "text": "을 할당하나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "참조",
+          "userDefined": false,
+          "alias": "reference",
+          "meta": "@reference"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "매개변수",
+          "userDefined": true,
+          "alias": "parameter",
+          "meta": "@parameter"
+        },
+        {
+          "text": "는 실",
+          "userDefined": false
+        },
+        {
+          "text": "인자",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "변수",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " 공간을 ",
+          "userDefined": false
+        },
+        {
+          "text": "공유",
+          "userDefined": true,
+          "alias": "share",
+          "meta": "@share"
+        },
+        {
+          "text": "하나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "참조",
+          "userDefined": false,
+          "alias": "reference",
+          "meta": "@reference"
+        },
+        {
+          "text": "도 ",
+          "userDefined": false
+        },
+        {
+          "text": "반환",
+          "userDefined": true,
+          "alias": "return",
+          "meta": "@return"
+        },
+        {
+          "text": "이",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " 가능한가요?",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "참조",
+          "userDefined": true,
+          "alias": "reference",
+          "meta": "@reference"
+        },
+        {
+          "text": "변수",
+          "userDefined": true,
+          "alias": "Variable",
+          "meta": "@Variable"
+        },
+        {
+          "text": "란",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "참조",
+          "userDefined": true,
+          "alias": "reference",
+          "meta": "@reference"
+        },
+        {
+          "text": "란",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": "?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
