@@ -1,0 +1,452 @@
+{
+  "id": "a6c9de91-3678-43c4-9eb8-f1844babcdaf",
+  "name": "pointerIntent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "error",
+          "dataType": "@error",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$error",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "pointer",
+          "dataType": "@pointer",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$pointer",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "object",
+          "dataType": "@object",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$object",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "array",
+          "dataType": "@array",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$array",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "how",
+          "dataType": "@how",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$how",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "save",
+          "dataType": "@save",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$save",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "call",
+          "dataType": "@call",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$call",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "Variable",
+          "dataType": "@Variable",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$Variable",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "role",
+          "dataType": "@role",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$role",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "why",
+          "dataType": "@why",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$why",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "포인터",
+          "userDefined": false,
+          "alias": "pointer",
+          "meta": "@pointer"
+        },
+        {
+          "text": "를 사용하면 기존의 ",
+          "userDefined": false
+        },
+        {
+          "text": "저장",
+          "userDefined": false,
+          "alias": "save",
+          "meta": "@save"
+        },
+        {
+          "text": " 방식과 차이가 있나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "포인터",
+          "userDefined": false,
+          "alias": "pointer",
+          "meta": "@pointer"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "변수",
+          "userDefined": true,
+          "alias": "Variable",
+          "meta": "@Variable"
+        },
+        {
+          "text": "는 ",
+          "userDefined": false
+        },
+        {
+          "text": "왜",
+          "userDefined": true,
+          "alias": "why",
+          "meta": "@why"
+        },
+        {
+          "text": " 사용하나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "포인터",
+          "userDefined": false,
+          "alias": "pointer",
+          "meta": "@pointer"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "변수",
+          "userDefined": true,
+          "alias": "Variable",
+          "meta": "@Variable"
+        },
+        {
+          "text": "의 ",
+          "userDefined": false
+        },
+        {
+          "text": "역할",
+          "userDefined": true,
+          "alias": "role",
+          "meta": "@role"
+        },
+        {
+          "text": "은 무엇인가요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "포인터",
+          "userDefined": false,
+          "alias": "pointer",
+          "meta": "@pointer"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "변수",
+          "userDefined": true,
+          "alias": "Variable",
+          "meta": "@Variable"
+        },
+        {
+          "text": "는 어떻게 ",
+          "userDefined": false
+        },
+        {
+          "text": "호출",
+          "userDefined": true,
+          "alias": "call",
+          "meta": "@call"
+        },
+        {
+          "text": "하나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "포인터",
+          "userDefined": false,
+          "alias": "pointer",
+          "meta": "@pointer"
+        },
+        {
+          "text": "는 어떻게 ",
+          "userDefined": false
+        },
+        {
+          "text": "저장",
+          "userDefined": true,
+          "alias": "save",
+          "meta": "@save"
+        },
+        {
+          "text": "되나요",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "객체",
+          "userDefined": true,
+          "alias": "object",
+          "meta": "@object"
+        },
+        {
+          "text": "배열",
+          "userDefined": true,
+          "alias": "array",
+          "meta": "@array"
+        },
+        {
+          "text": "에서 ",
+          "userDefined": false
+        },
+        {
+          "text": "어떻게",
+          "userDefined": true,
+          "alias": "how",
+          "meta": "@how"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "포인터",
+          "userDefined": false,
+          "alias": "pointer",
+          "meta": "@pointer"
+        },
+        {
+          "text": "를 사용하나요?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "객체",
+          "userDefined": true,
+          "alias": "object",
+          "meta": "@object"
+        },
+        {
+          "text": "포인터",
+          "userDefined": true,
+          "alias": "pointer",
+          "meta": "@pointer"
+        },
+        {
+          "text": "를 사용하는데 ",
+          "userDefined": false
+        },
+        {
+          "text": "에러",
+          "userDefined": false,
+          "alias": "error",
+          "meta": "@error"
+        },
+        {
+          "text": "가 발생하는 이유가 무엇입니까?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "객체",
+          "userDefined": true,
+          "alias": "object",
+          "meta": "@object"
+        },
+        {
+          "text": "포인터",
+          "userDefined": true,
+          "alias": "pointer",
+          "meta": "@pointer"
+        },
+        {
+          "text": "에서 ",
+          "userDefined": false
+        },
+        {
+          "text": "에러",
+          "userDefined": false,
+          "alias": "error",
+          "meta": "@error"
+        },
+        {
+          "text": "가 발생합니다.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": null,
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
