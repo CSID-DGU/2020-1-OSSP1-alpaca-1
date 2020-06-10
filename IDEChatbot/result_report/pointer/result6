@@ -1,0 +1,41 @@
+{
+  "responseId": "477f670f-70ba-4d4d-872c-b3f6a6df5066-2db64ae0",
+  "queryResult": {
+    "queryText": "객체배열에서 어떻게 포인터를 사용하나요?",
+    "parameters": {
+      "array": "array",
+      "Variable": "",
+      "how": "how",
+      "why": "",
+      "role": "",
+      "save": "",
+      "object": "object",
+      "error": "",
+      "pointer": "pointer",
+      "call": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "1: 포인터 p를 사용. 객체처럼 접근 2: 배열의 이름을 포인터로 사용 3: 포인터 p의 정수연산이용",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "1: 포인터 p를 사용. 객체처럼 접근 2: 배열의 이름을 포인터로 사용 3: 포인터 p의 정수연산이용"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/a6c9de91-3678-43c4-9eb8-f1844babcdaf",
+      "displayName": "pointerIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 301
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
