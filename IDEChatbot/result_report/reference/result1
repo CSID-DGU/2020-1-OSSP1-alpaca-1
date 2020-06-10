@@ -1,0 +1,38 @@
+{
+  "responseId": "6de0669f-d1f5-4d4a-8085-f3cebd792f85-2db64ae0",
+  "queryResult": {
+    "queryText": "참조 매개변수는 어떤 상황에서 오류가 발생합니까?",
+    "parameters": {
+      "reference": "reference",
+      "Variable": [],
+      "error": "error",
+      "return": "",
+      "parameter": "parameter",
+      "space": "",
+      "share": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "초기화 없을시",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "초기화 없을시"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/ea8e9c4a-df06-485d-8c4e-68cfd9cf971d",
+      "displayName": "referenceIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 1304
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
