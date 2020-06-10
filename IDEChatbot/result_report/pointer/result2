@@ -1,0 +1,41 @@
+{
+  "responseId": "db834e0c-2717-4a1d-acc7-0478bcd2d8ab-2db64ae0",
+  "queryResult": {
+    "queryText": "포인터 변수는 왜 사용하나요?",
+    "parameters": {
+      "save": "",
+      "role": "",
+      "call": "",
+      "pointer": "pointer",
+      "why": "why",
+      "error": "",
+      "Variable": "Variable",
+      "how": "",
+      "object": "",
+      "array": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "객체를 다루기 위해서",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "객체를 다루기 위해서"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/a6c9de91-3678-43c4-9eb8-f1844babcdaf",
+      "displayName": "pointerIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 1458
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
