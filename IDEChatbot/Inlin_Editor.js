@@ -465,11 +465,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     return admin.database().ref().once("value").then((snapshot)=>{
     	var ideaInfo=snapshot.child('answer/encapsulation/idea').val();
       	var howInfo=snapshot.child('answer/encapsulation/how').val();
-      	if(b!=""){agent.add(howInfo);}
+      	if(b=="how"){agent.add(howInfo);}
       	else{agent.add(ideaInfo);}
     });
   }
-	function handleinheritance(agent){
+  function handleinheritance(agent){
   	const a=agent.parameters.inheritance;
     const b=agent.parameters.code;
     const c=agent.parameters.feature;
@@ -497,6 +497,33 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       else if(h=="virtual"&&i=="declare"){agent.add(virtualdeclareInfo);}
     });
   }
+  
+  function handlereference(agent){
+  	const a=agent.parameters.reference;
+    const b=agent.parameters.Variable;
+    const c=agent.parameters.return;
+    const d=agent.parameters.parameter;
+    const e=agent.parameters.share;
+    const f=agent.parameters.space;
+    const g=agent.parameters.error;
+    return admin.database().ref().once("value").then((snapshot)=>{
+    	var ideaInfo=snapshot.child('answer/reference/idea').val();
+      	var errorInfo=snapshot.child('answer/reference/parameter/error').val();
+      	var shareInfo=snapshot.child('answer/reference/parameter/share').val();
+      	var spaceInfo=snapshot.child('answer/reference/parameter/space').val();
+      	var returnInfo=snapshot.child('answer/reference/return/exam').val();
+      	var variableInfo=snapshot.child('answer/reference/variable').val();
+      	if(d=="parameter"){
+      		if(g=="error"){agent.add(errorInfo);}
+      		else if(e=="share"){agent.add(shareInfo);}
+      		else if(f=="space"){agent.add(spaceInfo);}
+        }
+      	else if(c=="return"){agent.add(returnInfo);}
+      	else if(b=="Variable"){agent.add(variableInfo);}
+      	else agent.add(ideaInfo);
+    });
+  }
+  
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
@@ -534,5 +561,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('namespaceIntent',handlenamespace);
   intentMap.set('encapsulationIntent',handleencapsulation);
   intentMap.set('inheritanceIntent',handleinheritance);
+  intentMap.set('referenceIntent',handlereference);
   agent.handleRequest(intentMap);
 });
