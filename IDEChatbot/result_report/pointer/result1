@@ -1,0 +1,41 @@
+{
+  "responseId": "f17365ee-3aa9-4928-b3a9-d87ad8c4a824-2db64ae0",
+  "queryResult": {
+    "queryText": "포인터를 사용하면 기존의 저장 방식과 차이가 있나요?",
+    "parameters": {
+      "save": "save",
+      "error": "",
+      "how": "",
+      "array": "",
+      "call": "",
+      "object": "",
+      "role": "",
+      "why": "",
+      "pointer": "pointer",
+      "Variable": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "자신이 데이터를 저장할 공간이 아닌 저장할 공간이 있는 위치를 저장하는 메모리번지 저장",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "자신이 데이터를 저장할 공간이 아닌 저장할 공간이 있는 위치를 저장하는 메모리번지 저장"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/a6c9de91-3678-43c4-9eb8-f1844babcdaf",
+      "displayName": "pointerIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 1418
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
