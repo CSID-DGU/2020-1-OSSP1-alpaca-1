@@ -1,0 +1,41 @@
+{
+  "responseId": "ece1b9ae-722a-4af9-8e0d-5d370e9a2069-2db64ae0",
+  "queryResult": {
+    "queryText": "포인터 변수는 어떻게 호출하나요?",
+    "parameters": {
+      "object": "",
+      "error": "",
+      "Variable": "Variable",
+      "pointer": "pointer",
+      "why": "",
+      "how": "",
+      "role": "",
+      "call": "call",
+      "save": "",
+      "array": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "주소를 이용해 객체안의 변수값을 읽고쓰고 멤버함수 호출가능",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "주소를 이용해 객체안의 변수값을 읽고쓰고 멤버함수 호출가능"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/a6c9de91-3678-43c4-9eb8-f1844babcdaf",
+      "displayName": "pointerIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 326
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
