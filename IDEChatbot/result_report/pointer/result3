@@ -1,0 +1,41 @@
+{
+  "responseId": "cb96bfe2-8c96-4124-92bc-97d04111ca7f-2db64ae0",
+  "queryResult": {
+    "queryText": "포인터 변수의 역할은 무엇인가요?",
+    "parameters": {
+      "why": "",
+      "save": "",
+      "object": "",
+      "how": "",
+      "Variable": "Variable",
+      "role": "role",
+      "error": "",
+      "array": "",
+      "pointer": "pointer",
+      "call": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "객체의 주소 저장",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "객체의 주소 저장"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/a6c9de91-3678-43c4-9eb8-f1844babcdaf",
+      "displayName": "pointerIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 79
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
