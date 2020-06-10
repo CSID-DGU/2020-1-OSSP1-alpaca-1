@@ -1,0 +1,38 @@
+{
+  "responseId": "43495505-9266-4d79-8856-bf33d54c8a36-2db64ae0",
+  "queryResult": {
+    "queryText": "참조도 반환이 가능한가요?",
+    "parameters": {
+      "space": "",
+      "Variable": [],
+      "parameter": "",
+      "error": "",
+      "share": "",
+      "return": "return",
+      "reference": "reference"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "Power& Power::operator<<(int n){}",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "Power& Power::operator<<(int n){}"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/idechatbot-xsrbmv/agent/intents/ea8e9c4a-df06-485d-8c4e-68cfd9cf971d",
+      "displayName": "referenceIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 226
+    },
+    "languageCode": "ko"
+  },
+  "webhookStatus": {
+    "message": "Webhook execution successful"
+  }
+}
