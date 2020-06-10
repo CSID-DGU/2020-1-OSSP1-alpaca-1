@@ -1,0 +1,18 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "pointer",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "pointer",
+      "synonyms": [
+        "pointer",
+        "포인터"
+      ]
+    }
+  ],
+  "id": "d021433a-1fad-49e1-b5ac-9052bd8cae80",
+  "isOverridable": false
+}
