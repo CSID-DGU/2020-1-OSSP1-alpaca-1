@@ -4,13 +4,6 @@ const LOBBY_ROOM_ID = 'LOBBY';
 
 export default function createSocketHanlder(io) {
 
-  // ** clear empty rooms in interval globally
-  if (global.clearEmptyRoomsInterval) clearInterval(global.clearEmptyRoomsInterval);
-  global.clearEmptyRoomsInterval = setInterval(() => {
-    Room.clearEmptyRooms();
-    io.to(LOBBY_ROOM_ID).emit('rooms', Room.instances);
-  }, 1000);
-
   return function socketHandler(socket) {
 
     // 1: login (connected) -> emit logined with userData
