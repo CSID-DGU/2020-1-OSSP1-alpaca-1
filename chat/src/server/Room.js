@@ -1,20 +1,6 @@
 class Room {
   static instances = [];
 
-  static clearEmptyRooms() {
-    const at = parseInt((new Date()).getTime()/1000) - 60*60; // 60min ago
-    for (let i = 0; i < Room.instances.length; i++) {
-      let room = Room.instances[i];
-      if (room.users.length > 0) continue;
-
-      const lastMessage = room.messages[room.messages.length - 1];
-      if (!lastMessage || lastMessage.at < at) {
-        Room.instances.splice(i, 1);
-        i--;
-      }
-    }
-  }
-
   static create(args) {
     return new Room(args);
   }
