@@ -170,7 +170,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
    });
   }
   
-   function handlevariable(agent){
+    function handlevariable(agent){
     const a=agent.parameters.Variable;
     const b=agent.parameters.type;
     const c=agent.parameters.default;
@@ -183,11 +183,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         var ideaInfo=snapshot.child('answer/Variable/'+c+'/idea').val();
         var examInfo=snapshot.child('answer/Variable/'+c+'/exam').val();
         var adInfo=snapshot.child('answer/Variable/'+c+'/advantage').val();
-        if(f=="idea") 
-        { agent.add(ideaInfo);}
+        if(d=="advantage") 
+        { agent.add(adInfo);}
          else if(e=="exam")
          {agent.add(examInfo);}
-        else{agent.add(adInfo);}
+        else{agent.add(ideaInfo);}
       }
       else if(b=="type")
       {
@@ -469,7 +469,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	else{agent.add(ideaInfo);}
     });
   }
-  function handleinheritance(agent){
+   function handleinheritance(agent){
   	const a=agent.parameters.inheritance;
     const b=agent.parameters.code;
     const c=agent.parameters.feature;
@@ -493,6 +493,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       else if(d=="give"){agent.add(giveInfo);}
       else if(f=="multi"&&b=="code"){agent.add(multicodeInfo);}
       else if(g=="role"){agent.add(roleInfo);}
+      else if(e=="idea"){agent.add(ideaInfo);}
       else if(h=="virtual"&&e=="idea"){agent.add(virtualideaInfo);}
       else if(h=="virtual"&&i=="declare"){agent.add(virtualdeclareInfo);}
     });
