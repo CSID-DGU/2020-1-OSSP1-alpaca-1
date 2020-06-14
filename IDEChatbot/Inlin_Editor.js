@@ -31,7 +31,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     else{b='idea';}
     return admin.database().ref().once("value").then((snapshot)=>{
     	var STLInfo=snapshot.child('answer/'+a+'/'+b).val();
-      	agent.add(STLInfo);});
+      	agent.add(STLInfo+"이다.");});
   }
   
   function handlestaticallocation(agent){
@@ -47,7 +47,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     if(b!="use"){b='idea';}
     return admin.database().ref().once("value").then((snapshot)=>{
     	var  abstractionInfo=snapshot.child('answer/'+a+'/'+b).val();
-      	agent.add(abstractionInfo);});
+      	agent.add(abstractionInfo+"이다.");});
   }
   
   function handlevector(agent){
@@ -58,21 +58,21 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     else{b='idea';}
     return admin.database().ref().once("value").then((snapshot)=>{
     	var  vectorInfo=snapshot.child('answer/'+a+'/'+b).val();
-      	agent.add(vectorInfo); });
+      	agent.add(vectorInfo+"이다."); });
   }
   
   function handleiterator(agent){
   	const a=agent.parameters.iterator;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var iteratorInfo=snapshot.child('answer/'+a+'/idea').val();
-      	agent.add(iteratorInfo);});
+      	agent.add(iteratorInfo+"이다.");});
   }
   
   function handletemplate(agent){
   	const a=agent.parameters.template;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var templateInfo=snapshot.child('answer/'+a+'/idea').val();
-      	agent.add(templateInfo);});
+      	agent.add(templateInfo+"이다.");});
   }
   
   function handlegeneric(agent){
@@ -98,7 +98,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     return admin.database().ref().once("value").then((snapshot)=>{
     	var streamInfo=snapshot.child('answer/'+a+'/idea').val();
       	var iostreamInfo=snapshot.child('answer/stream/'+b).val();
-      	if(a=="stream") agent.add(streamInfo); 
+      	if(a=="stream") agent.add(streamInfo+"이다."); 
       	else agent.add(iostreamInfo);});
   }
   
@@ -113,7 +113,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 	const a=agent.parameters.overriding;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
-      	agent.add(ideaInfo); });
+      	agent.add(ideaInfo+"하는 것이다."); });
   }
 
   function handlememoryallocation(agent){
@@ -121,7 +121,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     const b=agent.parameters.careful;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var ideaInfo=snapshot.child('answer/'+a+'/'+b).val();
-      	agent.add(ideaInfo); });
+      	agent.add(ideaInfo+"한다."); });
   }
   
   function handlemalloc(agent){
@@ -139,14 +139,15 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     return admin.database().ref().once("value").then((snapshot)=>{
     	var howInfo=snapshot.child('answer/reuse/how').val();
       	var meanInfo=snapshot.child('answer/reuse/mean').val();
-      	if(b=="how") agent.add(howInfo); else agent.add(meanInfo); });
+      	if(b=="how") agent.add(howInfo+"을 통해 재사용한다."); 
+      else agent.add(meanInfo+"하는 것을 의미한다."); });
   }
   
   function handledynamicbinding(agent){
   	const a=agent.parameters.dynamicbinding;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var ideaInfo=snapshot.child('answer/'+a+'/idea').val();
-      	agent.add(ideaInfo); });
+      	agent.add(ideaInfo+"되는 것이다."); });
   }
   
    function handleoperatingoverloading(agent){
@@ -166,11 +167,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       {agent.add(postfixInfo);}
       else if(e=="prefixoperator")
       {agent.add(prefixInfo);}
-      else{agent.add(ideaInfo);}
+      else{agent.add(ideaInfo+"를 하는 것이다.");}
    });
   }
   
-    function handlevariable(agent){
+   function handlevariable(agent){
     const a=agent.parameters.Variable;
     const b=agent.parameters.type;
     const c=agent.parameters.default;
@@ -184,15 +185,15 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         var examInfo=snapshot.child('answer/Variable/'+c+'/exam').val();
         var adInfo=snapshot.child('answer/Variable/'+c+'/advantage').val();
         if(d=="advantage") 
-        { agent.add(adInfo);}
+        { agent.add(adInfo+"하다.");}
          else if(e=="exam")
          {agent.add(examInfo);}
-        else{agent.add(ideaInfo);}
+        else{agent.add(ideaInfo+"한다.");}
       }
       else if(b=="type")
       {
         var variabletype=snapshot.child('answer/'+a+'/type').val();
-        agent.add(variabletype);
+        agent.add(variabletype+"가 있다.");
       }});
   }
   
@@ -206,10 +207,10 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	var whereInfo=snapshot.child('answer/'+a+'/'+b).val();
       	var needInfo=snapshot.child('answer/'+a+'/'+c).val();
       	var handlingInfo=snapshot.child('answer/'+a+'/'+d).val();
-      	if(b=="where") agent.add(whereInfo);
-      	else if(c=="need") agent.add(needInfo);
-      	else if(d=="handling") agent.add(handlingInfo);
-      	else agent.add(ideaInfo);
+      	if(b=="where") agent.add(whereInfo+"한다.");
+      	else if(c=="need") agent.add(needInfo+"하다.");
+      	else if(d=="handling") agent.add(handlingInfo+"한다.");
+      	else agent.add(ideaInfo+"이다.");
     });
   }
   
@@ -222,12 +223,10 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       var functionInfo=snapshot.child('answer/string/function').val();
       var headerInfo=snapshot.child('answer/string/header').val();
       var gapInfo=snapshot.child('answer/string/gap').val();
-      if(b=="function")agent.add(functionInfo);
-      else if(d=="gap")
-      {
-        agent.add(gapInfo);
-      }
-      else agent.add(headerInfo);});
+      if(b=="function"){agent.add(functionInfo);}
+      else if(d=="gap"){agent.add(gapInfo); }
+      else agent.add(headerInfo);
+    });
   }
   
   function handledestructor(agent){
@@ -250,14 +249,14 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       var returnInfo=snapshot.child('answer/'+a+'/'+g).val();
       var whenInfo=snapshot.child('answer/'+a+'/'+h).val();
        var whyInfo=snapshot.child('answer/'+a+'/'+i).val();
-      if(c=="dynamicobject")agent.add(dynamicobjectInfo);
-      else if(e=="order")agent.add(orderInfo);
-      else if(f=="redundancy")agent.add(redundancyInfo);
-      else if(g=="return")agent.add(returnInfo);
-      else if(h=="when")agent.add(whenInfo);
-      else if(i=="why")agent.add(whyInfo);
-      else if(j=="how")agent.add(callInfo);
-      else agent.add(ideaInfo);
+      if(c=="dynamicobject")agent.add(dynamicobjectInfo+"된다.");
+      else if(e=="order")agent.add(orderInfo+"한다.");
+      else if(f=="redundancy")agent.add(redundancyInfo+"하다.");
+      else if(g=="return")agent.add(returnInfo+"하다.");
+      else if(h=="when")agent.add(whenInfo+"소멸한다.");
+      else if(i=="why")agent.add(whyInfo+"하다.");
+      else if(j=="how")agent.add(callInfo+"된다.");
+      else agent.add(ideaInfo+"이다.");
       });
   }
     function handlefriend(agent){
@@ -273,11 +272,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
        var locationInfo=snapshot.child('answer/'+a+'/'+d).val();
        var possibleInfo=snapshot.child('answer/'+a+'/'+e).val();
        var whenInfo=snapshot.child('answer/'+a+'/'+f).val();
-      if(b=="how")agent.add(howInfo);
-      else if(d=="location")agent.add(locationInfo);
-      else if(e=="possible")agent.add(possibleInfo);
-      else if(f=="when")agent.add(whenInfo);
-      else agent.add(ideaInfo);
+      if(b=="how")agent.add(howInfo+"을 통해 사용가능하다.");
+      else if(d=="location")agent.add(locationInfo+"에서 가능하다.");
+      else if(e=="possible")agent.add(possibleInfo+"에서 사용 가능하다.");
+      else if(f=="when")agent.add(whenInfo+"사용한다.");
+      else agent.add(ideaInfo+"이다.");
       });
   }
   
@@ -286,7 +285,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     const b=agent.parameters.similar;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var ideaInfo=snapshot.child('answer/c++/similar').val();
-      	agent.add(ideaInfo); });
+      	agent.add(ideaInfo+"하다."); });
   }
   function handlearray(agent){
   	const a=agent.parameters.object;
@@ -304,13 +303,13 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	var declare=snapshot.child('answer/array/object/declare').val();
       	var initInfo=snapshot.child('answer/array/object/initialization/exam').val();
     	if(a=="object"){
-        	if(g=="why") agent.add(whyInfo);
-          	else if(f=="relation") agent.add(relationInfo);
-          	else if(e=="declare") agent.add(declare);
+        	if(g=="why") agent.add(whyInfo+"한다.");
+          	else if(f=="relation") agent.add(relationInfo+"한다.");
+          	else if(e=="declare") agent.add(declare+"한다.");
           	else agent.add(initInfo);
         }
       else{
-      	agent.add(destructInfo);
+      	agent.add(destructInfo+"된다.");
       }
     });
   }
@@ -326,7 +325,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         	agent.add(referenceInfo);
         }
       	else{
-        	agent.add(valueInfo);
+        	agent.add(valueInfo+"된다.");
         }
       	});
   }
@@ -342,10 +341,10 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	var meanInfo=snapshot.child('answer/class/mean').val();
         var whyInfo=snapshot.child('answer/class/why').val();
         var absideaInfo=snapshot.child('answer/class/abstractclass/idea').val();
-        if(b=="how"){agent.add(howInfo);}
-      	else if(f=="idea"){agent.add(absideaInfo);}
-       else if(d=="why"){agent.add(whyInfo);}
-      else{agent.add(meanInfo);}
+        if(b=="how"){agent.add(howInfo+"하여 작성한다.");}
+      	else if(f=="idea"){agent.add(absideaInfo+"이다.");}
+       else if(d=="why"){agent.add(whyInfo+"사용한다.");}
+      else{agent.add(meanInfo+"를 의미한다.");}
       	});
   }
   
@@ -356,8 +355,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     return admin.database().ref().once("value").then((snapshot)=>{
     	var orderInfo=snapshot.child('answer/constructor/order').val();
       	var whyInfo=snapshot.child('answer/constructor/why').val();
-      	if(b=="order"){agent.add(orderInfo);}
-      	else if(c=="why"){agent.add(whyInfo);}
+      	if(b=="order"){agent.add(orderInfo+"하는 순서이다.");}
+      	else if(c=="why"){agent.add(whyInfo+"하다.");}
     });
   }
   
@@ -381,7 +380,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   	const a=agent.parameters.copyconstructor;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var ideaInfo=snapshot.child('answer/copyconstructor/idea').val();
-      	agent.add(ideaInfo);
+      	agent.add(ideaInfo+"이다.");
     });
   }
   
@@ -389,7 +388,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   	const a=agent.parameters.downcasting;
     return admin.database().ref().once("value").then((snapshot)=>{
     	var ideaInfo=snapshot.child('answer/downcasting/idea').val();
-      	agent.add(ideaInfo);
+      	agent.add(ideaInfo+"이다.");
     });
   }
   
@@ -418,9 +417,9 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         	agent.add(inithow);
         }
       	else{
-        	if(e=="how"&&d=="return"){agent.add(re);}
-          	else if(e=="how"){agent.add(how);}
-          	else {agent.add(when);}
+        	if(e=="how"&&d=="return"){agent.add(re+"한다.");}
+          	else if(e=="how"){agent.add(how+"을 통해 할당한다.");}
+          	else {agent.add(when+"에 사용한다.");}
         }
     });
   }
@@ -435,10 +434,10 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       var relationInfo=snapshot.child('answer/functionredundancy/relation').val();
       var whenInfo=snapshot.child('answer/functionredundancy/when').val();
       var whyInfo=snapshot.child('answer/functionredundancy/why').val();
-      if(b=="idea"){agent.add(ideaInfo);}
-      else if(c=="relation"){agent.add(relationInfo);}
-      else if(d=="when"){agent.add(whenInfo);}
-      else{agent.add(whyInfo);}
+      if(b=="idea"){agent.add(ideaInfo+"하다.");}
+      else if(c=="relation"){agent.add(relationInfo+"중복 가능하다.");}
+      else if(d=="when"){agent.add(whenInfo+"실행된다.");}
+      else{agent.add(whyInfo+"하기 위해서 이다.");}
        });
   }
    function handlenamespace(agent){
@@ -453,9 +452,9 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       var howInfo=snapshot.child('answer/namespace/using/how').val();
       var ideaInfo=snapshot.child('answer/namespace/using/idea').val();
       if(b=="must"){agent.add(mustInfo);}
-      else if(c=="role"){agent.add(roleInfo);}
+      else if(c=="role"){agent.add(roleInfo+"한다.");}
       else if(d=="how"){agent.add(howInfo);}
-      else{agent.add(ideaInfo);}
+      else{agent.add(ideaInfo+"이다.");}
     });
   }
   
@@ -465,11 +464,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     return admin.database().ref().once("value").then((snapshot)=>{
     	var ideaInfo=snapshot.child('answer/encapsulation/idea').val();
       	var howInfo=snapshot.child('answer/encapsulation/how').val();
-      	if(b=="how"){agent.add(howInfo);}
+      	if(b=="how"){agent.add(howInfo+"하여 캡슐화한다.");}
       	else{agent.add(ideaInfo);}
     });
   }
-   function handleinheritance(agent){
+  function handleinheritance(agent){
   	const a=agent.parameters.inheritance;
     const b=agent.parameters.code;
     const c=agent.parameters.feature;
@@ -489,13 +488,13 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         var virtualideaInfo=snapshot.child('answer/inheritance/virtual/idea').val();
         var virtualdeclareInfo=snapshot.child('answer/inheritance/virtual/declare').val();
       if(b=="code"){agent.add(codeInfo);}
-      	else if(c=="feature"){agent.add(featureInfo);}
-      else if(d=="give"){agent.add(giveInfo);}
+      	else if(c=="feature"){agent.add(featureInfo+"을 가진다.");}
+      else if(d=="give"){agent.add(giveInfo+"한다.");}
       else if(f=="multi"&&b=="code"){agent.add(multicodeInfo);}
-      else if(g=="role"){agent.add(roleInfo);}
+      else if(g=="role"){agent.add(roleInfo+"하는 역할을 한다.");}
       else if(e=="idea"){agent.add(ideaInfo);}
-      else if(h=="virtual"&&e=="idea"){agent.add(virtualideaInfo);}
-      else if(h=="virtual"&&i=="declare"){agent.add(virtualdeclareInfo);}
+      else if(h=="virtual"&&e=="idea"){agent.add(virtualideaInfo+"이다.");}
+      else if(h=="virtual"&&i=="declare"){agent.add(virtualdeclareInfo+"을 통해 선언한다.");}
     });
   }
   
@@ -515,13 +514,13 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       	var returnInfo=snapshot.child('answer/reference/return/exam').val();
       	var variableInfo=snapshot.child('answer/reference/variable').val();
       	if(d=="parameter"){
-      		if(g=="error"){agent.add(errorInfo);}
-      		else if(e=="share"){agent.add(shareInfo);}
+      		if(g=="error"){agent.add(errorInfo+"에러가 발생한다.");}
+      		else if(e=="share"){agent.add(shareInfo+"을 공유한다.");}
       		else if(f=="space"){agent.add(spaceInfo);}
         }
       	else if(c=="return"){agent.add(returnInfo);}
-      	else if(b=="Variable"){agent.add(variableInfo);}
-      	else agent.add(ideaInfo);
+      	else if(b=="Variable"){agent.add(variableInfo+"한다.");}
+      	else agent.add(ideaInfo+"이다.");
     });
   }
   
@@ -548,13 +547,13 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         	if(d=="array"){
             	if(e=="how"){agent.add(o_a_h);}
             }
-          	else if(a=="error"){agent.add(o_e);}
+          	else if(a=="error"){agent.add(o_e+"한다.");}
         }
-      	else if(f=="save"){agent.add(s);}
+      	else if(f=="save"){agent.add(s+"한다.");}
       	else if(h=="Variable"){
-        	if(g=="call"){agent.add(v_c);}
-          	else if(i=="role"){agent.add(v_r);}
-          	else if(j=="why"){agent.add(v_w);}
+        	if(g=="call"){agent.add(v_c+"하다.");}
+          	else if(i=="role"){agent.add(v_r+"한다.");}
+          	else if(j=="why"){agent.add(v_w+"사용한다.");}
         }
     });
   }
