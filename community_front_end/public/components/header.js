@@ -53,7 +53,7 @@ class Header extends React.Component {
             </div>
             <div className = "header__bottom">
                 <div className = "row">
-                    <ul className = "header__bottom ul-nolist-inline">
+                    <ul className = "header__bottom-nav ul-nolist-inline">
 			
                         <Welcome 
                             HeaderTask = {[
