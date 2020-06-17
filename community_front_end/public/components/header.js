@@ -76,8 +76,8 @@ class Header extends React.Component {
                             ]}
                         />
                     </ul>
-                   <ul className = "header__bottom-nav2 ul-nolist-inline">
-			
+                   <ul className = "header__bottom-nav ul-nolist-inline">
+			<p>
                    <Welcome 
                             HeaderTask = {[
                       
@@ -93,7 +93,7 @@ class Header extends React.Component {
 			                }
 
                             ]}
-                        />
+                        /></p>
                     </ul>
                 </div>
             </div>
