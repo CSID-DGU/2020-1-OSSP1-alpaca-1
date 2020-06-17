@@ -75,7 +75,7 @@ class Header extends React.Component {
                             ]}
                         />
                     </ul>
-                   <ul className = "header__bottom-nav1 ul-nolist-inline">
+                   <ul className = "header__bottom-nav ul-nolist-inline">
                    <Welcome 
                             HeaderTask = {[
                       
