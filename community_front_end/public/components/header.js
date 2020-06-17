@@ -53,22 +53,22 @@ class Header extends React.Component {
             </div>
             <div className = "header__bottom">
                 <div className = "row">
-                    <ul className = "header__bottom-nav ul-nolist-inline">
+                    <ul className = "header__bottom ul-nolist-inline">
 			
                         <Welcome 
                             HeaderTask = {[
                         {
-                                title : "학습목차",
+                                title : "학습 목차",
                                 url : "/main/class/notice",
                                 isSelected : window.location.pathname.includes("/main/class/")
                             },
                             {
-                                title : "문제",
+                                title : "문제 리스트",
                                 url : "/main/problems/list",
                                 isSelected : window.location.pathname.includes("/main/problems")
                             },
                             {
-                                title : "프로젝트",
+                                title : "프로젝트 관리",
                                 url : `${process.env.REACT_APP_FRONT_IDE_URL}?id=${this.props.userSeq}`,
                                 isSelected : false
                             },
@@ -78,7 +78,7 @@ class Header extends React.Component {
                                 isSelected : window.location.pathname.includes("/main/home")
                             },
 		            {
-				         title : "토론",
+				         title : "토론방",
 				         url : `http://192.168.35.165:3005`,
 				         isSelected : false
 			     }
