@@ -54,6 +54,7 @@ class Header extends React.Component {
             <div className = "header__bottom">
                 <div className = "row">
                     <ul className = "header__bottom-nav ul-nolist-inline">
+			<li>
                         <Welcome 
                             HeaderTask = {[
                         {
@@ -73,9 +74,10 @@ class Header extends React.Component {
                             }
                         
                             ]}
-                        />
+                        /></li>
                     </ul>
                    <ul className = "header__bottom-nav ul-nolist-inline">
+			<li>
                    <Welcome 
                             HeaderTask = {[
                       
@@ -91,7 +93,7 @@ class Header extends React.Component {
 			                }
 
                             ]}
-                        />
+                        /></li>
                     </ul>
                 </div>
             </div>
