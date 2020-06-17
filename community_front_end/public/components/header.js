@@ -70,17 +70,25 @@ class Header extends React.Component {
                                 title : "프로젝트 관리",
                                 url : `${process.env.REACT_APP_FRONT_IDE_URL}?id=${this.props.userSeq}`,
                                 isSelected : false
-                            },
+                            }
+                        
+                            ]}
+                        />
+                    </ul>
+                   <ul className = "header__bottom-nav1 ul-nolist-inline">
+                   <Welcome 
+                            HeaderTask = {[
+                      
                             {
                                 title : "마이페이지",
                                 url : "/main/home", 
                                 isSelected : window.location.pathname.includes("/main/home")
                             },
-		            {
-				title : "토론방",
-				url : `http://192.168.35.165:3005`,
-				isSelected : false
-			    }
+		                     {
+				                title : "토론방",
+				                url : `http://192.168.35.165:3005`,
+				                isSelected : false
+			                }
 
                             ]}
                         />
