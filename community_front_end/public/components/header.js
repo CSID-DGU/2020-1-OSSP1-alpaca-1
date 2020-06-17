@@ -58,41 +58,35 @@ class Header extends React.Component {
                         <Welcome 
                             HeaderTask = {[
                         {
-                                title : "학습 목차",
+                                title : "학습목차",
                                 url : "/main/class/notice",
                                 isSelected : window.location.pathname.includes("/main/class/")
                             },
                             {
-                                title : "문제 리스트",
+                                title : "문제",
                                 url : "/main/problems/list",
                                 isSelected : window.location.pathname.includes("/main/problems")
                             },
                             {
-                                title : "프로젝트 관리",
+                                title : "프로젝트",
                                 url : `${process.env.REACT_APP_FRONT_IDE_URL}?id=${this.props.userSeq}`,
                                 isSelected : false
-                            }
-                        
-                            ]}
-                        />
-                    </ul>
-			<p>
-                   <Welcome 
-                            HeaderTask = {[
-                      
-                            {
+                            },
+ 			   {
                                 title : "마이페이지",
                                 url : "/main/home", 
                                 isSelected : window.location.pathname.includes("/main/home")
                             },
-		                     {
-				                title : "토론방",
-				                url : `http://192.168.35.165:3005`,
-				                isSelected : false
-			                }
-
+		            {
+				         title : "토론",
+				         url : `http://192.168.35.165:3005`,
+				         isSelected : false
+			     }
+                        
                             ]}
-                        /></p>
+                        />
+                    </ul>
+			
                     
                 </div>
             </div>
