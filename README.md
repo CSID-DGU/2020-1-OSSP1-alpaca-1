@@ -49,7 +49,7 @@ DGU IDE를 실행후 로그인을 하면 다음과 같은 메뉴를 볼 수 있�
 IDE 개발환경 : Ubuntu  
 챗봇 개발툴 : Dialogflow  
 챗봇 데이터베이스 : Firebase    
-익명 채팅방 개발툴:JacaScript, react    
+익명 채팅방 개발툴:JavaScript, React    
 
 # 구축 방법    
 1.https://github.com/lynever/plass-ide-2020 에서 plass-ide-2020/web ide environment setting.txt 파일을 참고하여    
