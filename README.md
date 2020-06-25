@@ -51,5 +51,15 @@ IDE 개발환경 : Ubuntu
 챗봇 데이터베이스 : Firebase  
 익명 채팅방 개발툴:JacaScript, react  
 
-
+# 구축 방법  
+1.https://github.com/lynever/plass-ide-2020/blob/master/web%20ide%20environment%20setting.txt을 참고하여
+개발환경 구축에 필요한 사항들을 Ubuntu에 설치 다운 받으세요. 
+2.2020-1-OSSP1-alpaca-1/web-ide-front/public/index.html를 다운받아 Ubuntu에서 해당 위치의 파일을 이것으로 변경하세요.
+3.2020-1-OSSP1-alpaca-1/community_front_end/public/components/header.js을 다운받아 Ubuntu에서 해당 위치의 파일을 이것으로 변경하세요.  
+4.2020-1-OSSP1-alpaca-1/chat/폴더의 모든 파일들을 chat폴더를 생성해 plass-ide-2020/plass-ide-2020폴더내에 다운 받습니다.  
+5.chat폴더의 내용을 서버로 구축하고, 해당 서버를 Ubuntu에서 포트포워딩을 하여 3005번 포트에 부여하세요.
+  
+# 문의
+문의 사항이 있다면 이메일을 보내주세요.😋🥰
+권예진kwon990928@naver.com
 
