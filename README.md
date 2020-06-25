@@ -7,13 +7,13 @@ DGU IDE.VERSION2
 # 팀원
 권예진, 이선아, 윤영식, 최은지 
 
-# 역할 분담
-챗봇 개발-윤영식, 최은지  
-챗봇 IDE연동 및 익명 채팅방 개발및 IDE연동-권예진, 이선아 
+# 역할 분담  
+챗봇 개발-윤영식, 최은지    
+챗봇 IDE연동 및 익명 채팅방 개발및 IDE연동-권예진, 이선아   
 
-# 목적  
-기존 DGU IDE에 다음과 같은 기능을 추가한 DGU IDE.VERSION2를 만듭니다.    
-동국대학교 컴퓨터 전공 수업을 듣는 학우들의 과제 학습과 공부에 도움이 될 수 있도록
+# 목적    
+기존 DGU IDE에 다음과 같은 기능을 추가한 DGU IDE.VERSION2를 만듭니다.      
+동국대학교 컴퓨터 전공 수업을 듣는 학우들의 과제 학습과 공부에 도움이 될 수 있도록  
 C++프로그래밍 내용에 대한 궁금한 점을 답변 해줄 수 있는 c++ Q&A챗봇과   
 학우들과 교수님이 자유롭게 익명으로 질문과 답변을 해 줄 수 있는 익명 채팅방을 만들었습니다.
 # 기능  
@@ -45,13 +45,13 @@ DGU IDE를 실행후 로그인을 하면 다음과 같은 메뉴를 볼 수 있�
 방을 나가고 싶다면 좌측 상단의 나가기 버튼을 클릭하세요. 
 ![UI2](https://user-images.githubusercontent.com/62545246/83891398-0f29a600-a788-11ea-8521-95108ccb3d37.JPG)    
 
-# 개발환경
-IDE 개발환경 : Ubuntu
-챗봇 개발툴 : Dialogflow
-챗봇 데이터베이스 : Firebase  
-익명 채팅방 개발툴:JacaScript, react  
+# 개발환경  
+IDE 개발환경 : Ubuntu  
+챗봇 개발툴 : Dialogflow  
+챗봇 데이터베이스 : Firebase    
+익명 채팅방 개발툴:JacaScript, react    
 
-# 구축 방법  
+# 구축 방법    
 1.https://github.com/lynever/plass-ide-2020/blob/master/web%20ide%20environment%20setting.txt을 참고하여  
 개발환경 구축에 필요한 사항들을 Ubuntu에 설치 다운 받으세요.  
 2.2020-1-OSSP1-alpaca-1/web-ide-front/public/index.html를 다운받아 Ubuntu에서 해당 위치의 파일을 이것으로 변경하세요.  
