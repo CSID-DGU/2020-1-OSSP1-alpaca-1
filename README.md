@@ -52,7 +52,7 @@ IDE 개발환경 : Ubuntu
 익명 채팅방 개발툴:JacaScript, react    
 
 # 구축 방법    
-1.https://github.com/lynever/plass-ide-2020/blob/master/web%20ide%20environment%20setting.txt을 참고하여  
+1.https://github.com/lynever/plass-ide-2020 에서 plass-ide-2020/web ide environment setting.txt 파일을 참고하여    
 개발환경 구축에 필요한 사항들을 Ubuntu에 설치 다운 받으세요.  
 2.2020-1-OSSP1-alpaca-1/web-ide-front/public/index.html를 다운받아 Ubuntu에서 해당 위치의 파일을 이것으로 변경하세요.  
 3.2020-1-OSSP1-alpaca-1/community_front_end/public/components/header.js을 다운받아 Ubuntu에서 해당 위치의 파일을 이것으로 변경하세  요.    
