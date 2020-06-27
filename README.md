@@ -17,7 +17,7 @@ DGU IDE.VERSION2
 C++프로그래밍 내용에 대한 궁금한 점을 답변 해줄 수 있는 c++ Q&A챗봇과   
 학우들과 교수님이 자유롭게 익명으로 질문과 답변을 해 줄 수 있는 익명 채팅방을 만들었습니다.  
 참조 OpenSource
-DGU IDE-https://github.com/lynever/plass-ide-2020 
+DGU IDE-https://github.com/lynever/plass-ide-2020   
 익명채팅방-https://github.com/dehypnosis/chat
 # 기능  
 1.챗봇  
