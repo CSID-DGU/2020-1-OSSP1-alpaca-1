@@ -15,7 +15,7 @@ DGU IDE.VERSION2
 기존 DGU IDE에 다음과 같은 기능을 추가한 DGU IDE.VERSION2를 만듭니다.      
 동국대학교 컴퓨터 전공 수업을 듣는 학우들의 과제 학습과 공부에 도움이 될 수 있도록  
 C++프로그래밍 내용에 대한 궁금한 점을 답변 해줄 수 있는 c++ Q&A챗봇과   
-학우들과 교수님이 자유롭게 익명으로 질문과 답변을 해 줄 수 있는 익명 채팅방을 만들었습니다.
+학우들과 교수님이 자유롭게 익명으로 질문과 답변을 해 줄 수 있는 익명 채팅방을 만들었습니다.  
 참조 OpenSource
 DGU IDE-https://github.com/lynever/plass-ide-2020 
 익명채팅방-https://github.com/dehypnosis/chat
