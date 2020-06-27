@@ -49,10 +49,10 @@ DGU IDE를 실행후 로그인을 하면 다음과 같은 메뉴를 볼 수 있�
 ![UI2](https://user-images.githubusercontent.com/62545246/83891398-0f29a600-a788-11ea-8521-95108ccb3d37.JPG)    
 
 # 개발환경  
-IDE 개발환경 : Ubuntu  
-챗봇 개발툴 : Dialogflow  
-챗봇 데이터베이스 : Firebase    
-익명 채팅방 개발툴:JavaScript, React    
+IDE 개발환경 : Ubuntu, React    
+챗봇 개발툴 : Dialogflow, Firebase      
+익명 채팅방 개발툴:JavaScript, React.js, Boilerplate    
+Boilerplate https://github.com/zckly/MobX-React-Webpack-Express  
 
 # 구축 방법    
 1.https://github.com/lynever/plass-ide-2020 에서 plass-ide-2020/web ide environment setting.txt 파일을 참고하여    
